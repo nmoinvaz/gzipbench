@@ -14,7 +14,7 @@ decompression grid crosses decoders with producers, gzip-ng decoding bgzip
 and MiGz output as well as its own.
 
 Usage:
-    ./bench.py [files...] [-o out.json] [--size-mb N] [--levels 1,3,6,9]
+    ./bench.py [files...] [-o out.json] [--size-mb N] [--levels 1,2,...,9]
                [--threads auto|1,2,4] [--runs 3] [--warmup 1]
 
 Tools found on PATH are benchmarked, missing ones are skipped and noted.
@@ -315,7 +315,7 @@ def main():
     ap.add_argument("-o", "--output", default="gzipbench.json", help="output JSON path")
     ap.add_argument("--size-mb", type=int, default=256,
                     help="synthetic input size when no files are given")
-    ap.add_argument("--levels", default="1,3,6,9",
+    ap.add_argument("--levels", default="1,2,3,4,5,6,7,8,9",
                     help="compression level ladder, must include 6")
     ap.add_argument("--threads", default="auto",
                     help="thread counts to sweep, auto is powers of two up to the cpus")

@@ -9,10 +9,10 @@ input's size and crc. In-process buffer codec benchmarks are
 [codecbench]'s job instead.
 
 The variant matrix follows the [gzip-ng] README benchmarks. Each tool runs
-the compression level ladder, serial and parallel variants separately,
-parallel tools sweep thread counts at level 6, and the decompression grid
-crosses decoders with producers, gzip-ng decoding bgzip and MiGz output as
-well as its own.
+the compression level ladder, levels 1 through 9, serial and parallel
+variants separately, parallel tools sweep thread counts at level 6, and
+the decompression grid crosses decoders with producers, gzip-ng decoding
+bgzip and MiGz output as well as its own.
 
 ## Tools
 

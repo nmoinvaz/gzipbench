@@ -389,9 +389,13 @@ def render(ctx, benchmarks, title, out_path):
         gtop = body_bottom + 60
         svg.text(lx0, gtop - 34, f"deflate blocks, level 6, "
                  f"{sample_mib:g} MiB sample", size=12, fill=INK)
+        ux = width - 16
+        cw2 = ux - 96 - sx2
         svg.text(cx - 12, gtop - 16, "members", size=11, anchor="end")
         svg.text(cx, gtop - 16, "blocks in stream", size=11)
-        svg.text(sx2, gtop - 16, "average block size, compressed", size=11)
+        svg.text(sx2, gtop - 16, "average block size", size=11)
+        svg.text(sx2 + cw2, gtop - 16, "compressed", size=11, anchor="end")
+        svg.text(ux, gtop - 16, "uncompressed", size=11, anchor="end")
         cmax = max(b["blocks"] for b in census)
         smax = max(b["block_output_bytes"] for b in census)
         y = gtop + 8
@@ -403,21 +407,23 @@ def render(ctx, benchmarks, title, out_path):
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
             svg.text(cx - 12, y + 12, f"{b['members']:,}", size=10, anchor="end")
             svg.text(lx2, y + 12, row_label, size=10, fill=INK)
-            for px0, value, vmax, text, tip in (
-                    (cx, b["blocks"], cmax, f"{b['blocks']:,}",
+            for px0, pw, value, vmax, text, tip in (
+                    (cx, cw, b["blocks"], cmax, f"{b['blocks']:,}",
                      f"{b['blocks']:,} blocks ({b['stored']} stored, "
                      f"{b['fixed']} fixed, {b['dynamic']} dynamic), "
                      f"{b['members']:,} members"),
-                    (sx2, b["block_output_bytes"], smax,
+                    (sx2, cw2, b["block_output_bytes"], smax,
                      fmt_bytes(b["block_output_bytes"]),
                      f"avg {fmt_bytes(b['block_output_bytes'])} compressed, "
                      f"{fmt_bytes(b['block_input_bytes'])} of input per block")):
-                w = max((cw - 64) * value / vmax, 6)
+                w = max((pw - 64) * value / vmax, 6)
                 svg.add(f'<path d="M{px0} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 '
                         f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" fill="{color}" '
                         f'fill-opacity="{op}">'
                         f'<title>{esc(row_label + " - " + tip)}</title></path>')
-                svg.text(px0 + cw, y + 12, text, size=10, fill=INK, anchor="end")
+                svg.text(px0 + pw, y + 12, text, size=10, fill=INK, anchor="end")
+            svg.text(ux, y + 12, fmt_bytes(b["block_input_bytes"]),
+                     size=10, fill=INK, anchor="end")
             y += 22
         body_bottom = y + 6
 

@@ -397,7 +397,8 @@ def render(ctx, benchmarks, title, out_path):
         for b in census:
             color = series_color(b["series"])
             op = MODE_OPACITY.get(b["mode"], 1.0)
-            row_label = f"{b['series']} · {b['mode']}"
+            row_label = (b["series"] if b["mode"] == "normal"
+                         else f"{b['series']} · {b['mode']}")
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
             svg.text(lx2, y + 12, row_label, size=10, fill=INK)
             for px0, value, vmax, text, tip in (

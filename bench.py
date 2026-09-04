@@ -338,6 +338,9 @@ def main():
     missing = [s for s in ("gzipng", "pigz", "gzip", "minigzip", "bgzip", "migz")
                if s not in tools]
 
+    # Sampled before the run, afterwards it reflects the benchmark's own work
+    load_avg = list(os.getloadavg())
+
     work = tempfile.mkdtemp(prefix="gzipbench-")
     try:
         data = os.path.join(work, "data")
@@ -434,7 +437,7 @@ def main():
                 "num_cpus": ncpus,
                 "cpu_brand": cpu_brand(),
                 "os": platform.platform(),
-                "load_avg": list(os.getloadavg()),
+                "load_avg": load_avg,
                 "input": {"description": desc, "bytes": input_bytes},
                 "runs": args.runs, "warmup": args.warmup,
                 "threads": threads,

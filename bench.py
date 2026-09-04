@@ -24,6 +24,7 @@ needs tools/fetch-migz.sh run once. Needs only the Python standard library.
 import argparse
 import glob
 import json
+import math
 import os
 import platform
 import random
@@ -249,7 +250,8 @@ def run_once(argv, stdin_path, stdout_path):
 
 def measure(argv, stdin_path, stdout_path, runs, warmup, verify=None):
     """Wall times over runs, after warmups. A verify pair (size, crc) checks
-    the first warmup's output before the timed runs write to /dev/null."""
+    the first warmup's output before the timed runs write to /dev/null.
+    Short benchmarks repeat up to tenfold, toward two seconds in total."""
     if verify:
         with tempfile.NamedTemporaryFile(dir=os.path.dirname(stdin_path),
                                          delete=False) as tmp:
@@ -266,7 +268,10 @@ def measure(argv, stdin_path, stdout_path, runs, warmup, verify=None):
         warmup -= 1
     for _ in range(max(warmup, 0)):
         run_once(argv, stdin_path, stdout_path)
-    times = [run_once(argv, stdin_path, stdout_path) for _ in range(runs)]
+    times = [run_once(argv, stdin_path, stdout_path)]
+    runs = max(runs, min(10, math.ceil(2.0 / max(times[0], 0.01))))
+    while len(times) < runs:
+        times.append(run_once(argv, stdin_path, stdout_path))
     return {
         "seconds_mean": statistics.fmean(times),
         "seconds_min": min(times),
@@ -314,7 +319,8 @@ def main():
                     help="compression level ladder, must include 6")
     ap.add_argument("--threads", default="auto",
                     help="thread counts to sweep, auto is powers of two up to the cpus")
-    ap.add_argument("--runs", type=int, default=3, help="timed runs per benchmark")
+    ap.add_argument("--runs", type=int, default=3,
+                    help="timed runs per benchmark, short ones repeat toward two seconds")
     ap.add_argument("--warmup", type=int, default=1, help="warmup runs per benchmark")
     args = ap.parse_args()
 

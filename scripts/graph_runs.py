@@ -384,8 +384,8 @@ def render(ctx, benchmarks, title, out_path):
             SERIES_ORDER.index(b["series"]) if b["series"] in SERIES_ORDER
             else len(SERIES_ORDER), MODE_ORDER.index(b["mode"])))
         sample_mib = census[0]["input_bytes"] / 1048576
-        lx0, lx2, cw = 16, 524, 300
-        cx, sx2 = 200, 708
+        lx0, cw = 16, 340
+        cx, sx2 = 200, 580
         gtop = body_bottom + 60
         svg.text(lx0, gtop - 34, f"deflate blocks, level 6, "
                  f"{sample_mib:g} MiB sample", size=12, fill=INK)
@@ -406,7 +406,6 @@ def render(ctx, benchmarks, title, out_path):
                          else f"{b['series']} · {b['mode']}")
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
             svg.text(cx - 12, y + 12, f"{b['members']:,}", size=10, anchor="end")
-            svg.text(lx2, y + 12, row_label, size=10, fill=INK)
             for px0, pw, value, vmax, text, tip in (
                     (cx, cw, b["blocks"], cmax, f"{b['blocks']:,}",
                      f"{b['blocks']:,} blocks ({b['stored']} stored, "

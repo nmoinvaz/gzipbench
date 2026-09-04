@@ -452,8 +452,8 @@ def main():
             for vslug in ("gzipng-p", "pigz-p", "bgzip-p"):
                 compress(vslug, 6, t)
 
-        # Decompression grid from the gzip-ng README, gzip-ng and bgzip sweep
-        # their own output across the thread counts
+        # Decompression grid from the gzip-ng README, the parallel decoders
+        # sweep their own output across the thread counts
         for t in threads:
             decompress("gzipng-p", "gzipng-p", t)
         for t in threads:
@@ -463,7 +463,8 @@ def main():
         decompress("migz", "migz", None)
         decompress("gzipng", "gzipng", None)
         decompress("minigzip", "minigzip", None)
-        decompress("pigz-p", "pigz-p", tmax)
+        for t in threads:
+            decompress("pigz-p", "pigz-p", t)
         decompress("gzip", "gzip", None)
 
         # Deflate block census, level 6 streams in each mode a tool supports,

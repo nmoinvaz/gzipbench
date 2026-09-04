@@ -167,11 +167,12 @@ def render(ctx, benchmarks, title, out_path):
     decompress = [b for b in benchmarks if b["kind"] == "decompress"]
 
     # The scatter takes the ladder points, serial or at the full thread count;
-    # sweep intermediates feed the scaling panels only
+    # sweep intermediates feed the scaling panels only, where serial tools
+    # appear too, their single value at the first thread count
     ladder = [b for b in compress if b["threads"] in (None, tmax)]
-    sweep_c = [b for b in compress if b["threads"] is not None and b["level"] == 6]
+    sweep_c = [b for b in compress if b["level"] == 6]
     own = [b for b in decompress if b["variant"] == b["producer_variant"]]
-    sweep_d = [b for b in own if b["threads"] is not None]
+    sweep_d = own
     rows = [b for b in decompress if b["threads"] in (None, tmax)]
 
     series_seen = []
@@ -295,13 +296,13 @@ def render(ctx, benchmarks, title, out_path):
     # on its own output, across the swept thread counts
     facets = [("compress, level 6", sweep_c), ("decompress, own output", sweep_d)]
     facets = [(cap, pts) for cap, pts in facets
-              if len({b["threads"] for b in pts}) > 1]
+              if len({b["threads"] for b in pts} - {None}) > 1]
     ftop = max(py + ph + 76, right_bottom + 36)
     fh, fw, gapx = 190, 450, 44
     for fi, (caption, pts) in enumerate(facets):
         fx = 78 + fi * (fw + gapx)
         svg.text(fx, ftop - 18, f"{caption}, by threads", size=12, fill=INK)
-        tvals = sorted({b["threads"] for b in pts})
+        tvals = sorted({b["threads"] for b in pts} - {None})
 
         def tx(t, fx=fx, tvals=tvals):
             return fx + tvals.index(t) / max(len(tvals) - 1, 1) * fw
@@ -316,8 +317,11 @@ def render(ctx, benchmarks, title, out_path):
         fseries = {}
         for b in pts:
             fseries.setdefault(b["series"], []).append(b)
-        end_ys = [fy(max(line, key=lambda b: b["threads"])["bytes_per_second"])
-                  for line in fseries.values() if len(line) > 1]
+        lines = {s: sorted((b for b in rows if b["threads"] is not None),
+                           key=lambda b: b["threads"])
+                 for s, rows in fseries.items()}
+        end_ys = [fy(line[-1]["bytes_per_second"])
+                  for line in lines.values() if len(line) > 1]
 
         # Later facets label their scale inside the right edge, the outside
         # left would collide with the previous facet's value labels, and the
@@ -334,22 +338,39 @@ def render(ctx, benchmarks, title, out_path):
             svg.text(tx(t), ftop + fh + 14, str(t), size=10, anchor="middle")
         svg.text(fx + fw / 2, ftop + fh + 30, "threads", size=11, anchor="middle")
 
+        # One pool for endpoint and serial value labels, crowding labels
+        # yield in series order, the tooltips still tell the dots apart
+        label_ys = []
+
+        def place_label(x, yy, value, anchor="start"):
+            if all(abs(yy - oy) > 10 for oy in label_ys):
+                svg.text(x, yy, fmt_speed(value), size=9, anchor=anchor)
+                label_ys.append(yy)
+
         for s in series_seen:
-            line = sorted(fseries.get(s, []), key=lambda b: b["threads"])
-            if len(line) < 2:
-                continue
-            coords = [(tx(b["threads"]), fy(b["bytes_per_second"])) for b in line]
-            path = " ".join(f"{'M' if q == 0 else 'L'}{x:.1f},{yy:.1f}"
-                            for q, (x, yy) in enumerate(coords))
-            svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
-                    f'stroke-width="2" stroke-opacity="0.7"/>')
-            for b, (x, yy) in zip(line, coords):
-                tip = (f"{s} threads:{b['threads']} - {fmt_speed(b['bytes_per_second'])}"
+            line = lines.get(s, [])
+            if len(line) >= 2:
+                coords = [(tx(b["threads"]), fy(b["bytes_per_second"])) for b in line]
+                path = " ".join(f"{'M' if q == 0 else 'L'}{x:.1f},{yy:.1f}"
+                                for q, (x, yy) in enumerate(coords))
+                svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
+                        f'stroke-width="2" stroke-opacity="0.7"/>')
+                for b, (x, yy) in zip(line, coords):
+                    tip = (f"{s} threads:{b['threads']} - {fmt_speed(b['bytes_per_second'])}"
+                           + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
+                    svg.dot(x, yy, series_color(s), tip, r=4)
+                lb = line[-1]
+                place_label(tx(lb["threads"]) - 8, fy(lb["bytes_per_second"]) - 8,
+                            lb["bytes_per_second"], anchor="end")
+            # Serial tools sit at the first thread count with a single marker
+            for b in fseries.get(s, []):
+                if b["threads"] is not None:
+                    continue
+                x, yy = tx(tvals[0]), fy(b["bytes_per_second"])
+                tip = (f"{s} - {fmt_speed(b['bytes_per_second'])}"
                        + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
                 svg.dot(x, yy, series_color(s), tip, r=4)
-            lb = line[-1]
-            svg.text(tx(lb["threads"]) - 8, fy(lb["bytes_per_second"]) - 8,
-                     fmt_speed(lb["bytes_per_second"]), size=9, anchor="end")
+                place_label(x + 8, yy + 3, b["bytes_per_second"])
         if fi == len(facets) - 1:
             better_arrow(svg, fx + fw + 22, ftop + 92, fx + fw + 22, ftop + 30)
     body_bottom = ftop + fh + 44 if facets else max(py + ph + 56, right_bottom)

@@ -389,6 +389,7 @@ def render(ctx, benchmarks, title, out_path):
         gtop = body_bottom + 60
         svg.text(lx0, gtop - 34, f"deflate blocks, level 6, "
                  f"{sample_mib:g} MiB sample", size=12, fill=INK)
+        svg.text(cx - 12, gtop - 16, "members", size=11, anchor="end")
         svg.text(cx, gtop - 16, "blocks in stream", size=11)
         svg.text(sx2, gtop - 16, "average block size, compressed", size=11)
         cmax = max(b["blocks"] for b in census)
@@ -400,6 +401,7 @@ def render(ctx, benchmarks, title, out_path):
             row_label = (b["series"] if b["mode"] == "normal"
                          else f"{b['series']} · {b['mode']}")
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
+            svg.text(cx - 12, y + 12, f"{b['members']:,}", size=10, anchor="end")
             svg.text(lx2, y + 12, row_label, size=10, fill=INK)
             for px0, value, vmax, text, tip in (
                     (cx, b["blocks"], cmax, f"{b['blocks']:,}",

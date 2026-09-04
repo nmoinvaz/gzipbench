@@ -1,3 +1,6 @@
 __pycache__/
 tools/migz/
+tools/src/
+tools/bin/
+tools/zlibng.json
 *.gz

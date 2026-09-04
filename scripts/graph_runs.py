@@ -399,6 +399,12 @@ def render(ctx, benchmarks, title, out_path):
 
     # Version and machine footnote, wrapped when the tools make it long
     versions = " · ".join(v for v in ctx.get("tools", {}).values() if v)
+    zn = ctx.get("zlibng")
+    if zn:
+        seg = ("zlib-ng " + zn.get("version", "")).strip()
+        if zn.get("commit"):
+            seg += f" @ {zn['commit'][:9]}"
+        versions = seg + (" · " + versions if versions else "")
     machine = machine_line(ctx)
     warnings = run_warnings(ctx, benchmarks)
     height = body_bottom + 42 + (16 if warnings else 0)

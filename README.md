@@ -38,16 +38,23 @@ stream by parsing the deflate bitstream itself
 [gzip]: https://www.gnu.org/software/gzip/
 [codecbench]: https://github.com/nmoinvaz/codecbench
 
-Tools found on PATH are benchmarked, missing ones are skipped and noted.
-`GZIPNG`, `PIGZ`, `GZIP`, `MINIGZIP`, `BGZIP`, and `JAVA` override the
-lookup. MiGz has no standalone binary, `tools/fetch_migz.py` pulls the
-pinned jars from Maven Central once and compiles a small pipe CLI, JVM
-start stays part of its measurements.
+Tools in `tools/bin` are preferred, then PATH, missing ones are skipped
+and noted. `GZIPNG`, `PIGZ`, `GZIP`, `MINIGZIP`, `BGZIP`, and `JAVA`
+override the lookup. MiGz has no standalone binary, `tools/fetch_migz.py`
+pulls the pinned jars from Maven Central once and compiles a small pipe
+CLI, JVM start stays part of its measurements.
+
+`tools/build_tools.py` builds gzip-ng, minigzip, pigz, and bgzip against
+zlib-ng develop into `tools/bin`, so every zlib-linked tool measures the
+same library. It writes `tools/zlibng.json`, and the graphs put that
+zlib-ng version and commit in their footer. GNU gzip carries its own
+deflate and MiGz uses the JVM's zlib, so those two stay system provided.
 
 ## Running
 
 ```sh
 python3 tools/fetch_migz.py
+python3 tools/build_tools.py
 ./bench.py -o results/all-tools.json
 python3 scripts/graph_runs.py results/all-tools.json
 ```

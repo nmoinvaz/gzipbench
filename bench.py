@@ -155,7 +155,10 @@ def locate_tools():
     tools = {}
 
     def path_for(env, name):
-        return os.environ.get(env) or shutil.which(name)
+        built = os.path.join(TOOLS_DIR, "bin", name)
+        return (os.environ.get(env)
+                or (built if os.path.exists(built) else None)
+                or shutil.which(name))
 
     p = path_for("GZIPNG", "gzip-ng")
     if p:
@@ -200,6 +203,19 @@ VARIANTS = {
 # gzip-ng's parallel blocks are always rsync friendly, --rsyncable only
 # changes the plain stream, so the census row would duplicate normal
 CENSUS_SKIP = {("gzipng-p", "rsyncable")}
+
+
+def zlibng_info(tools):
+    """zlib-ng provenance, the build_tools.py manifest when present, the
+    version gzip-ng compiled in otherwise."""
+    manifest = os.path.join(TOOLS_DIR, "zlibng.json")
+    if os.path.exists(manifest):
+        with open(manifest) as f:
+            return json.load(f)
+    gz = tools.get("gzipng")
+    if gz and "zlib-ng" in gz.version:
+        return {"version": gz.version.split("zlib-ng", 1)[1].strip(" ()")}
+    return None
 
 
 def synthesize(path, size_mb, seed=20260904):
@@ -522,6 +538,7 @@ def main():
                 "runs": args.runs, "warmup": args.warmup,
                 "threads": threads,
                 "tools": {s: t.version for s, t in tools.items()},
+                "zlibng": zlibng_info(tools),
                 "missing": missing,
             },
             "benchmarks": benchmarks,

@@ -384,14 +384,13 @@ def render(ctx, benchmarks, title, out_path):
             SERIES_ORDER.index(b["series"]) if b["series"] in SERIES_ORDER
             else len(SERIES_ORDER), MODE_ORDER.index(b["mode"])))
         sample_mib = census[0]["input_bytes"] / 1048576
-        lx0, cw, gap = 16, 330, 56
-        cx = 250
-        sx2 = cx + cw + gap
-        gtop = body_bottom + 46
-        svg.text(lx0, gtop - 18, f"deflate blocks, level 6, "
+        lx0, lx2, cw = 16, 524, 300
+        cx, sx2 = 200, 708
+        gtop = body_bottom + 60
+        svg.text(lx0, gtop - 34, f"deflate blocks, level 6, "
                  f"{sample_mib:g} MiB sample", size=12, fill=INK)
-        svg.text(cx, gtop - 18, "blocks in stream", size=11)
-        svg.text(sx2, gtop - 18, "average block size, compressed", size=11)
+        svg.text(cx, gtop - 16, "blocks in stream", size=11)
+        svg.text(sx2, gtop - 16, "average block size, compressed", size=11)
         cmax = max(b["blocks"] for b in census)
         smax = max(b["block_output_bytes"] for b in census)
         y = gtop + 8
@@ -400,6 +399,7 @@ def render(ctx, benchmarks, title, out_path):
             op = MODE_OPACITY.get(b["mode"], 1.0)
             row_label = f"{b['series']} · {b['mode']}"
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
+            svg.text(lx2, y + 12, row_label, size=10, fill=INK)
             for px0, value, vmax, text, tip in (
                     (cx, b["blocks"], cmax, f"{b['blocks']:,}",
                      f"{b['blocks']:,} blocks ({b['stored']} stored, "

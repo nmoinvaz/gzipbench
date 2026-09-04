@@ -300,23 +300,27 @@ def render(ctx, benchmarks, title, out_path):
             return ftop + fh - (math.log10(s) - math.log10(lo)) / \
                 (math.log10(hi) - math.log10(lo)) * fh
 
+        fseries = {}
+        for b in pts:
+            fseries.setdefault(b["series"], []).append(b)
+        end_ys = [fy(max(line, key=lambda b: b["threads"])["bytes_per_second"])
+                  for line in fseries.values() if len(line) > 1]
+
         # Later facets label their scale inside the right edge, the outside
-        # left would collide with the previous facet's value labels
+        # left would collide with the previous facet's value labels, and the
+        # inside labels yield to the line endpoint values drawn there
         for v in nice_log_ticks(lo, hi):
             yy = fy(v)
             svg.line(fx, yy, fx + fw, yy, GRID)
             if fi == 0:
                 svg.text(fx - 8, yy + 4, fmt_speed(v), size=9, anchor="end")
-            else:
+            elif all(abs(yy - ey) > 16 for ey in end_ys):
                 svg.text(fx + fw - 4, yy - 3, fmt_speed(v), size=8, anchor="end")
         svg.line(fx, ftop + fh, fx + fw, ftop + fh, INK_SOFT)
         for t in tvals:
             svg.text(tx(t), ftop + fh + 14, str(t), size=10, anchor="middle")
         svg.text(fx + fw / 2, ftop + fh + 30, "threads", size=11, anchor="middle")
 
-        fseries = {}
-        for b in pts:
-            fseries.setdefault(b["series"], []).append(b)
         for s in series_seen:
             line = sorted(fseries.get(s, []), key=lambda b: b["threads"])
             if len(line) < 2:

@@ -4,8 +4,9 @@
 Plots the compression benchmarks as a speed versus ratio chart, one point
 per level with the ladder connected in order, serial and parallel variants
 as separate series. Decompression rows, including the cross-decode pairs,
-get a throughput bar panel, and the thread sweeps get scaling line panels
-for compression and decompression at the bottom.
+get a throughput bar panel, the thread sweeps get scaling line panels, and
+the deflate block census gets paired bar panels, block counts and average
+block sizes across the normal, rsyncable, and independent modes.
 
 Usage:
     python3 scripts/graph_runs.py run.json [-o out.svg] [--title text]
@@ -32,10 +33,22 @@ SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
 REPO_URL = "https://github.com/nmoinvaz/gzipbench"
 
 
+MODE_ORDER = ["normal", "rsyncable", "independent"]
+MODE_OPACITY = {"normal": 1.0, "rsyncable": 0.66, "independent": 0.4}
+
+
 def fmt_speed(bps):
     if bps >= 1e9:
         return f"{bps / 1e9:.2f} GB/s"
     return f"{bps / 1e6:.0f} MB/s"
+
+
+def fmt_bytes(v):
+    if v >= 1e6:
+        return f"{v / 1e6:.1f} MB"
+    if v >= 1e3:
+        return f"{v / 1e3:.1f} kB"
+    return f"{v:.0f} B"
 
 
 def esc(s):
@@ -142,7 +155,7 @@ def run_warnings(ctx, benchmarks):
     ncpus = ctx.get("num_cpus") or 1
     if load1 > ncpus / 2:
         warns.append(f"load {load1:.1f} during run")
-    n = sum(1 for b in benchmarks if cv_of(b) > 0.03)
+    n = sum(1 for b in benchmarks if "seconds_mean" in b and cv_of(b) > 0.03)
     if n:
         warns.append(f"{n} benchmarks with cv above 3%")
     return warns
@@ -341,6 +354,49 @@ def render(ctx, benchmarks, title, out_path):
             better_arrow(svg, fx + fw + 22, ftop + 92, fx + fw + 22, ftop + 30)
     body_bottom = ftop + fh + 44 if facets else max(py + ph + 56, right_bottom)
 
+    # Deflate block census, paired bar panels: how many blocks each mode
+    # cuts the stream into, and how big the average block is, per variant,
+    # bar shade carries the mode within a variant's color
+    census = [b for b in benchmarks if b["kind"] == "blocks"]
+    if census:
+        census.sort(key=lambda b: (
+            SERIES_ORDER.index(b["series"]) if b["series"] in SERIES_ORDER
+            else len(SERIES_ORDER), MODE_ORDER.index(b["mode"])))
+        sample_mib = census[0]["input_bytes"] / 1048576
+        lx0, cw, gap = 16, 330, 56
+        cx = 250
+        sx2 = cx + cw + gap
+        gtop = body_bottom + 46
+        svg.text(lx0, gtop - 18, f"deflate blocks, level 6, "
+                 f"{sample_mib:g} MiB sample", size=12, fill=INK)
+        svg.text(cx, gtop - 18, "blocks in stream", size=11)
+        svg.text(sx2, gtop - 18, "average block size, compressed", size=11)
+        cmax = max(b["blocks"] for b in census)
+        smax = max(b["block_output_bytes"] for b in census)
+        y = gtop + 8
+        for b in census:
+            color = series_color(b["series"])
+            op = MODE_OPACITY.get(b["mode"], 1.0)
+            row_label = f"{b['series']} · {b['mode']}"
+            svg.text(lx0, y + 12, row_label, size=10, fill=INK)
+            for px0, value, vmax, text, tip in (
+                    (cx, b["blocks"], cmax, f"{b['blocks']:,}",
+                     f"{b['blocks']:,} blocks ({b['stored']} stored, "
+                     f"{b['fixed']} fixed, {b['dynamic']} dynamic), "
+                     f"{b['members']:,} members"),
+                    (sx2, b["block_output_bytes"], smax,
+                     fmt_bytes(b["block_output_bytes"]),
+                     f"avg {fmt_bytes(b['block_output_bytes'])} compressed, "
+                     f"{fmt_bytes(b['block_input_bytes'])} of input per block")):
+                w = max((cw - 64) * value / vmax, 6)
+                svg.add(f'<path d="M{px0} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 '
+                        f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" fill="{color}" '
+                        f'fill-opacity="{op}">'
+                        f'<title>{esc(row_label + " - " + tip)}</title></path>')
+                svg.text(px0 + cw, y + 12, text, size=10, fill=INK, anchor="end")
+            y += 22
+        body_bottom = y + 6
+
     # Version and machine footnote, wrapped when the tools make it long
     versions = " · ".join(v for v in ctx.get("tools", {}).values() if v)
     machine = machine_line(ctx)
@@ -365,6 +421,11 @@ def print_table(benchmarks):
     print(f"{'benchmark':<{width}} {'time':>9} {'speed':>10} {'ratio':>7}")
     print("-" * (width + 30))
     for b in benchmarks:
+        if b["kind"] == "blocks":
+            print(f"{b['name']:<{width}} {b['blocks']:>8,} blocks, "
+                  f"{b['members']:,} members, avg "
+                  f"{fmt_bytes(b['block_output_bytes'])} compressed")
+            continue
         ratio = f"{b['ratio']:>7.3f}" if "ratio" in b else f"{'-':>7}"
         print(f"{b['name']:<{width}} {b['seconds_mean']:>8.2f}s "
               f"{fmt_speed(b['bytes_per_second']):>10} {ratio}")

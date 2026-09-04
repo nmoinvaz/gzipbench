@@ -65,7 +65,9 @@ def main():
 
     base, bctx = load(sys.argv[1])
     cont, cctx = load(sys.argv[2])
-    common = sorted(set(base) & set(cont))
+    # Block census rows carry counts, not times, so they have no delta here
+    common = sorted(n for n in set(base) & set(cont)
+                    if "seconds_mean" in base[n] and "seconds_mean" in cont[n])
     if not common:
         print("No benchmarks in common between the two runs.", file=sys.stderr)
         sys.exit(1)

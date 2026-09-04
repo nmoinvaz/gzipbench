@@ -11,11 +11,13 @@ The variant matrix follows the gzip-ng README benchmarks. Each tool
 compresses the input across the level ladder, serial and parallel variants
 separately, parallel tools sweep the thread counts at level 6, and the
 decompression grid crosses decoders with producers, gzip-ng decoding bgzip
-and MiGz output as well as its own.
+and MiGz output as well as its own. A deflate block census then compresses
+a capped sample at level 6 in normal, rsyncable, and independent modes and
+counts the blocks and members in each stream.
 
 Usage:
     ./bench.py [files...] [-o out.json] [--size-mb N] [--levels 1,2,...,9]
-               [--threads auto|1,2,4] [--runs 3] [--warmup 1]
+               [--threads auto|1,2,4] [--runs 3] [--warmup 1] [--blocks-mb 32]
 
 Tools found on PATH are benchmarked, missing ones are skipped and noted.
 GZIPNG, PIGZ, GZIP, MINIGZIP, BGZIP, and JAVA override the lookup. MiGz
@@ -38,7 +40,10 @@ import tempfile
 import time
 import zlib
 
-TOOLS_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "tools")
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+TOOLS_DIR = os.path.join(BASE_DIR, "tools")
+sys.path.insert(0, os.path.join(BASE_DIR, "scripts"))
+import deflate_blocks  # noqa: E402
 
 # Fixed series order, the graph assigns colors by it
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
@@ -79,6 +84,9 @@ def version_of(argv, pattern=None):
 class Tool:
     """One executable: where it is, its version, and its command lines."""
 
+    # Extra compress argv per block census mode, tools override what they support
+    modes = {"normal": []}
+
     def __init__(self, slug, path, version):
         self.slug = slug
         self.path = path
@@ -94,9 +102,11 @@ class Tool:
 class GzipLike(Tool):
     """gzip flag conventions, with an optional threads flag."""
 
-    def __init__(self, slug, path, version, threads_flag=None):
+    def __init__(self, slug, path, version, threads_flag=None, modes=None):
         super().__init__(slug, path, version)
         self.threads_flag = threads_flag
+        if modes:
+            self.modes = modes
 
     def compress(self, level, threads):
         argv = [self.path, f"-{level}"]
@@ -149,13 +159,17 @@ def locate_tools():
 
     p = path_for("GZIPNG", "gzip-ng")
     if p:
-        tools["gzipng"] = GzipLike("gzipng", p, version_of([p, "-V"]), "-p")
+        tools["gzipng"] = GzipLike("gzipng", p, version_of([p, "-V"]), "-p",
+                                   modes={"normal": [], "rsyncable": ["--rsyncable"]})
     p = path_for("PIGZ", "pigz")
     if p:
-        tools["pigz"] = GzipLike("pigz", p, version_of([p, "--version"]), "-p")
+        tools["pigz"] = GzipLike("pigz", p, version_of([p, "--version"]), "-p",
+                                 modes={"normal": [], "rsyncable": ["--rsyncable"],
+                                        "independent": ["-i"]})
     p = path_for("GZIP", "gzip")
     if p:
-        tools["gzip"] = GzipLike("gzip", p, version_of([p, "--version"]))
+        tools["gzip"] = GzipLike("gzip", p, version_of([p, "--version"]),
+                                 modes={"normal": [], "rsyncable": ["--rsyncable"]})
     p = path_for("MINIGZIP", "minigzip")
     if p:
         tools["minigzip"] = Minigzip("minigzip", p, "minigzip")
@@ -182,6 +196,10 @@ VARIANTS = {
     "bgzip-p": ("bgzip", True, "bgzip -@"),
     "migz": ("migz", False, "migz"),
 }
+
+# gzip-ng's parallel blocks are always rsync friendly, --rsyncable only
+# changes the plain stream, so the census row would duplicate normal
+CENSUS_SKIP = {("gzipng-p", "rsyncable")}
 
 
 def synthesize(path, size_mb, seed=20260904):
@@ -322,6 +340,8 @@ def main():
     ap.add_argument("--runs", type=int, default=3,
                     help="timed runs per benchmark, short ones repeat toward two seconds")
     ap.add_argument("--warmup", type=int, default=1, help="warmup runs per benchmark")
+    ap.add_argument("--blocks-mb", type=int, default=32,
+                    help="input sample for the deflate block census, 0 disables it")
     args = ap.parse_args()
 
     levels = sorted({int(x) for x in args.levels.split(",")})
@@ -429,6 +449,66 @@ def main():
         decompress("minigzip", "minigzip", None)
         decompress("pigz-p", "pigz-p", tmax)
         decompress("gzip", "gzip", None)
+
+        # Deflate block census, level 6 streams in each mode a tool supports,
+        # on a capped sample because the scan decodes every Huffman symbol
+        # in pure Python
+        sample, sample_bytes = data, input_bytes
+        if args.blocks_mb and input_bytes > args.blocks_mb << 20:
+            sample = os.path.join(work, "sample")
+            with open(data, "rb") as f, open(sample, "wb") as out:
+                left = args.blocks_mb << 20
+                while left > 0 and (chunk := f.read(min(left, 1 << 20))):
+                    out.write(chunk)
+                    left -= len(chunk)
+            sample_bytes = os.path.getsize(sample)
+
+        def census(vslug, mode, t):
+            tool, parallel, series = VARIANTS[vslug]
+            if tool not in tools or (vslug, mode) in CENSUS_SKIP:
+                return
+            extra = tools[tool].modes.get(mode)
+            if extra is None:
+                return
+            argv = tools[tool].compress(6, t if parallel else None)
+            argv[1:1] = extra
+            out = os.path.join(work, f"blocks-{vslug}-{mode}.gz")
+            with open(sample, "rb") as fi, open(out, "wb") as fo:
+                r = subprocess.run(argv, stdin=fi, stdout=fo,
+                                   stderr=subprocess.PIPE)
+            if r.returncode != 0:
+                print(f"blocks/{vslug}/mode:{mode} skipped: "
+                      f"{r.stderr.decode().strip()}")
+                return
+            try:
+                c = deflate_blocks.scan_path(out)
+            except deflate_blocks.BadStream as e:
+                sys.exit(f"{' '.join(argv)} produced an unparsable stream: {e}")
+            if c["produced_bytes"] != sample_bytes:
+                sys.exit(f"{' '.join(argv)} stream decodes to "
+                         f"{c['produced_bytes']} bytes, expected {sample_bytes}")
+            b = {
+                "name": f"blocks/{vslug}/mode:{mode}",
+                "kind": "blocks", "series": series, "variant": vslug,
+                "mode": mode, "level": 6, "threads": t if parallel else None,
+                "input_bytes": sample_bytes,
+                "output_bytes": os.path.getsize(out),
+                "members": c["members"], "blocks": c["blocks"],
+                "stored": c["stored"], "fixed": c["fixed"],
+                "dynamic": c["dynamic"],
+                "block_output_bytes": c["deflate_bytes"] / c["blocks"],
+                "block_input_bytes": sample_bytes / c["blocks"],
+            }
+            benchmarks.append(b)
+            print(f"{b['name']:<44} {b['blocks']:>7} blocks "
+                  f"{b['members']:>6} members  avg "
+                  f"{b['block_output_bytes'] / 1e3:7.1f} kB out "
+                  f"{b['block_input_bytes'] / 1e3:7.1f} kB in")
+
+        if args.blocks_mb:
+            for vslug in VARIANTS:
+                for mode in ("normal", "rsyncable", "independent"):
+                    census(vslug, mode, tmax)
 
         result = {
             "context": {

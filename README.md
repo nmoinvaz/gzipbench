@@ -12,7 +12,11 @@ The variant matrix follows the [gzip-ng] README benchmarks. Each tool runs
 the compression level ladder, levels 1 through 9, serial and parallel
 variants separately, parallel tools sweep thread counts at level 6, and
 the decompression grid crosses decoders with producers, gzip-ng decoding
-bgzip and MiGz output as well as its own.
+bgzip and MiGz output as well as its own. A deflate block census then
+compresses a capped sample in each mode a tool supports, normal,
+`--rsyncable`, and independent, and counts the blocks and members in every
+stream by parsing the deflate bitstream itself
+(`scripts/deflate_blocks.py`).
 
 ## Tools
 
@@ -53,9 +57,9 @@ of source-like text, build-log lines, and random blocks, weighted to land
 near the 4.8 to 1 of the gzip-ng README corpus under `gzip -6`. Pass files
 to measure real data instead, they are concatenated into one stream.
 
-`--levels`, `--threads`, `--runs`, and `--size-mb` trim or grow the matrix,
-`./bench.py --help` lists the defaults. Everything needs only the Python
-standard library.
+`--levels`, `--threads`, `--runs`, `--size-mb`, and `--blocks-mb` trim or
+grow the matrix, `./bench.py --help` lists the defaults. Everything needs
+only the Python standard library.
 
 ## Comparing
 
@@ -70,8 +74,10 @@ or two gzip-ng builds, compare directly with time and ratio deltas.
 
 `scripts/graph_runs.py` turns a run into a speed versus ratio SVG, the
 level ladders connected in order, a decompression throughput panel
-including the cross-decode pairs, thread scaling line panels, repetition
-error bars, and machine specs. An aggregate table prints to stdout.
+including the cross-decode pairs, thread scaling line panels, deflate
+block census panels, block counts and average block sizes across the
+normal, rsyncable, and independent modes, repetition error bars, and
+machine specs. An aggregate table prints to stdout.
 
 All tools on the synthetic mixed input:
 

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1578" viewBox="0 0 1080 1578" font-family="system-ui, sans-serif">
-<rect width="1080" height="1578" fill="#fcfcfb"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1544" viewBox="0 0 1080 1544" font-family="system-ui, sans-serif">
+<rect width="1080" height="1544" fill="#fcfcfb"/>
 <text x="16.0" y="28.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="bold">gzip tools, compress and decompress</text>
 <text x="1064.0" y="28.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="normal">pigzpp -p</text>
 <circle cx="987.2" cy="24" r="5" fill="#cd5c5c"/>
@@ -464,55 +464,49 @@
 <text x="968.0" y="1182.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.3 kB</text>
 <text x="1064.0" y="1182.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">34.6 kB</text>
 <text x="78.0" y="1226.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress migz output</text>
-<text x="78.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
-<text x="458.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.58 GB/s</text>
-<path d="M78 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#e87ba4"><title>gzip-ng - 7.58 GB/s, 0.04 s, cv 14.4%</title></path>
-<text x="78.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
-<text x="458.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.19 GB/s</text>
-<path d="M78 1283 h306.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-306.4 z" fill="#2a78d6"><title>gzip-ng -p 10 - 6.19 GB/s, 0.04 s, cv 27.2%</title></path>
-<text x="78.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
-<text x="458.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.88 GB/s</text>
-<path d="M78 1317 h140.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-140.5 z" fill="#eda100"><title>migz - 2.88 GB/s, 0.09 s, cv 3.6%</title></path>
-<text x="78.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="458.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.19 GB/s</text>
-<path d="M78 1351 h55.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-55.7 z" fill="#008300"><title>minigzip - 1.19 GB/s, 0.23 s, cv 0.4%</title></path>
-<text x="78.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
-<text x="458.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.14 GB/s</text>
-<path d="M78 1385 h52.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-52.9 z" fill="#1baf7a"><title>bgzip -@ 10 - 1.14 GB/s, 0.24 s, cv 0.5%</title></path>
-<text x="78.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
-<text x="458.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">738 MB/s</text>
-<path d="M78 1419 h33.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-33.0 z" fill="#cd5c5c"><title>pigzpp -p 10 - 738 MB/s, 0.36 s, cv 0.1%</title></path>
-<text x="78.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
-<text x="458.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">669 MB/s</text>
-<path d="M78 1453 h29.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-29.5 z" fill="#eb6834"><title>pigz -p 10 - 669 MB/s, 0.40 s, cv 0.7%</title></path>
-<text x="78.0" y="1482.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
-<text x="458.0" y="1482.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">344 MB/s</text>
-<path d="M78 1487 h13.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-13.2 z" fill="#4a3aa7"><title>gzip - 344 MB/s, 0.78 s, cv 0.1%</title></path>
+<text x="78.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
+<text x="458.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.19 GB/s</text>
+<path d="M78 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 6.19 GB/s, 0.04 s, cv 27.2%</title></path>
+<text x="78.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
+<text x="458.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.88 GB/s</text>
+<path d="M78 1283 h172.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-172.9 z" fill="#eda100"><title>migz - 2.88 GB/s, 0.09 s, cv 3.6%</title></path>
+<text x="78.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="458.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.19 GB/s</text>
+<path d="M78 1317 h69.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-69.1 z" fill="#008300"><title>minigzip - 1.19 GB/s, 0.23 s, cv 0.4%</title></path>
+<text x="78.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
+<text x="458.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.14 GB/s</text>
+<path d="M78 1351 h65.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-65.6 z" fill="#1baf7a"><title>bgzip -@ 10 - 1.14 GB/s, 0.24 s, cv 0.5%</title></path>
+<text x="78.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
+<text x="458.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">738 MB/s</text>
+<path d="M78 1385 h41.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-41.3 z" fill="#cd5c5c"><title>pigzpp -p 10 - 738 MB/s, 0.36 s, cv 0.1%</title></path>
+<text x="78.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
+<text x="458.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">669 MB/s</text>
+<path d="M78 1419 h37.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-37.0 z" fill="#eb6834"><title>pigz -p 10 - 669 MB/s, 0.40 s, cv 0.7%</title></path>
+<text x="78.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<text x="458.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">344 MB/s</text>
+<path d="M78 1453 h17.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-17.1 z" fill="#4a3aa7"><title>gzip - 344 MB/s, 0.78 s, cv 0.1%</title></path>
 <text x="572.0" y="1226.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress bgzip -@ output</text>
-<text x="572.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
-<text x="952.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.40 GB/s</text>
-<path d="M572 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#e87ba4"><title>gzip-ng - 9.40 GB/s, 0.03 s, cv 1.8%</title></path>
-<text x="572.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
-<text x="952.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.48 GB/s</text>
-<path d="M572 1283 h258.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-258.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 6.48 GB/s, 0.04 s, cv 13.6%</title></path>
-<text x="572.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
-<text x="952.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5.29 GB/s</text>
-<path d="M572 1317 h210.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-210.0 z" fill="#1baf7a"><title>bgzip -@ 10 - 5.29 GB/s, 0.05 s, cv 10.8%</title></path>
-<text x="572.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="952.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.08 GB/s</text>
-<path d="M572 1351 h39.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-39.8 z" fill="#008300"><title>minigzip - 1.08 GB/s, 0.25 s, cv 0.4%</title></path>
-<text x="572.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
-<text x="952.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">537 MB/s</text>
-<path d="M572 1385 h17.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-17.7 z" fill="#cd5c5c"><title>pigzpp -p 10 - 537 MB/s, 0.50 s, cv 0.5%</title></path>
-<text x="572.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
-<text x="952.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">469 MB/s</text>
-<path d="M572 1419 h15.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-15.0 z" fill="#eb6834"><title>pigz -p 10 - 469 MB/s, 0.57 s, cv 2.8%</title></path>
-<text x="572.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
-<text x="952.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">321 MB/s</text>
-<path d="M572 1453 h9.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-9.0 z" fill="#4a3aa7"><title>gzip - 321 MB/s, 0.84 s, cv 0.8%</title></path>
-<text x="16.0" y="1552.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">zlib-ng 2.3.90 @ 1239e8883 · gzip-ng 2.0.0 (zlib-ng 2.3.90) · pigz 2.8 · pigzpp 1.1.0 (based on pigz 2.8) · gzip 1.14 · minigzip · bgzip (htslib) 1.22.1 · MiGz 2.0.beta-1 on openjdk version "26.0.2.1" 2026-08-18</text>
-<text x="16.0" y="1566.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">Apple M5, 10 cpus, synthetic mixed 256 MiB (256 MiB), Nathans-MacBook-Air-M5-2.local, 2026-09-04</text>
-<text x="16.0" y="1536.0" font-size="10" fill="#c98500" text-anchor="start" font-weight="normal">⚠</text>
-<text x="30.0" y="1536.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">17 benchmarks with cv above 3%</text>
-<a href="https://github.com/nmoinvaz/gzipbench"><text x="1064" y="1566" font-size="10" fill="#52514e" text-anchor="end" text-decoration="underline">github.com/nmoinvaz/gzipbench</text></a>
+<text x="572.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
+<text x="952.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.48 GB/s</text>
+<path d="M572 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 6.48 GB/s, 0.04 s, cv 13.6%</title></path>
+<text x="572.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
+<text x="952.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5.29 GB/s</text>
+<path d="M572 1283 h306.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-306.3 z" fill="#1baf7a"><title>bgzip -@ 10 - 5.29 GB/s, 0.05 s, cv 10.8%</title></path>
+<text x="572.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="952.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.08 GB/s</text>
+<path d="M572 1317 h59.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-59.4 z" fill="#008300"><title>minigzip - 1.08 GB/s, 0.25 s, cv 0.4%</title></path>
+<text x="572.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
+<text x="952.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">537 MB/s</text>
+<path d="M572 1351 h27.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-27.5 z" fill="#cd5c5c"><title>pigzpp -p 10 - 537 MB/s, 0.50 s, cv 0.5%</title></path>
+<text x="572.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
+<text x="952.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">469 MB/s</text>
+<path d="M572 1385 h23.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-23.5 z" fill="#eb6834"><title>pigz -p 10 - 469 MB/s, 0.57 s, cv 2.8%</title></path>
+<text x="572.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<text x="952.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">321 MB/s</text>
+<path d="M572 1419 h14.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.8 z" fill="#4a3aa7"><title>gzip - 321 MB/s, 0.84 s, cv 0.8%</title></path>
+<text x="16.0" y="1518.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">zlib-ng 2.3.90 @ 1239e8883 · gzip-ng 2.0.0 (zlib-ng 2.3.90) · pigz 2.8 · pigzpp 1.1.0 (based on pigz 2.8) · gzip 1.14 · minigzip · bgzip (htslib) 1.22.1 · MiGz 2.0.beta-1 on openjdk version "26.0.2.1" 2026-08-18</text>
+<text x="16.0" y="1532.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">Apple M5, 10 cpus, synthetic mixed 256 MiB (256 MiB), Nathans-MacBook-Air-M5-2.local, 2026-09-04</text>
+<text x="16.0" y="1502.0" font-size="10" fill="#c98500" text-anchor="start" font-weight="normal">⚠</text>
+<text x="30.0" y="1502.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">16 benchmarks with cv above 3%</text>
+<a href="https://github.com/nmoinvaz/gzipbench"><text x="1064" y="1532" font-size="10" fill="#52514e" text-anchor="end" text-decoration="underline">github.com/nmoinvaz/gzipbench</text></a>
 </svg>

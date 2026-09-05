@@ -110,6 +110,38 @@ def build_bgzip(prefix):
     install_bin(os.path.join(src, "bgzip"), "bgzip")
 
 
+def build_pigzpp(commit):
+    print("pigzpp")
+    src = os.path.join(SRC, "pigzpp")
+    if not os.path.exists(src):
+        sh(["git", "clone", "--depth", "1", "--recursive",
+            "https://github.com/thammegowda/pigzpp.git", src])
+    else:
+        sh(["git", "-C", src, "fetch", "--depth", "1", "origin", "HEAD"])
+        sh(["git", "-C", src, "checkout", "-f", "FETCH_HEAD"])
+        sh(["git", "-C", src, "submodule", "update", "--init", "--recursive",
+            "--depth", "1"])
+    # Pin the embedded zlib-ng to the same commit as everything else, fall
+    # back to the submodule's own pin if that combination does not build
+    sub = subprocess.check_output(
+        ["git", "-C", src, "submodule", "status"], text=True)
+    zn = next((line.split()[1] for line in sub.splitlines()
+               if "zlib-ng" in line), None)
+    if zn:
+        subprocess.run(["git", "-C", os.path.join(src, zn), "fetch",
+                        "origin", commit], check=True)
+        sh(["git", "-C", os.path.join(src, zn), "checkout", "-f", commit])
+    try:
+        sh(["make", "build"], cwd=src)
+    except subprocess.CalledProcessError:
+        if not zn:
+            raise
+        print("  zlib-ng develop pin failed, rebuilding with the bundled pin")
+        sh(["git", "-C", src, "submodule", "update", "--force", zn])
+        sh(["make", "build"], cwd=src)
+    install_bin(os.path.join(src, "build", "pigzpp"), "pigzpp")
+
+
 def build_gzipng(commit):
     print("gzip-ng")
     src = os.environ.get("GZIPNG_SRC")
@@ -135,6 +167,7 @@ def main():
     prefix, manifest = build_zlibng()
     build_pigz(prefix)
     build_bgzip(prefix)
+    build_pigzpp(manifest["commit"])
     build_gzipng(manifest["commit"])
     with open(os.path.join(TOOLS_DIR, "zlibng.json"), "w") as f:
         json.dump(manifest, f, indent=1)

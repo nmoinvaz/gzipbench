@@ -45,9 +45,10 @@ TOOLS_DIR = os.path.join(BASE_DIR, "tools")
 sys.path.insert(0, os.path.join(BASE_DIR, "scripts"))
 import deflate_blocks  # noqa: E402
 
-# Fixed series order, the graph assigns colors by it
+# Fixed series order, the graph assigns colors by it; new series append so
+# established colors keep their identity across published runs
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
-                "gzip-ng", "minigzip", "gzip"]
+                "gzip-ng", "minigzip", "gzip", "pigzpp -p"]
 
 
 def find_java():
@@ -121,6 +122,21 @@ class GzipLike(Tool):
         return argv + ["-c"]
 
 
+class Pigzpp(GzipLike):
+    """pigz flags plus an engine selector, pinned to zlib-ng so every tool
+    measures the same library, auto may pick ISA-L on some machines."""
+
+    def compress(self, level, threads):
+        argv = super().compress(level, threads)
+        argv[1:1] = ["-E", "zlib"]
+        return argv
+
+    def decompress(self, threads):
+        argv = super().decompress(threads)
+        argv[1:1] = ["-E", "zlib"]
+        return argv
+
+
 class Bgzip(Tool):
     def compress(self, level, threads):
         return [self.path, "-l", str(level), "-@", str(threads), "-c"]
@@ -169,6 +185,12 @@ def locate_tools():
         tools["pigz"] = GzipLike("pigz", p, version_of([p, "--version"]), "-p",
                                  modes={"normal": [], "rsyncable": ["--rsyncable"],
                                         "independent": ["-i"]})
+    p = path_for("PIGZPP", "pigzpp")
+    if p:
+        # -R, the long --rsyncable trips an argument parsing bug in 1.1.0
+        tools["pigzpp"] = Pigzpp("pigzpp", p, version_of([p, "-V"]), "-p",
+                                 modes={"normal": [], "rsyncable": ["-R"],
+                                        "independent": ["-i"]})
     p = path_for("GZIP", "gzip")
     if p:
         tools["gzip"] = GzipLike("gzip", p, version_of([p, "--version"]),
@@ -194,6 +216,7 @@ VARIANTS = {
     "gzipng": ("gzipng", False, "gzip-ng"),
     "gzipng-p": ("gzipng", True, "gzip-ng -p"),
     "pigz-p": ("pigz", True, "pigz -p"),
+    "pigzpp-p": ("pigzpp", True, "pigzpp -p"),
     "gzip": ("gzip", False, "gzip"),
     "minigzip": ("minigzip", False, "minigzip"),
     "bgzip-p": ("bgzip", True, "bgzip -@"),
@@ -368,10 +391,12 @@ def main():
     tmax = threads[-1]
 
     tools = locate_tools()
-    for slug in ("gzipng", "pigz", "gzip", "minigzip", "bgzip", "migz"):
+    for slug in ("gzipng", "pigz", "pigzpp", "gzip", "minigzip", "bgzip",
+                 "migz"):
         note = tools[slug].version if slug in tools else "missing, skipped"
         print(f"{slug:<10} {note}")
-    missing = [s for s in ("gzipng", "pigz", "gzip", "minigzip", "bgzip", "migz")
+    missing = [s for s in ("gzipng", "pigz", "pigzpp", "gzip", "minigzip",
+                           "bgzip", "migz")
                if s not in tools]
 
     # Sampled before the run, afterwards it reflects the benchmark's own work
@@ -444,12 +469,12 @@ def main():
         for level in levels:
             for vslug in ("gzipng", "gzip", "minigzip"):
                 compress(vslug, level, None)
-            for vslug in ("gzipng-p", "pigz-p", "bgzip-p", "migz"):
+            for vslug in ("gzipng-p", "pigz-p", "pigzpp-p", "bgzip-p", "migz"):
                 compress(vslug, level, tmax)
 
         # Thread sweep at level 6, the full count is already measured above
         for t in threads[:-1]:
-            for vslug in ("gzipng-p", "pigz-p", "bgzip-p"):
+            for vslug in ("gzipng-p", "pigz-p", "pigzpp-p", "bgzip-p"):
                 compress(vslug, 6, t)
 
         # Decompression grid from the gzip-ng README, the parallel decoders
@@ -465,6 +490,8 @@ def main():
         decompress("minigzip", "minigzip", None)
         for t in threads:
             decompress("pigz-p", "pigz-p", t)
+        for t in threads:
+            decompress("pigzpp-p", "pigzpp-p", t)
         decompress("gzip", "gzip", None)
 
         # Deflate block census, level 6 streams in each mode a tool supports,

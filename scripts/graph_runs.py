@@ -28,7 +28,7 @@ SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
                  "#e87ba4", "#008300", "#4a3aa7", "#e34948", "#7a7668"]
 
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
-                "gzip-ng", "minigzip", "gzip"]
+                "gzip-ng", "minigzip", "gzip", "pigzpp -p"]
 
 REPO_URL = "https://github.com/nmoinvaz/gzipbench"
 

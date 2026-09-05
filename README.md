@@ -24,6 +24,7 @@ stream by parsing the deflate bitstream itself
 | ------------ | ------------------------ | ------------- | --------------- |
 | `gzip-ng -p` | [gzip-ng]                | `-p`          |                 |
 | `pigz -p`    | [pigz]                   | `-p`          |                 |
+| `pigzpp -p`  | [pigzpp] (`-E zlib`)     | `-p`          |                 |
 | `bgzip -@`   | [bgzip] (htslib)         | `-@`          |                 |
 | `migz`       | [MiGz] (pool of cpus)    | always        | a JDK           |
 | `gzip-ng`    | [gzip-ng] serial         |               |                 |
@@ -32,6 +33,7 @@ stream by parsing the deflate bitstream itself
 
 [gzip-ng]: https://github.com/nmoinvaz/gzip-ng
 [pigz]: https://zlib.net/pigz/
+[pigzpp]: https://github.com/thammegowda/pigzpp
 [bgzip]: https://github.com/samtools/htslib
 [MiGz]: https://github.com/linkedin/migz
 [zlib-ng]: https://github.com/zlib-ng/zlib-ng
@@ -39,14 +41,14 @@ stream by parsing the deflate bitstream itself
 [codecbench]: https://github.com/nmoinvaz/codecbench
 
 Tools in `tools/bin` are preferred, then PATH, missing ones are skipped
-and noted. `GZIPNG`, `PIGZ`, `GZIP`, `MINIGZIP`, `BGZIP`, and `JAVA`
-override the lookup. MiGz has no standalone binary, `tools/fetch_migz.py`
+and noted. `GZIPNG`, `PIGZ`, `PIGZPP`, `GZIP`, `MINIGZIP`, `BGZIP`, and
+`JAVA` override the lookup. MiGz has no standalone binary, `tools/fetch_migz.py`
 pulls the pinned jars from Maven Central once and compiles a small pipe
 CLI, JVM start stays part of its measurements.
 
-`tools/build_tools.py` builds gzip-ng, minigzip, pigz, and bgzip against
-zlib-ng develop into `tools/bin`, so every zlib-linked tool measures the
-same library. It writes `tools/zlibng.json`, and the graphs put that
+`tools/build_tools.py` builds gzip-ng, minigzip, pigz, pigzpp, and bgzip
+against zlib-ng develop into `tools/bin`, so every zlib-linked tool
+measures the same library. It writes `tools/zlibng.json`, and the graphs put that
 zlib-ng version and commit in their footer. GNU gzip carries its own
 deflate and MiGz uses the JVM's zlib, so those two stay system provided.
 

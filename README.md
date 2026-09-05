@@ -57,14 +57,19 @@ deflate and MiGz uses the JVM's zlib, so those two stay system provided.
 ```sh
 python3 tools/fetch_migz.py
 python3 tools/build_tools.py
-./bench.py -o results/all-tools.json
+curl -LO https://mirror.circlestorm.org/silesia.tar
+./bench.py silesia.tar -o results/all-tools.json
 python3 scripts/graph_runs.py results/all-tools.json
 ```
 
-With no input files the benchmark generates a deterministic synthetic mix
-of source-like text, build-log lines, and random blocks, weighted to land
-near the 4.8 to 1 of the gzip-ng README corpus under `gzip -6`. Pass files
-to measure real data instead, they are concatenated into one stream.
+The showcased run measures the [Silesia corpus], the common ground of
+compression benchmarks. With no input files the benchmark instead
+generates a deterministic synthetic mix of source-like text, build-log
+lines, and random blocks, weighted to land near the 4.8 to 1 of the
+gzip-ng README corpus under `gzip -6`. Any files passed are concatenated
+into one stream.
+
+[Silesia corpus]: http://sun.aei.polsl.pl/~sdeor/index.php?page=silesia
 
 `--levels`, `--threads`, `--runs`, `--size-mb`, and `--blocks-mb` trim or
 grow the matrix, `./bench.py --help` lists the defaults. Everything needs
@@ -88,6 +93,7 @@ block census panels, block counts and average block sizes across the
 normal, rsyncable, and independent modes, repetition error bars, and
 machine specs. An aggregate table prints to stdout.
 
-All tools on the synthetic mixed input:
+All tools on the [Silesia corpus](https://mirror.circlestorm.org/silesia.tar)
+(`silesia.tar`, 202 MiB), the common ground of compression benchmarks:
 
 ![All tools, compress and decompress](results/all-tools.svg)

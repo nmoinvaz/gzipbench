@@ -419,7 +419,9 @@ def render(ctx, benchmarks, title, out_path):
         y = gtop + 8
         prev_series = None
         for b in census:
-            color = series_color(b["series"])
+            # gzip-ng and gzip-ng -p are one tool, share one color here
+            color = series_color("gzip-ng -p" if b["series"] == "gzip-ng"
+                                 else b["series"])
             row_label = (b["series"] if b["mode"] == "normal"
                          else f"{b['series']} · {b['mode']}")
             if b["series"] != prev_series:

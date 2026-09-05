@@ -389,16 +389,16 @@
 <text x="1064.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.1 kB</text>
 <text x="16.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
 <text x="188.0" y="912.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 905 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#e87ba4"><title>gzip-ng - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
+<path d="M200 905 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#2a78d6"><title>gzip-ng - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
 <text x="540.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">241</text>
-<path d="M580 905 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#e87ba4"><title>gzip-ng - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
+<path d="M580 905 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#2a78d6"><title>gzip-ng - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
 <text x="968.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.7 kB</text>
 <text x="1064.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">139.2 kB</text>
 <text x="30.0" y="934.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
 <text x="188.0" y="934.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 927 h139.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-139.1 z" fill="#e87ba4"><title>gzip-ng · rsyncable - 5,663 blocks (2831 stored, 497 fixed, 2335 dynamic), 1 members</title></path>
+<path d="M200 927 h139.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-139.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - 5,663 blocks (2831 stored, 497 fixed, 2335 dynamic), 1 members</title></path>
 <text x="540.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5,663</text>
-<path d="M580 927 h4.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.1 z" fill="#e87ba4"><title>gzip-ng · rsyncable - avg 1.0 kB compressed, 5.9 kB of input per block</title></path>
+<path d="M580 927 h4.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - avg 1.0 kB compressed, 5.9 kB of input per block</title></path>
 <text x="968.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.0 kB</text>
 <text x="1064.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5.9 kB</text>
 <text x="16.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p</text>

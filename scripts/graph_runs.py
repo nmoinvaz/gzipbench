@@ -217,7 +217,7 @@ def render(ctx, benchmarks, title, out_path):
         lx -= 20
 
     # Decompression panel, own-output throughput bars; the cross-decode
-    # pairs get their own panels below the census
+    # pairs stack under it in the same column
     bx, by, bw = 812, 76, 220
     svg.text(bx, by - 22, "decompress, own output", size=12, fill=INK)
     rows.sort(key=lambda b: -b["bytes_per_second"])
@@ -237,6 +237,32 @@ def render(ctx, benchmarks, title, out_path):
         y += 34
     better_arrow(svg, bx, y + 2, bx + 64, y + 2)
     right_bottom = y + 12
+
+    # Cross-decode panels, every decoder against the block-framed streams
+    for producer, title in (("migz", "migz output"), ("bgzip-p", "bgzip -@ output")):
+        crows = [b for b in decompress if b["producer_variant"] == producer
+                 and b["threads"] in (None, tmax)]
+        if not crows:
+            continue
+        crows.sort(key=lambda b: -b["bytes_per_second"])
+        pmax = max(b["bytes_per_second"] for b in crows)
+        y = right_bottom + 44
+        svg.text(bx, y - 22, f"decompress {title}", size=12, fill=INK)
+        for b in crows:
+            label = variant_label(b["series"], b["threads"])
+            speed = b["bytes_per_second"]
+            svg.text(bx, y, label, size=10, fill=INK)
+            svg.text(bx + bw, y, fmt_speed(speed), size=10, fill=INK,
+                     anchor="end")
+            w = max(bw * speed / pmax, 6)
+            tip = (f"{label} - {fmt_speed(speed)}, {b['seconds_mean']:.2f} s"
+                   + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
+            svg.add(f'<path d="M{bx} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 v4 '
+                    f'a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" '
+                    f'fill="{series_color(b["series"])}">'
+                    f'<title>{esc(tip)}</title></path>')
+            y += 34
+        right_bottom = y + 12
 
     # Compression panel, speed versus ratio, level ladders connected in order
     px, py, pw = 78, 76, 640
@@ -451,40 +477,6 @@ def render(ctx, benchmarks, title, out_path):
                      size=10, fill=INK, anchor="end")
             y += 22
         body_bottom = y + 6
-
-    # Cross-decode panels, every decoder against the block-framed streams
-    cross = []
-    for producer, title in (("migz", "migz output"), ("bgzip-p", "bgzip -@ output")):
-        crows = [b for b in decompress if b["producer_variant"] == producer
-                 and b["threads"] in (None, tmax)]
-        if crows:
-            cross.append((title, crows))
-    if cross:
-        ctop = body_bottom + 46
-        cbw = 380
-        cy_max = ctop
-        for pi, (title, crows) in enumerate(cross):
-            px = 78 + pi * (cbw + 114)
-            svg.text(px, ctop - 18, f"decompress {title}", size=12, fill=INK)
-            crows.sort(key=lambda b: -b["bytes_per_second"])
-            pmax = max(b["bytes_per_second"] for b in crows)
-            y = ctop
-            for b in crows:
-                label = variant_label(b["series"], b["threads"])
-                speed = b["bytes_per_second"]
-                svg.text(px, y, label, size=10, fill=INK)
-                svg.text(px + cbw, y, fmt_speed(speed), size=10, fill=INK,
-                         anchor="end")
-                w = max(cbw * speed / pmax, 6)
-                tip = (f"{label} - {fmt_speed(speed)}, {b['seconds_mean']:.2f} s"
-                       + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
-                svg.add(f'<path d="M{px} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 '
-                        f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" '
-                        f'fill="{series_color(b["series"])}">'
-                        f'<title>{esc(tip)}</title></path>')
-                y += 34
-            cy_max = max(cy_max, y)
-        body_bottom = cy_max + 4
 
     # Version and machine footnote, wrapped when the tools make it long
     versions = " · ".join(v for v in ctx.get("tools", {}).values() if v)

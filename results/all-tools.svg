@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1544" viewBox="0 0 1080 1544" font-family="system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1694" viewBox="0 0 1080 1694" font-family="system-ui, sans-serif">
 <style>@media (prefers-color-scheme: dark){[fill="#fcfcfb"]{fill:#201f1d}[stroke="#fcfcfb"]{stroke:#201f1d}[fill="#0b0b0b"]{fill:#e8e6e3}[stroke="#0b0b0b"]{stroke:#e8e6e3}[fill="#52514e"]{fill:#a8a49d}[stroke="#52514e"]{stroke:#a8a49d}[fill="#e7e6e2"]{fill:#343230}[stroke="#e7e6e2"]{stroke:#343230}[fill="#c98500"]{fill:#d69a2d}[stroke="#c98500"]{stroke:#d69a2d}[fill="#eb6834"]{fill:#dd5c26}[stroke="#eb6834"]{stroke:#dd5c26}[fill="#eda100"]{fill:#c08800}[stroke="#eda100"]{stroke:#c08800}[fill="#e87ba4"]{fill:#d1678f}[stroke="#e87ba4"]{stroke:#d1678f}[fill="#4a3aa7"]{fill:#7263cf}[stroke="#4a3aa7"]{stroke:#7263cf}[fill="#cd5c5c"]{fill:#d65a55}[stroke="#cd5c5c"]{stroke:#d65a55}[fill="#7a7668"]{fill:#8a8579}[stroke="#7a7668"]{stroke:#8a8579}}</style>
-<rect width="1080" height="1544" fill="#fcfcfb"/>
+<rect width="1080" height="1694" fill="#fcfcfb"/>
 <text x="16.0" y="28.0" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="bold">gzip tools, compress and decompress</text>
 <text x="1064.0" y="28.0" font-size="12" fill="#0b0b0b" text-anchor="end" font-weight="normal">pigzpp -p</text>
 <circle cx="987.2" cy="24" r="5" fill="#cd5c5c"/>
@@ -44,471 +44,484 @@
 <text x="1032.0" y="314.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">202 MB/s</text>
 <path d="M812 319 h8.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-8.3 z" fill="#4a3aa7"><title>gzip - 202 MB/s, 1.05 s, cv 0.1%</title></path>
 <g opacity="0.35"><line x1="812.0" y1="350.0" x2="870.0" y2="350.0" stroke="#52514e" stroke-width="2"/><polygon points="876.0,350.0 867.0,354.0 867.0,346.0" fill="#52514e"/><text x="844.0" y="343.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(0.0 844.0 350.0)">better</text></g>
-<line x1="78.0" y1="414.2" x2="718.0" y2="414.2" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="418.2" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">10 MB/s</text>
-<line x1="78.0" y1="370.0" x2="718.0" y2="370.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="374.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">20 MB/s</text>
-<line x1="78.0" y1="311.6" x2="718.0" y2="311.6" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="315.6" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">50 MB/s</text>
-<line x1="78.0" y1="267.4" x2="718.0" y2="267.4" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="271.4" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">100 MB/s</text>
-<line x1="78.0" y1="223.2" x2="718.0" y2="223.2" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="227.2" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
-<line x1="78.0" y1="164.8" x2="718.0" y2="164.8" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="168.8" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">500 MB/s</text>
-<line x1="78.0" y1="120.6" x2="718.0" y2="120.6" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="124.6" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">1.00 GB/s</text>
-<line x1="78.0" y1="76.4" x2="718.0" y2="76.4" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="80.4" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">2.00 GB/s</text>
-<line x1="126.4" y1="76.0" x2="126.4" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="126.4" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.2</text>
-<line x1="237.8" y1="76.0" x2="237.8" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="237.8" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.4</text>
-<line x1="349.3" y1="76.0" x2="349.3" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="349.3" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.6</text>
-<line x1="460.8" y1="76.0" x2="460.8" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="460.8" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.8</text>
-<line x1="572.2" y1="76.0" x2="572.2" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="572.2" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">3</text>
-<line x1="683.7" y1="76.0" x2="683.7" y2="436.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="683.7" y="454.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">3.2</text>
-<line x1="78.0" y1="436.0" x2="718.0" y2="436.0" stroke="#52514e" stroke-width="1"/>
-<text x="398.0" y="476.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal">compression ratio</text>
+<text x="812.0" y="382.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress migz output</text>
+<text x="812.0" y="404.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
+<text x="1032.0" y="404.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.71 GB/s</text>
+<path d="M812 409 h216.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-216.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 3.71 GB/s, 0.06 s, cv 20.7%</title></path>
+<text x="812.0" y="438.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
+<text x="1032.0" y="438.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.75 GB/s</text>
+<path d="M812 443 h100.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-100.1 z" fill="#eda100"><title>migz - 1.75 GB/s, 0.12 s, cv 13.3%</title></path>
+<text x="812.0" y="472.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="1032.0" y="472.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">625 MB/s</text>
+<path d="M812 477 h33.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-33.1 z" fill="#008300"><title>minigzip - 625 MB/s, 0.34 s, cv 0.6%</title></path>
+<text x="812.0" y="506.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
+<text x="1032.0" y="506.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">582 MB/s</text>
+<path d="M812 511 h30.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-30.6 z" fill="#1baf7a"><title>bgzip -@ 10 - 582 MB/s, 0.36 s, cv 0.4%</title></path>
+<text x="812.0" y="540.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
+<text x="1032.0" y="540.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">371 MB/s</text>
+<path d="M812 545 h18.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-18.0 z" fill="#cd5c5c"><title>pigzpp -p 10 - 371 MB/s, 0.57 s, cv 0.4%</title></path>
+<text x="812.0" y="574.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
+<text x="1032.0" y="574.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">355 MB/s</text>
+<path d="M812 579 h17.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-17.1 z" fill="#eb6834"><title>pigz -p 10 - 355 MB/s, 0.60 s, cv 0.9%</title></path>
+<text x="812.0" y="608.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<text x="1032.0" y="608.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">201 MB/s</text>
+<path d="M812 613 h7.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-7.9 z" fill="#4a3aa7"><title>gzip - 201 MB/s, 1.06 s, cv 0.1%</title></path>
+<text x="812.0" y="676.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress bgzip -@ output</text>
+<text x="812.0" y="698.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
+<text x="1032.0" y="698.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.76 GB/s</text>
+<path d="M812 703 h216.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-216.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 3.76 GB/s, 0.06 s, cv 10.8%</title></path>
+<text x="812.0" y="732.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
+<text x="1032.0" y="732.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.49 GB/s</text>
+<path d="M812 737 h200.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-200.0 z" fill="#1baf7a"><title>bgzip -@ 10 - 3.49 GB/s, 0.06 s, cv 6.3%</title></path>
+<text x="812.0" y="766.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="1032.0" y="766.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">592 MB/s</text>
+<path d="M812 771 h30.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-30.6 z" fill="#008300"><title>minigzip - 592 MB/s, 0.36 s, cv 0.2%</title></path>
+<text x="812.0" y="800.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
+<text x="1032.0" y="800.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">318 MB/s</text>
+<path d="M812 805 h14.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.6 z" fill="#cd5c5c"><title>pigzpp -p 10 - 318 MB/s, 0.67 s, cv 0.0%</title></path>
+<text x="812.0" y="834.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
+<text x="1032.0" y="834.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">286 MB/s</text>
+<path d="M812 839 h12.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-12.7 z" fill="#eb6834"><title>pigz -p 10 - 286 MB/s, 0.74 s, cv 0.1%</title></path>
+<text x="812.0" y="868.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<text x="1032.0" y="868.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">198 MB/s</text>
+<path d="M812 873 h7.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-7.6 z" fill="#4a3aa7"><title>gzip - 198 MB/s, 1.07 s, cv 0.6%</title></path>
+<line x1="78.0" y1="825.7" x2="718.0" y2="825.7" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="829.7" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">10 MB/s</text>
+<line x1="78.0" y1="727.7" x2="718.0" y2="727.7" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="731.7" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">20 MB/s</text>
+<line x1="78.0" y1="598.2" x2="718.0" y2="598.2" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="602.2" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">50 MB/s</text>
+<line x1="78.0" y1="500.3" x2="718.0" y2="500.3" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="504.3" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">100 MB/s</text>
+<line x1="78.0" y1="402.3" x2="718.0" y2="402.3" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="406.3" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
+<line x1="78.0" y1="272.8" x2="718.0" y2="272.8" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="276.8" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">500 MB/s</text>
+<line x1="78.0" y1="174.9" x2="718.0" y2="174.9" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="178.9" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">1.00 GB/s</text>
+<line x1="78.0" y1="76.9" x2="718.0" y2="76.9" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="80.9" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">2.00 GB/s</text>
+<line x1="126.4" y1="76.0" x2="126.4" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="126.4" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.2</text>
+<line x1="237.8" y1="76.0" x2="237.8" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="237.8" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.4</text>
+<line x1="349.3" y1="76.0" x2="349.3" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="349.3" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.6</text>
+<line x1="460.8" y1="76.0" x2="460.8" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="460.8" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">2.8</text>
+<line x1="572.2" y1="76.0" x2="572.2" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="572.2" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">3</text>
+<line x1="683.7" y1="76.0" x2="683.7" y2="874.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="683.7" y="892.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">3.2</text>
+<line x1="78.0" y1="874.0" x2="718.0" y2="874.0" stroke="#52514e" stroke-width="1"/>
+<text x="398.0" y="914.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal">compression ratio</text>
 <text x="78.0" y="54.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">compress</text>
 <g opacity="0.35"><line x1="590.0" y1="158.0" x2="673.0" y2="103.3" stroke="#52514e" stroke-width="2"/><polygon points="678.0,100.0 672.7,108.3 668.3,101.6" fill="#52514e"/><text x="634.0" y="122.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(-33.4 634.0 129.0)">better</text></g>
-<path d="M157.9,110.4 L472.1,139.0 L545.4,142.6 L580.1,173.3 L606.5,194.9 L614.6,167.6 L627.9,188.4 L632.5,210.5 L648.0,226.8" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="119.1" x2="157.9" y2="102.8"/><line x1="154.9" y1="119.1" x2="160.9" y2="119.1"/><line x1="154.9" y1="102.8" x2="160.9" y2="102.8"/></g>
-<g><circle cx="157.9" cy="110.4" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:1 - 1.17 GB/s, ratio 2.257, cv 12.7%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="141.9" x2="472.1" y2="136.2"/><line x1="469.1" y1="141.9" x2="475.1" y2="141.9"/><line x1="469.1" y1="136.2" x2="475.1" y2="136.2"/></g>
-<g><circle cx="472.1" cy="139.0" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:2 - 749 MB/s, ratio 2.820, cv 4.5%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="145.3" x2="545.4" y2="139.9"/><line x1="542.4" y1="145.3" x2="548.4" y2="145.3"/><line x1="542.4" y1="139.9" x2="548.4" y2="139.9"/></g>
-<g><circle cx="545.4" cy="142.6" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:3 - 709 MB/s, ratio 2.952, cv 4.2%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="179.9" x2="580.1" y2="167.3"/><line x1="577.1" y1="179.9" x2="583.1" y2="179.9"/><line x1="577.1" y1="167.3" x2="583.1" y2="167.3"/></g>
-<g><circle cx="580.1" cy="173.3" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:4 - 438 MB/s, ratio 3.014, cv 9.9%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="205.0" x2="606.5" y2="186.1"/><line x1="603.5" y1="205.0" x2="609.5" y2="205.0"/><line x1="603.5" y1="186.1" x2="609.5" y2="186.1"/></g>
-<g><circle cx="606.5" cy="194.9" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:5 - 312 MB/s, ratio 3.061, cv 14.7%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="172.2" x2="614.6" y2="163.3"/><line x1="611.6" y1="172.2" x2="617.6" y2="172.2"/><line x1="611.6" y1="163.3" x2="617.6" y2="163.3"/></g>
-<g><circle cx="614.6" cy="167.6" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:6 - 478 MB/s, ratio 3.076, cv 6.9%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="189.8" x2="627.9" y2="187.0"/><line x1="624.9" y1="189.8" x2="630.9" y2="189.8"/><line x1="624.9" y1="187.0" x2="630.9" y2="187.0"/></g>
-<g><circle cx="627.9" cy="188.4" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:7 - 345 MB/s, ratio 3.100, cv 2.2%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="210.9" x2="632.5" y2="210.0"/><line x1="629.5" y1="210.9" x2="635.5" y2="210.9"/><line x1="629.5" y1="210.0" x2="635.5" y2="210.0"/></g>
-<g><circle cx="632.5" cy="210.5" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:8 - 244 MB/s, ratio 3.108, cv 0.7%</title></g>
-<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="243.4" x2="648.0" y2="213.6"/><line x1="645.0" y1="243.4" x2="651.0" y2="243.4"/><line x1="645.0" y1="213.6" x2="651.0" y2="213.6"/></g>
-<g><circle cx="648.0" cy="226.8" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:9 - 189 MB/s, ratio 3.136, cv 23.0%</title></g>
-<path d="M427.0,275.5 L472.9,282.7 L517.4,298.5 L562.7,300.6 L608.4,324.4 L631.4,347.2 L639.2,358.5 L645.4,386.8 L646.5,406.0" fill="none" stroke="#4a3aa7" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="427.0" y1="275.7" x2="427.0" y2="275.4"/><line x1="424.0" y1="275.7" x2="430.0" y2="275.7"/><line x1="424.0" y1="275.4" x2="430.0" y2="275.4"/></g>
-<g><circle cx="427.0" cy="275.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:1 - 88 MB/s, ratio 2.739, cv 0.3%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.9" y1="283.7" x2="472.9" y2="281.7"/><line x1="469.9" y1="283.7" x2="475.9" y2="283.7"/><line x1="469.9" y1="281.7" x2="475.9" y2="281.7"/></g>
-<g><circle cx="472.9" cy="282.7" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:2 - 79 MB/s, ratio 2.822, cv 1.6%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="517.4" y1="298.6" x2="517.4" y2="298.4"/><line x1="514.4" y1="298.6" x2="520.4" y2="298.6"/><line x1="514.4" y1="298.4" x2="520.4" y2="298.4"/></g>
-<g><circle cx="517.4" cy="298.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:3 - 61 MB/s, ratio 2.902, cv 0.1%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="562.7" y1="300.7" x2="562.7" y2="300.5"/><line x1="559.7" y1="300.7" x2="565.7" y2="300.7"/><line x1="559.7" y1="300.5" x2="565.7" y2="300.5"/></g>
-<g><circle cx="562.7" cy="300.6" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:4 - 59 MB/s, ratio 2.983, cv 0.2%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="608.4" y1="324.8" x2="608.4" y2="324.0"/><line x1="605.4" y1="324.8" x2="611.4" y2="324.8"/><line x1="605.4" y1="324.0" x2="611.4" y2="324.0"/></g>
-<g><circle cx="608.4" cy="324.4" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:5 - 41 MB/s, ratio 3.065, cv 0.6%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="631.4" y1="347.5" x2="631.4" y2="347.0"/><line x1="628.4" y1="347.5" x2="634.4" y2="347.5"/><line x1="628.4" y1="347.0" x2="634.4" y2="347.0"/></g>
-<g><circle cx="631.4" cy="347.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:6 - 29 MB/s, ratio 3.106, cv 0.4%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="639.2" y1="358.5" x2="639.2" y2="358.4"/><line x1="636.2" y1="358.5" x2="642.2" y2="358.5"/><line x1="636.2" y1="358.4" x2="642.2" y2="358.4"/></g>
-<g><circle cx="639.2" cy="358.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:7 - 24 MB/s, ratio 3.120, cv 0.1%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="645.4" y1="387.0" x2="645.4" y2="386.6"/><line x1="642.4" y1="387.0" x2="648.4" y2="387.0"/><line x1="642.4" y1="386.6" x2="648.4" y2="386.6"/></g>
-<g><circle cx="645.4" cy="386.8" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:8 - 15 MB/s, ratio 3.131, cv 0.3%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="646.5" y1="406.5" x2="646.5" y2="405.6"/><line x1="643.5" y1="406.5" x2="649.5" y2="406.5"/><line x1="643.5" y1="405.6" x2="649.5" y2="405.6"/></g>
-<g><circle cx="646.5" cy="406.0" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:9 - 11 MB/s, ratio 3.133, cv 0.7%</title></g>
-<path d="M155.3,212.2 L469.3,245.5 L545.2,255.3 L580.2,266.7 L606.6,267.0 L614.7,279.5 L628.1,311.2 L632.9,339.6 L648.1,330.0" fill="none" stroke="#008300" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="212.3" x2="155.3" y2="212.1"/><line x1="152.3" y1="212.3" x2="158.3" y2="212.3"/><line x1="152.3" y1="212.1" x2="158.3" y2="212.1"/></g>
-<g><circle cx="155.3" cy="212.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:1 - 238 MB/s, ratio 2.252, cv 0.2%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.9" x2="469.3" y2="245.0"/><line x1="466.3" y1="245.9" x2="472.3" y2="245.9"/><line x1="466.3" y1="245.0" x2="472.3" y2="245.0"/></g>
-<g><circle cx="469.3" cy="245.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:2 - 141 MB/s, ratio 2.815, cv 0.8%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.5" x2="545.2" y2="255.2"/><line x1="542.2" y1="255.5" x2="548.2" y2="255.5"/><line x1="542.2" y1="255.2" x2="548.2" y2="255.2"/></g>
-<g><circle cx="545.2" cy="255.3" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:3 - 121 MB/s, ratio 2.951, cv 0.2%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="269.1" x2="580.2" y2="264.5"/><line x1="577.2" y1="269.1" x2="583.2" y2="269.1"/><line x1="577.2" y1="264.5" x2="583.2" y2="264.5"/></g>
-<g><circle cx="580.2" cy="266.7" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:4 - 101 MB/s, ratio 3.014, cv 3.7%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="267.2" x2="606.6" y2="266.8"/><line x1="603.6" y1="267.2" x2="609.6" y2="267.2"/><line x1="603.6" y1="266.8" x2="609.6" y2="266.8"/></g>
-<g><circle cx="606.6" cy="267.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:5 - 101 MB/s, ratio 3.062, cv 0.3%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="279.8" x2="614.7" y2="279.3"/><line x1="611.7" y1="279.8" x2="617.7" y2="279.8"/><line x1="611.7" y1="279.3" x2="617.7" y2="279.3"/></g>
-<g><circle cx="614.7" cy="279.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:6 - 83 MB/s, ratio 3.076, cv 0.4%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="314.0" x2="628.1" y2="308.6"/><line x1="625.1" y1="314.0" x2="631.1" y2="314.0"/><line x1="625.1" y1="308.6" x2="631.1" y2="308.6"/></g>
-<g><circle cx="628.1" cy="311.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:7 - 50 MB/s, ratio 3.100, cv 4.3%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.3" x2="632.9" y2="339.0"/><line x1="629.9" y1="340.3" x2="635.9" y2="340.3"/><line x1="629.9" y1="339.0" x2="635.9" y2="339.0"/></g>
-<g><circle cx="632.9" cy="339.6" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:8 - 32 MB/s, ratio 3.109, cv 1.0%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="331.3" x2="648.1" y2="328.6"/><line x1="645.1" y1="331.3" x2="651.1" y2="331.3"/><line x1="645.1" y1="328.6" x2="651.1" y2="328.6"/></g>
-<g><circle cx="648.1" cy="330.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:9 - 37 MB/s, ratio 3.136, cv 2.1%</title></g>
-<path d="M155.3,215.7 L469.3,244.9 L545.2,255.3 L580.2,266.3 L606.6,267.5 L614.7,279.7 L628.1,309.0 L632.9,339.8 L648.1,327.6" fill="none" stroke="#e87ba4" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="221.6" x2="155.3" y2="210.2"/><line x1="152.3" y1="221.6" x2="158.3" y2="221.6"/><line x1="152.3" y1="210.2" x2="158.3" y2="210.2"/></g>
-<g><circle cx="155.3" cy="215.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:1 - 225 MB/s, ratio 2.252, cv 8.9%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.4" x2="469.3" y2="244.3"/><line x1="466.3" y1="245.4" x2="472.3" y2="245.4"/><line x1="466.3" y1="244.3" x2="472.3" y2="244.3"/></g>
-<g><circle cx="469.3" cy="244.9" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:2 - 142 MB/s, ratio 2.815, cv 0.8%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.6" x2="545.2" y2="254.9"/><line x1="542.2" y1="255.6" x2="548.2" y2="255.6"/><line x1="542.2" y1="254.9" x2="548.2" y2="254.9"/></g>
-<g><circle cx="545.2" cy="255.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:3 - 121 MB/s, ratio 2.951, cv 0.5%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="267.8" x2="580.2" y2="264.9"/><line x1="577.2" y1="267.8" x2="583.2" y2="267.8"/><line x1="577.2" y1="264.9" x2="583.2" y2="264.9"/></g>
-<g><circle cx="580.2" cy="266.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:4 - 102 MB/s, ratio 3.014, cv 2.3%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="268.0" x2="606.6" y2="266.9"/><line x1="603.6" y1="268.0" x2="609.6" y2="268.0"/><line x1="603.6" y1="266.9" x2="609.6" y2="266.9"/></g>
-<g><circle cx="606.6" cy="267.5" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:5 - 100 MB/s, ratio 3.062, cv 0.9%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="280.4" x2="614.7" y2="278.9"/><line x1="611.7" y1="280.4" x2="617.7" y2="280.4"/><line x1="611.7" y1="278.9" x2="617.7" y2="278.9"/></g>
-<g><circle cx="614.7" cy="279.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:6 - 83 MB/s, ratio 3.076, cv 1.1%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="309.1" x2="628.1" y2="309.0"/><line x1="625.1" y1="309.1" x2="631.1" y2="309.1"/><line x1="625.1" y1="309.0" x2="631.1" y2="309.0"/></g>
-<g><circle cx="628.1" cy="309.0" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:7 - 52 MB/s, ratio 3.100, cv 0.1%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.2" x2="632.9" y2="339.4"/><line x1="629.9" y1="340.2" x2="635.9" y2="340.2"/><line x1="629.9" y1="339.4" x2="635.9" y2="339.4"/></g>
-<g><circle cx="632.9" cy="339.8" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:8 - 32 MB/s, ratio 3.109, cv 0.7%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="329.0" x2="648.1" y2="326.3"/><line x1="645.1" y1="329.0" x2="651.1" y2="329.0"/><line x1="645.1" y1="326.3" x2="651.1" y2="326.3"/></g>
-<g><circle cx="648.1" cy="327.6" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:9 - 39 MB/s, ratio 3.136, cv 2.1%</title></g>
-<path d="M424.5,178.5 L469.7,178.2 L512.2,193.0 L556.8,193.9 L600.0,218.7 L622.6,232.2 L629.7,243.7 L635.9,265.9 L637.0,297.0" fill="none" stroke="#eda100" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="424.5" y1="184.2" x2="424.5" y2="173.4"/><line x1="421.5" y1="184.2" x2="427.5" y2="184.2"/><line x1="421.5" y1="173.4" x2="427.5" y2="173.4"/></g>
-<g><circle cx="424.5" cy="178.5" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:1 - 403 MB/s, ratio 2.735, cv 8.5%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.7" y1="181.0" x2="469.7" y2="175.6"/><line x1="466.7" y1="181.0" x2="472.7" y2="181.0"/><line x1="466.7" y1="175.6" x2="472.7" y2="175.6"/></g>
-<g><circle cx="469.7" cy="178.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:2 - 405 MB/s, ratio 2.816, cv 4.2%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="512.2" y1="193.9" x2="512.2" y2="192.2"/><line x1="509.2" y1="193.9" x2="515.2" y2="193.9"/><line x1="509.2" y1="192.2" x2="515.2" y2="192.2"/></g>
-<g><circle cx="512.2" cy="193.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:3 - 321 MB/s, ratio 2.892, cv 1.3%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="556.8" y1="194.9" x2="556.8" y2="192.9"/><line x1="553.8" y1="194.9" x2="559.8" y2="194.9"/><line x1="553.8" y1="192.9" x2="559.8" y2="192.9"/></g>
-<g><circle cx="556.8" cy="193.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:4 - 317 MB/s, ratio 2.972, cv 1.6%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="600.0" y1="221.0" x2="600.0" y2="216.5"/><line x1="597.0" y1="221.0" x2="603.0" y2="221.0"/><line x1="597.0" y1="216.5" x2="603.0" y2="216.5"/></g>
-<g><circle cx="600.0" cy="218.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:5 - 215 MB/s, ratio 3.050, cv 3.5%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="622.6" y1="233.5" x2="622.6" y2="230.9"/><line x1="619.6" y1="233.5" x2="625.6" y2="233.5"/><line x1="619.6" y1="230.9" x2="625.6" y2="230.9"/></g>
-<g><circle cx="622.6" cy="232.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:6 - 174 MB/s, ratio 3.090, cv 2.1%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="629.7" y1="244.9" x2="629.7" y2="242.5"/><line x1="626.7" y1="244.9" x2="632.7" y2="244.9"/><line x1="626.7" y1="242.5" x2="632.7" y2="242.5"/></g>
-<g><circle cx="629.7" cy="243.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:7 - 145 MB/s, ratio 3.103, cv 1.9%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="635.9" y1="266.7" x2="635.9" y2="265.0"/><line x1="632.9" y1="266.7" x2="638.9" y2="266.7"/><line x1="632.9" y1="265.0" x2="638.9" y2="265.0"/></g>
-<g><circle cx="635.9" cy="265.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:8 - 102 MB/s, ratio 3.114, cv 1.3%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="637.0" y1="297.5" x2="637.0" y2="296.4"/><line x1="634.0" y1="297.5" x2="640.0" y2="297.5"/><line x1="634.0" y1="296.4" x2="640.0" y2="296.4"/></g>
-<g><circle cx="637.0" cy="297.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:9 - 63 MB/s, ratio 3.116, cv 0.8%</title></g>
-<path d="M127.1,106.0 L426.3,139.2 L489.2,144.9 L516.3,150.3 L539.0,169.3 L544.6,161.9 L557.1,182.3 L560.9,203.7 L575.0,215.9" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="127.1" y1="108.4" x2="127.1" y2="103.6"/><line x1="124.1" y1="108.4" x2="130.1" y2="108.4"/><line x1="124.1" y1="103.6" x2="130.1" y2="103.6"/></g>
-<g><circle cx="127.1" cy="106.0" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:1 - 1.26 GB/s, ratio 2.201, cv 3.7%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="426.3" y1="145.7" x2="426.3" y2="133.2"/><line x1="423.3" y1="145.7" x2="429.3" y2="145.7"/><line x1="423.3" y1="133.2" x2="429.3" y2="133.2"/></g>
-<g><circle cx="426.3" cy="139.2" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:2 - 747 MB/s, ratio 2.738, cv 9.8%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="489.2" y1="149.5" x2="489.2" y2="140.6"/><line x1="486.2" y1="149.5" x2="492.2" y2="149.5"/><line x1="486.2" y1="140.6" x2="492.2" y2="140.6"/></g>
-<g><circle cx="489.2" cy="144.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:3 - 683 MB/s, ratio 2.851, cv 7.0%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.3" y1="153.1" x2="516.3" y2="147.7"/><line x1="513.3" y1="153.1" x2="519.3" y2="153.1"/><line x1="513.3" y1="147.7" x2="519.3" y2="147.7"/></g>
-<g><circle cx="516.3" cy="150.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:4 - 627 MB/s, ratio 2.900, cv 4.3%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="539.0" y1="184.5" x2="539.0" y2="157.1"/><line x1="536.0" y1="184.5" x2="542.0" y2="184.5"/><line x1="536.0" y1="157.1" x2="542.0" y2="157.1"/></g>
-<g><circle cx="539.0" cy="169.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:5 - 466 MB/s, ratio 2.940, cv 21.2%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="544.6" y1="164.1" x2="544.6" y2="159.7"/><line x1="541.6" y1="164.1" x2="547.6" y2="164.1"/><line x1="541.6" y1="159.7" x2="547.6" y2="159.7"/></g>
-<g><circle cx="544.6" cy="161.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:6 - 524 MB/s, ratio 2.950, cv 3.5%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="557.1" y1="185.2" x2="557.1" y2="179.6"/><line x1="554.1" y1="185.2" x2="560.1" y2="185.2"/><line x1="554.1" y1="179.6" x2="560.1" y2="179.6"/></g>
-<g><circle cx="557.1" cy="182.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:7 - 380 MB/s, ratio 2.973, cv 4.3%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="560.9" y1="203.9" x2="560.9" y2="203.6"/><line x1="557.9" y1="203.9" x2="563.9" y2="203.9"/><line x1="557.9" y1="203.6" x2="563.9" y2="203.6"/></g>
-<g><circle cx="560.9" cy="203.7" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:8 - 271 MB/s, ratio 2.980, cv 0.2%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="575.0" y1="223.6" x2="575.0" y2="209.0"/><line x1="572.0" y1="223.6" x2="578.0" y2="223.6"/><line x1="572.0" y1="209.0" x2="578.0" y2="209.0"/></g>
-<g><circle cx="575.0" cy="215.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:9 - 224 MB/s, ratio 3.005, cv 11.4%</title></g>
-<path d="M157.9,106.1 L472.1,135.6 L545.4,142.9 L580.1,162.7 L606.5,217.0 L614.6,167.3 L627.9,189.7 L632.5,211.4 L648.0,219.8" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="111.3" x2="157.9" y2="101.4"/><line x1="154.9" y1="111.3" x2="160.9" y2="111.3"/><line x1="154.9" y1="101.4" x2="160.9" y2="101.4"/></g>
-<g><circle cx="157.9" cy="106.1" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:1 - 1.25 GB/s, ratio 2.257, cv 7.7%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="139.1" x2="472.1" y2="132.3"/><line x1="469.1" y1="139.1" x2="475.1" y2="139.1"/><line x1="469.1" y1="132.3" x2="475.1" y2="132.3"/></g>
-<g><circle cx="472.1" cy="135.6" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:2 - 790 MB/s, ratio 2.820, cv 5.3%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="144.9" x2="545.4" y2="140.9"/><line x1="542.4" y1="144.9" x2="548.4" y2="144.9"/><line x1="542.4" y1="140.9" x2="548.4" y2="140.9"/></g>
-<g><circle cx="545.4" cy="142.9" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:3 - 705 MB/s, ratio 2.952, cv 3.1%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="169.6" x2="580.1" y2="156.5"/><line x1="577.1" y1="169.6" x2="583.1" y2="169.6"/><line x1="577.1" y1="156.5" x2="583.1" y2="156.5"/></g>
-<g><circle cx="580.1" cy="162.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:4 - 517 MB/s, ratio 3.014, cv 10.2%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="234.9" x2="606.5" y2="203.1"/><line x1="603.5" y1="234.9" x2="609.5" y2="234.9"/><line x1="603.5" y1="203.1" x2="609.5" y2="203.1"/></g>
-<g><circle cx="606.5" cy="217.0" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:5 - 220 MB/s, ratio 3.061, cv 24.5%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="170.6" x2="614.6" y2="164.2"/><line x1="611.6" y1="170.6" x2="617.6" y2="170.6"/><line x1="611.6" y1="164.2" x2="617.6" y2="164.2"/></g>
-<g><circle cx="614.6" cy="167.3" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:6 - 481 MB/s, ratio 3.076, cv 5.0%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="190.0" x2="627.9" y2="189.3"/><line x1="624.9" y1="190.0" x2="630.9" y2="190.0"/><line x1="624.9" y1="189.3" x2="630.9" y2="189.3"/></g>
-<g><circle cx="627.9" cy="189.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:7 - 338 MB/s, ratio 3.100, cv 0.6%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="213.0" x2="632.5" y2="209.8"/><line x1="629.5" y1="213.0" x2="635.5" y2="213.0"/><line x1="629.5" y1="209.8" x2="635.5" y2="209.8"/></g>
-<g><circle cx="632.5" cy="211.4" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:8 - 241 MB/s, ratio 3.108, cv 2.6%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="223.6" x2="648.0" y2="216.3"/><line x1="645.0" y1="223.6" x2="651.0" y2="223.6"/><line x1="645.0" y1="216.3" x2="651.0" y2="216.3"/></g>
-<g><circle cx="648.0" cy="219.8" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:9 - 211 MB/s, ratio 3.136, cv 5.7%</title></g>
-<path d="M141.2,109.4 L447.9,138.3 L516.9,144.1 L547.7,154.0 L572.3,156.1 L579.1,164.4 L592.1,187.8 L596.3,210.7 L611.2,224.9" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="141.2" y1="115.6" x2="141.2" y2="103.8"/><line x1="138.2" y1="115.6" x2="144.2" y2="115.6"/><line x1="138.2" y1="103.8" x2="144.2" y2="103.8"/></g>
-<g><circle cx="141.2" cy="109.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:1 - 1.19 GB/s, ratio 2.227, cv 9.2%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="447.9" y1="141.3" x2="447.9" y2="135.4"/><line x1="444.9" y1="141.3" x2="450.9" y2="141.3"/><line x1="444.9" y1="135.4" x2="450.9" y2="135.4"/></g>
-<g><circle cx="447.9" cy="138.3" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:2 - 757 MB/s, ratio 2.777, cv 4.7%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.9" y1="146.8" x2="516.9" y2="141.5"/><line x1="513.9" y1="146.8" x2="519.9" y2="146.8"/><line x1="513.9" y1="141.5" x2="519.9" y2="141.5"/></g>
-<g><circle cx="516.9" cy="144.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:3 - 692 MB/s, ratio 2.901, cv 4.1%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="547.7" y1="156.3" x2="547.7" y2="151.7"/><line x1="544.7" y1="156.3" x2="550.7" y2="156.3"/><line x1="544.7" y1="151.7" x2="550.7" y2="151.7"/></g>
-<g><circle cx="547.7" cy="154.0" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:4 - 592 MB/s, ratio 2.956, cv 3.6%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="572.3" y1="158.6" x2="572.3" y2="153.7"/><line x1="569.3" y1="158.6" x2="575.3" y2="158.6"/><line x1="569.3" y1="153.7" x2="575.3" y2="153.7"/></g>
-<g><circle cx="572.3" cy="156.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:5 - 573 MB/s, ratio 3.000, cv 3.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="579.1" y1="166.8" x2="579.1" y2="162.0"/><line x1="576.1" y1="166.8" x2="582.1" y2="166.8"/><line x1="576.1" y1="162.0" x2="582.1" y2="162.0"/></g>
-<g><circle cx="579.1" cy="164.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:6 - 503 MB/s, ratio 3.012, cv 3.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="592.1" y1="190.9" x2="592.1" y2="184.8"/><line x1="589.1" y1="190.9" x2="595.1" y2="190.9"/><line x1="589.1" y1="184.8" x2="595.1" y2="184.8"/></g>
-<g><circle cx="592.1" cy="187.8" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:7 - 349 MB/s, ratio 3.036, cv 4.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="596.3" y1="213.6" x2="596.3" y2="208.0"/><line x1="593.3" y1="213.6" x2="599.3" y2="213.6"/><line x1="593.3" y1="208.0" x2="599.3" y2="208.0"/></g>
-<g><circle cx="596.3" cy="210.7" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:8 - 243 MB/s, ratio 3.043, cv 4.4%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="611.2" y1="244.0" x2="611.2" y2="210.3"/><line x1="608.2" y1="244.0" x2="614.2" y2="244.0"/><line x1="608.2" y1="210.3" x2="614.2" y2="210.3"/></g>
-<g><circle cx="611.2" cy="224.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:9 - 195 MB/s, ratio 3.070, cv 25.8%</title></g>
-<text x="164.9" y="103.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="479.1" y="132.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="552.4" y="135.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="587.1" y="166.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="613.5" y="187.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="621.6" y="160.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
-<text x="639.5" y="203.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="655.0" y="219.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="434.0" y="268.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="479.9" y="275.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="524.4" y="291.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="569.7" y="293.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="615.4" y="317.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="638.4" y="340.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
-<text x="652.4" y="379.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="653.5" y="399.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="162.3" y="205.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="476.3" y="238.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="552.2" y="248.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="587.2" y="259.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="613.6" y="260.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="655.1" y="323.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="635.1" y="302.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
-<text x="431.5" y="171.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="476.7" y="171.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="519.2" y="186.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="563.8" y="186.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="607.0" y="211.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="636.7" y="236.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
-<text x="642.9" y="258.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="134.1" y="99.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="433.3" y="132.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="523.3" y="143.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="546.0" y="162.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="582.0" y="208.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="579.3" y="149.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="78.0" y="494.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">compress, level 6, by threads</text>
-<line x1="78.0" y1="656.5" x2="528.0" y2="656.5" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="660.5" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">50 MB/s</text>
-<line x1="78.0" y1="618.2" x2="528.0" y2="618.2" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="622.2" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">100 MB/s</text>
-<line x1="78.0" y1="579.8" x2="528.0" y2="579.8" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="583.8" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
-<line x1="78.0" y1="529.1" x2="528.0" y2="529.1" stroke="#e7e6e2" stroke-width="1"/>
-<text x="70.0" y="533.1" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">500 MB/s</text>
-<line x1="78.0" y1="702.0" x2="528.0" y2="702.0" stroke="#52514e" stroke-width="1"/>
-<text x="78.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">1</text>
-<text x="190.5" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">2</text>
-<text x="303.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">4</text>
-<text x="415.5" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">8</text>
-<text x="528.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">10</text>
-<text x="303.0" y="732.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">threads</text>
-<path d="M78.0,635.6 L190.5,587.8 L303.0,558.4 L415.5,537.7 L528.0,528.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="78.0" cy="635.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:1 - 73 MB/s, cv 15.5%</title></g>
-<g><circle cx="190.5" cy="587.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:2 - 173 MB/s, cv 1.1%</title></g>
-<g><circle cx="303.0" cy="558.4" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:4 - 295 MB/s, cv 10.9%</title></g>
-<g><circle cx="415.5" cy="537.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:8 - 428 MB/s, cv 6.4%</title></g>
-<g><circle cx="528.0" cy="528.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:10 - 503 MB/s, cv 3.8%</title></g>
-<text x="520.0" y="520.7" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">503 MB/s</text>
-<path d="M78.0,630.8 L190.5,591.6 L303.0,562.9 L415.5,538.7 L528.0,531.3" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="78.0" cy="630.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:1 - 80 MB/s, cv 3.8%</title></g>
-<g><circle cx="190.5" cy="591.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:2 - 162 MB/s, cv 0.9%</title></g>
-<g><circle cx="303.0" cy="562.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:4 - 272 MB/s, cv 7.6%</title></g>
-<g><circle cx="415.5" cy="538.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:8 - 421 MB/s, cv 2.2%</title></g>
-<g><circle cx="528.0" cy="531.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:10 - 481 MB/s, cv 5.0%</title></g>
-<path d="M78.0,625.9 L190.5,587.3 L303.0,560.0 L415.5,533.0 L528.0,526.5" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="78.0" cy="625.9" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:1 - 87 MB/s, cv 1.1%</title></g>
-<g><circle cx="190.5" cy="587.3" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:2 - 175 MB/s, cv 0.4%</title></g>
-<g><circle cx="303.0" cy="560.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:4 - 286 MB/s, cv 1.4%</title></g>
-<g><circle cx="415.5" cy="533.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:8 - 466 MB/s, cv 1.5%</title></g>
-<g><circle cx="528.0" cy="526.5" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:10 - 524 MB/s, cv 3.5%</title></g>
-<g><circle cx="78.0" cy="587.6" r="4" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz - 174 MB/s, cv 2.1%</title></g>
-<text x="86.0" y="590.6" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">174 MB/s</text>
-<g><circle cx="78.0" cy="628.8" r="4" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng - 83 MB/s, cv 1.1%</title></g>
-<text x="86.0" y="631.8" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">83 MB/s</text>
-<g><circle cx="78.0" cy="628.7" r="4" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip - 83 MB/s, cv 0.4%</title></g>
-<g><circle cx="78.0" cy="687.5" r="4" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip - 29 MB/s, cv 0.4%</title></g>
-<text x="86.0" y="690.5" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">29 MB/s</text>
-<path d="M78.0,629.9 L190.5,591.9 L303.0,565.4 L415.5,539.8 L528.0,531.5" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="78.0" cy="629.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:1 - 81 MB/s, cv 0.3%</title></g>
-<g><circle cx="190.5" cy="591.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:2 - 161 MB/s, cv 0.7%</title></g>
-<g><circle cx="303.0" cy="565.4" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:4 - 259 MB/s, cv 2.0%</title></g>
-<g><circle cx="415.5" cy="539.8" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:8 - 412 MB/s, cv 4.3%</title></g>
-<g><circle cx="528.0" cy="531.5" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:10 - 478 MB/s, cv 6.9%</title></g>
-<text x="572.0" y="494.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress, own output, by threads</text>
-<line x1="572.0" y1="688.0" x2="1022.0" y2="688.0" stroke="#e7e6e2" stroke-width="1"/>
-<text x="1018.0" y="685.0" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
-<line x1="572.0" y1="637.0" x2="1022.0" y2="637.0" stroke="#e7e6e2" stroke-width="1"/>
-<line x1="572.0" y1="598.3" x2="1022.0" y2="598.3" stroke="#e7e6e2" stroke-width="1"/>
-<text x="1018.0" y="595.3" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">1.00 GB/s</text>
-<line x1="572.0" y1="559.7" x2="1022.0" y2="559.7" stroke="#e7e6e2" stroke-width="1"/>
-<text x="1018.0" y="556.7" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">2.00 GB/s</text>
-<line x1="572.0" y1="702.0" x2="1022.0" y2="702.0" stroke="#52514e" stroke-width="1"/>
-<text x="572.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">1</text>
-<text x="684.5" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">2</text>
-<text x="797.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">4</text>
-<text x="909.5" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">8</text>
-<text x="1022.0" y="716.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">10</text>
-<text x="797.0" y="732.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">threads</text>
-<path d="M572.0,625.7 L684.5,588.7 L797.0,562.8 L909.5,532.1 L1022.0,526.6" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="572.0" cy="625.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:1 - 613 MB/s, cv 1.6%</title></g>
-<g><circle cx="684.5" cy="588.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:2 - 1.19 GB/s, cv 0.2%</title></g>
-<g><circle cx="797.0" cy="562.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:4 - 1.89 GB/s, cv 7.7%</title></g>
-<g><circle cx="909.5" cy="532.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:8 - 3.29 GB/s, cv 7.7%</title></g>
-<g><circle cx="1022.0" cy="526.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:10 - 3.62 GB/s, cv 7.7%</title></g>
-<text x="1014.0" y="518.6" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">3.62 GB/s</text>
-<path d="M572.0,651.5 L684.5,652.3 L797.0,653.5 L909.5,652.5 L1022.0,652.7" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="572.0" cy="651.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:1 - 385 MB/s, cv 0.3%</title></g>
-<g><circle cx="684.5" cy="652.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:2 - 379 MB/s, cv 0.2%</title></g>
-<g><circle cx="797.0" cy="653.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:4 - 371 MB/s, cv 2.7%</title></g>
-<g><circle cx="909.5" cy="652.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:8 - 379 MB/s, cv 0.6%</title></g>
-<g><circle cx="1022.0" cy="652.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:10 - 377 MB/s, cv 1.5%</title></g>
-<text x="1014.0" y="644.7" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">377 MB/s</text>
-<path d="M572.0,627.2 L684.5,592.6 L797.0,557.6 L909.5,531.0 L1022.0,528.7" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="572.0" cy="627.2" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:1 - 595 MB/s, cv 0.9%</title></g>
-<g><circle cx="684.5" cy="592.6" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:2 - 1.11 GB/s, cv 5.7%</title></g>
-<g><circle cx="797.0" cy="557.6" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:4 - 2.08 GB/s, cv 6.2%</title></g>
-<g><circle cx="909.5" cy="531.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:8 - 3.35 GB/s, cv 5.5%</title></g>
-<g><circle cx="1022.0" cy="528.7" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:10 - 3.49 GB/s, cv 6.3%</title></g>
-<g><circle cx="572.0" cy="567.1" r="4" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz - 1.75 GB/s, cv 13.3%</title></g>
-<text x="580.0" y="570.1" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">1.75 GB/s</text>
-<g><circle cx="572.0" cy="622.3" r="4" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng - 650 MB/s, cv 0.6%</title></g>
-<text x="580.0" y="625.3" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">650 MB/s</text>
-<g><circle cx="572.0" cy="623.8" r="4" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip - 633 MB/s, cv 0.7%</title></g>
-<g><circle cx="572.0" cy="687.4" r="4" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip - 202 MB/s, cv 0.1%</title></g>
-<text x="580.0" y="690.4" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">202 MB/s</text>
-<path d="M572.0,651.4 L684.5,655.5 L797.0,653.1 L909.5,651.9 L1022.0,653.2" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.7"/>
-<g><circle cx="572.0" cy="651.4" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:1 - 386 MB/s, cv 0.3%</title></g>
-<g><circle cx="684.5" cy="655.5" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:2 - 359 MB/s, cv 7.3%</title></g>
-<g><circle cx="797.0" cy="653.1" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:4 - 374 MB/s, cv 0.7%</title></g>
-<g><circle cx="909.5" cy="651.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:8 - 382 MB/s, cv 5.2%</title></g>
-<g><circle cx="1022.0" cy="653.2" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:10 - 374 MB/s, cv 2.2%</title></g>
-<g opacity="0.35"><line x1="1044.0" y1="604.0" x2="1044.0" y2="548.0" stroke="#52514e" stroke-width="2"/><polygon points="1044.0,542.0 1048.0,551.0 1040.0,551.0" fill="#52514e"/><text x="1044.0" y="566.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(-90.0 1044.0 573.0)">better</text></g>
-<text x="16.0" y="772.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">deflate blocks, level 6, 32 MiB sample</text>
-<text x="188.0" y="790.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">members</text>
-<text x="200.0" y="790.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">blocks in stream</text>
-<text x="580.0" y="790.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">average block size</text>
-<text x="968.0" y="790.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">compressed</text>
-<text x="1064.0" y="790.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">uncompressed</text>
-<text x="16.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@</text>
-<text x="188.0" y="826.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">516</text>
-<path d="M200 819 h11.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.4 z" fill="#1baf7a"><title>bgzip -@ - 610 blocks (0 stored, 3 fixed, 607 dynamic), 516 members</title></path>
-<text x="540.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">610</text>
-<path d="M580 819 h73.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-73.7 z" fill="#1baf7a"><title>bgzip -@ - avg 9.9 kB compressed, 55.0 kB of input per block</title></path>
-<text x="968.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.9 kB</text>
-<text x="1064.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">55.0 kB</text>
-<text x="16.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
-<text x="188.0" y="858.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 851 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#4a3aa7"><title>gzip - 138 blocks (0 stored, 0 fixed, 138 dynamic), 1 members</title></path>
-<text x="540.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">138</text>
-<path d="M580 851 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#4a3aa7"><title>gzip - avg 41.1 kB compressed, 243.1 kB of input per block</title></path>
-<text x="968.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">41.1 kB</text>
-<text x="1064.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">243.1 kB</text>
-<text x="30.0" y="880.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
-<text x="188.0" y="880.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 873 h272.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-272.0 z" fill="#4a3aa7"><title>gzip · rsyncable - 10,925 blocks (5119 stored, 2545 fixed, 3261 dynamic), 1 members</title></path>
-<text x="540.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">10,925</text>
-<path d="M580 873 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#4a3aa7"><title>gzip · rsyncable - avg 533 B compressed, 3.1 kB of input per block</title></path>
-<text x="968.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">533 B</text>
-<text x="1064.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.1 kB</text>
-<text x="16.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
-<text x="188.0" y="912.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 905 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#2a78d6"><title>gzip-ng - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
-<text x="540.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">241</text>
-<path d="M580 905 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#2a78d6"><title>gzip-ng - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
-<text x="968.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.7 kB</text>
-<text x="1064.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">139.2 kB</text>
-<text x="30.0" y="934.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
-<text x="188.0" y="934.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 927 h139.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-139.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - 5,663 blocks (2831 stored, 497 fixed, 2335 dynamic), 1 members</title></path>
-<text x="540.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5,663</text>
-<path d="M580 927 h4.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - avg 1.0 kB compressed, 5.9 kB of input per block</title></path>
-<text x="968.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.0 kB</text>
-<text x="1064.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5.9 kB</text>
-<text x="16.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p</text>
-<text x="188.0" y="966.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 959 h11.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.6 z" fill="#2a78d6"><title>gzip-ng -p - 618 blocks (310 stored, 1 fixed, 307 dynamic), 1 members</title></path>
-<text x="540.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">618</text>
-<path d="M580 959 h70.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.2 z" fill="#2a78d6"><title>gzip-ng -p - avg 9.4 kB compressed, 54.3 kB of input per block</title></path>
-<text x="968.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.4 kB</text>
-<text x="1064.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">54.3 kB</text>
-<text x="16.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
-<text x="188.0" y="998.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">64</text>
-<path d="M200 991 h2.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.2 z" fill="#eda100"><title>migz - 247 blocks (0 stored, 2 fixed, 245 dynamic), 64 members</title></path>
-<text x="540.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">247</text>
-<path d="M580 991 h178.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-178.2 z" fill="#eda100"><title>migz - avg 23.1 kB compressed, 135.8 kB of input per block</title></path>
-<text x="968.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.1 kB</text>
-<text x="1064.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">135.8 kB</text>
-<text x="16.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="188.0" y="1030.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1023 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#008300"><title>minigzip - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
-<text x="540.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">241</text>
-<path d="M580 1023 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#008300"><title>minigzip - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
-<text x="968.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.7 kB</text>
-<text x="1064.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">139.2 kB</text>
-<text x="16.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p</text>
-<text x="188.0" y="1062.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1055 h14.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.2 z" fill="#eb6834"><title>pigz -p - 721 blocks (120 stored, 214 fixed, 387 dynamic), 1 members</title></path>
-<text x="540.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">721</text>
-<path d="M580 1055 h58.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-58.5 z" fill="#eb6834"><title>pigz -p - avg 7.9 kB compressed, 46.5 kB of input per block</title></path>
-<text x="968.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.9 kB</text>
-<text x="1064.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">46.5 kB</text>
-<text x="30.0" y="1084.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
-<text x="188.0" y="1084.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1077 h70.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.9 z" fill="#eb6834"><title>pigz -p · rsyncable - 2,966 blocks (673 stored, 1185 fixed, 1108 dynamic), 1 members</title></path>
-<text x="540.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2,966</text>
-<path d="M580 1077 h11.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.3 z" fill="#eb6834"><title>pigz -p · rsyncable - avg 1.9 kB compressed, 11.3 kB of input per block</title></path>
-<text x="968.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.9 kB</text>
-<text x="1064.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">11.3 kB</text>
-<text x="30.0" y="1106.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
-<text x="188.0" y="1106.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1099 h18.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-18.7 z" fill="#eb6834"><title>pigz -p · independent - 900 blocks (510 stored, 1 fixed, 389 dynamic), 1 members</title></path>
-<text x="540.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">900</text>
-<path d="M580 1099 h47.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-47.4 z" fill="#eb6834"><title>pigz -p · independent - avg 6.5 kB compressed, 37.3 kB of input per block</title></path>
-<text x="968.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.5 kB</text>
-<text x="1064.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">37.3 kB</text>
-<text x="16.0" y="1138.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p</text>
-<text x="188.0" y="1138.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1131 h14.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.2 z" fill="#cd5c5c"><title>pigzpp -p - 722 blocks (118 stored, 217 fixed, 387 dynamic), 1 members</title></path>
-<text x="540.0" y="1138.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">722</text>
-<path d="M580 1131 h58.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-58.4 z" fill="#cd5c5c"><title>pigzpp -p - avg 7.9 kB compressed, 46.5 kB of input per block</title></path>
-<text x="968.0" y="1138.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.9 kB</text>
-<text x="1064.0" y="1138.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">46.5 kB</text>
-<text x="30.0" y="1160.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
-<text x="188.0" y="1160.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1153 h70.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.9 z" fill="#cd5c5c"><title>pigzpp -p · rsyncable - 2,966 blocks (674 stored, 1184 fixed, 1108 dynamic), 1 members</title></path>
-<text x="540.0" y="1160.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2,966</text>
-<path d="M580 1153 h11.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.3 z" fill="#cd5c5c"><title>pigzpp -p · rsyncable - avg 1.9 kB compressed, 11.3 kB of input per block</title></path>
-<text x="968.0" y="1160.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.9 kB</text>
-<text x="1064.0" y="1160.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">11.3 kB</text>
-<text x="30.0" y="1182.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
-<text x="188.0" y="1182.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1175 h18.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-18.7 z" fill="#cd5c5c"><title>pigzpp -p · independent - 900 blocks (510 stored, 1 fixed, 389 dynamic), 1 members</title></path>
-<text x="540.0" y="1182.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">900</text>
-<path d="M580 1175 h47.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-47.4 z" fill="#cd5c5c"><title>pigzpp -p · independent - avg 6.5 kB compressed, 37.3 kB of input per block</title></path>
-<text x="968.0" y="1182.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.5 kB</text>
-<text x="1064.0" y="1182.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">37.3 kB</text>
-<text x="78.0" y="1226.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress migz output</text>
-<text x="78.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
-<text x="458.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.71 GB/s</text>
-<path d="M78 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 3.71 GB/s, 0.06 s, cv 20.7%</title></path>
-<text x="78.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
-<text x="458.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.75 GB/s</text>
-<path d="M78 1283 h175.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-175.8 z" fill="#eda100"><title>migz - 1.75 GB/s, 0.12 s, cv 13.3%</title></path>
-<text x="78.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="458.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">625 MB/s</text>
-<path d="M78 1317 h60.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-60.0 z" fill="#008300"><title>minigzip - 625 MB/s, 0.34 s, cv 0.6%</title></path>
-<text x="78.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
-<text x="458.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">582 MB/s</text>
-<path d="M78 1351 h55.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-55.7 z" fill="#1baf7a"><title>bgzip -@ 10 - 582 MB/s, 0.36 s, cv 0.4%</title></path>
-<text x="78.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
-<text x="458.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">371 MB/s</text>
-<path d="M78 1385 h34.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-34.0 z" fill="#cd5c5c"><title>pigzpp -p 10 - 371 MB/s, 0.57 s, cv 0.4%</title></path>
-<text x="78.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
-<text x="458.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">355 MB/s</text>
-<path d="M78 1419 h32.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-32.4 z" fill="#eb6834"><title>pigz -p 10 - 355 MB/s, 0.60 s, cv 0.9%</title></path>
-<text x="78.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
-<text x="458.0" y="1448.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">201 MB/s</text>
-<path d="M78 1453 h16.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-16.6 z" fill="#4a3aa7"><title>gzip - 201 MB/s, 1.06 s, cv 0.1%</title></path>
-<text x="572.0" y="1226.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress bgzip -@ output</text>
-<text x="572.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p 10</text>
-<text x="952.0" y="1244.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.76 GB/s</text>
-<path d="M572 1249 h376.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-376.0 z" fill="#2a78d6"><title>gzip-ng -p 10 - 3.76 GB/s, 0.06 s, cv 10.8%</title></path>
-<text x="572.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@ 10</text>
-<text x="952.0" y="1278.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.49 GB/s</text>
-<path d="M572 1283 h348.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-348.3 z" fill="#1baf7a"><title>bgzip -@ 10 - 3.49 GB/s, 0.06 s, cv 6.3%</title></path>
-<text x="572.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="952.0" y="1312.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">592 MB/s</text>
-<path d="M572 1317 h55.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-55.8 z" fill="#008300"><title>minigzip - 592 MB/s, 0.36 s, cv 0.2%</title></path>
-<text x="572.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p 10</text>
-<text x="952.0" y="1346.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">318 MB/s</text>
-<path d="M572 1351 h28.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-28.1 z" fill="#cd5c5c"><title>pigzpp -p 10 - 318 MB/s, 0.67 s, cv 0.0%</title></path>
-<text x="572.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p 10</text>
-<text x="952.0" y="1380.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">286 MB/s</text>
-<path d="M572 1385 h24.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-24.9 z" fill="#eb6834"><title>pigz -p 10 - 286 MB/s, 0.74 s, cv 0.1%</title></path>
-<text x="572.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
-<text x="952.0" y="1414.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">198 MB/s</text>
-<path d="M572 1419 h16.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-16.0 z" fill="#4a3aa7"><title>gzip - 198 MB/s, 1.07 s, cv 0.6%</title></path>
-<text x="16.0" y="1518.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">zlib-ng 2.3.90 @ 1239e8883 · gzip-ng 2.0.0 (zlib-ng 2.3.90) · pigz 2.8 · pigzpp 1.1.0 (based on pigz 2.8) · gzip 1.14 · minigzip · bgzip (htslib) 1.22.1 · MiGz 2.0.beta-1 on openjdk version "26.0.2.1" 2026-08-18</text>
-<text x="16.0" y="1532.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">Apple M5, 10 cpus, silesia.tar (202 MiB), Nathans-MacBook-Air-M5-2.local, 2026-09-04</text>
-<text x="16.0" y="1502.0" font-size="10" fill="#c98500" text-anchor="start" font-weight="normal">⚠</text>
-<text x="30.0" y="1502.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">55 benchmarks with cv above 3%</text>
-<a href="https://github.com/nmoinvaz/gzipbench"><text x="1064" y="1532" font-size="10" fill="#52514e" text-anchor="end" text-decoration="underline">github.com/nmoinvaz/gzipbench</text></a>
+<path d="M157.9,152.3 L472.1,215.6 L545.4,223.5 L580.1,291.7 L606.5,339.5 L614.6,279.1 L627.9,325.2 L632.5,374.1 L648.0,410.2" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="171.5" x2="157.9" y2="135.4"/><line x1="154.9" y1="171.5" x2="160.9" y2="171.5"/><line x1="154.9" y1="135.4" x2="160.9" y2="135.4"/></g>
+<g><circle cx="157.9" cy="152.3" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:1 - 1.17 GB/s, ratio 2.257, cv 12.7%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="222.1" x2="472.1" y2="209.4"/><line x1="469.1" y1="222.1" x2="475.1" y2="222.1"/><line x1="469.1" y1="209.4" x2="475.1" y2="209.4"/></g>
+<g><circle cx="472.1" cy="215.6" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:2 - 749 MB/s, ratio 2.820, cv 4.5%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="229.6" x2="545.4" y2="217.7"/><line x1="542.4" y1="229.6" x2="548.4" y2="229.6"/><line x1="542.4" y1="217.7" x2="548.4" y2="217.7"/></g>
+<g><circle cx="545.4" cy="223.5" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:3 - 709 MB/s, ratio 2.952, cv 4.2%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="306.4" x2="580.1" y2="278.3"/><line x1="577.1" y1="306.4" x2="583.1" y2="306.4"/><line x1="577.1" y1="278.3" x2="583.1" y2="278.3"/></g>
+<g><circle cx="580.1" cy="291.7" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:4 - 438 MB/s, ratio 3.014, cv 9.9%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="362.1" x2="606.5" y2="320.1"/><line x1="603.5" y1="362.1" x2="609.5" y2="362.1"/><line x1="603.5" y1="320.1" x2="609.5" y2="320.1"/></g>
+<g><circle cx="606.5" cy="339.5" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:5 - 312 MB/s, ratio 3.061, cv 14.7%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="289.2" x2="614.6" y2="269.6"/><line x1="611.6" y1="289.2" x2="617.6" y2="289.2"/><line x1="611.6" y1="269.6" x2="617.6" y2="269.6"/></g>
+<g><circle cx="614.6" cy="279.1" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:6 - 478 MB/s, ratio 3.076, cv 6.9%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="328.3" x2="627.9" y2="322.1"/><line x1="624.9" y1="328.3" x2="630.9" y2="328.3"/><line x1="624.9" y1="322.1" x2="630.9" y2="322.1"/></g>
+<g><circle cx="627.9" cy="325.2" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:7 - 345 MB/s, ratio 3.100, cv 2.2%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="375.1" x2="632.5" y2="373.1"/><line x1="629.5" y1="375.1" x2="635.5" y2="375.1"/><line x1="629.5" y1="373.1" x2="635.5" y2="373.1"/></g>
+<g><circle cx="632.5" cy="374.1" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:8 - 244 MB/s, ratio 3.108, cv 0.7%</title></g>
+<g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="447.2" x2="648.0" y2="380.9"/><line x1="645.0" y1="447.2" x2="651.0" y2="447.2"/><line x1="645.0" y1="380.9" x2="651.0" y2="380.9"/></g>
+<g><circle cx="648.0" cy="410.2" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:9 - 189 MB/s, ratio 3.136, cv 23.0%</title></g>
+<path d="M427.0,518.3 L472.9,534.2 L517.4,569.2 L562.7,573.9 L608.4,626.7 L631.4,677.2 L639.2,702.1 L645.4,764.9 L646.5,807.6" fill="none" stroke="#4a3aa7" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="427.0" y1="518.7" x2="427.0" y2="518.0"/><line x1="424.0" y1="518.7" x2="430.0" y2="518.7"/><line x1="424.0" y1="518.0" x2="430.0" y2="518.0"/></g>
+<g><circle cx="427.0" cy="518.3" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:1 - 88 MB/s, ratio 2.739, cv 0.3%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.9" y1="536.4" x2="472.9" y2="532.0"/><line x1="469.9" y1="536.4" x2="475.9" y2="536.4"/><line x1="469.9" y1="532.0" x2="475.9" y2="532.0"/></g>
+<g><circle cx="472.9" cy="534.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:2 - 79 MB/s, ratio 2.822, cv 1.6%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="517.4" y1="569.3" x2="517.4" y2="569.1"/><line x1="514.4" y1="569.3" x2="520.4" y2="569.3"/><line x1="514.4" y1="569.1" x2="520.4" y2="569.1"/></g>
+<g><circle cx="517.4" cy="569.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:3 - 61 MB/s, ratio 2.902, cv 0.1%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="562.7" y1="574.1" x2="562.7" y2="573.7"/><line x1="559.7" y1="574.1" x2="565.7" y2="574.1"/><line x1="559.7" y1="573.7" x2="565.7" y2="573.7"/></g>
+<g><circle cx="562.7" cy="573.9" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:4 - 59 MB/s, ratio 2.983, cv 0.2%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="608.4" y1="627.5" x2="608.4" y2="625.8"/><line x1="605.4" y1="627.5" x2="611.4" y2="627.5"/><line x1="605.4" y1="625.8" x2="611.4" y2="625.8"/></g>
+<g><circle cx="608.4" cy="626.7" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:5 - 41 MB/s, ratio 3.065, cv 0.6%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="631.4" y1="677.8" x2="631.4" y2="676.6"/><line x1="628.4" y1="677.8" x2="634.4" y2="677.8"/><line x1="628.4" y1="676.6" x2="634.4" y2="676.6"/></g>
+<g><circle cx="631.4" cy="677.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:6 - 29 MB/s, ratio 3.106, cv 0.4%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="639.2" y1="702.2" x2="639.2" y2="701.9"/><line x1="636.2" y1="702.2" x2="642.2" y2="702.2"/><line x1="636.2" y1="701.9" x2="642.2" y2="701.9"/></g>
+<g><circle cx="639.2" cy="702.1" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:7 - 24 MB/s, ratio 3.120, cv 0.1%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="645.4" y1="765.3" x2="645.4" y2="764.5"/><line x1="642.4" y1="765.3" x2="648.4" y2="765.3"/><line x1="642.4" y1="764.5" x2="648.4" y2="764.5"/></g>
+<g><circle cx="645.4" cy="764.9" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:8 - 15 MB/s, ratio 3.131, cv 0.3%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="646.5" y1="808.5" x2="646.5" y2="806.6"/><line x1="643.5" y1="808.5" x2="649.5" y2="808.5"/><line x1="643.5" y1="806.6" x2="649.5" y2="806.6"/></g>
+<g><circle cx="646.5" cy="807.6" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:9 - 11 MB/s, ratio 3.133, cv 0.7%</title></g>
+<path d="M155.3,378.0 L469.3,451.6 L545.2,473.5 L580.2,498.8 L606.6,499.4 L614.7,527.1 L628.1,597.5 L632.9,660.4 L648.1,638.9" fill="none" stroke="#008300" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="378.2" x2="155.3" y2="377.7"/><line x1="152.3" y1="378.2" x2="158.3" y2="378.2"/><line x1="152.3" y1="377.7" x2="158.3" y2="377.7"/></g>
+<g><circle cx="155.3" cy="378.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:1 - 238 MB/s, ratio 2.252, cv 0.2%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="452.7" x2="469.3" y2="450.6"/><line x1="466.3" y1="452.7" x2="472.3" y2="452.7"/><line x1="466.3" y1="450.6" x2="472.3" y2="450.6"/></g>
+<g><circle cx="469.3" cy="451.6" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:2 - 141 MB/s, ratio 2.815, cv 0.8%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="473.8" x2="545.2" y2="473.2"/><line x1="542.2" y1="473.8" x2="548.2" y2="473.8"/><line x1="542.2" y1="473.2" x2="548.2" y2="473.2"/></g>
+<g><circle cx="545.2" cy="473.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:3 - 121 MB/s, ratio 2.951, cv 0.2%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="504.1" x2="580.2" y2="493.7"/><line x1="577.2" y1="504.1" x2="583.2" y2="504.1"/><line x1="577.2" y1="493.7" x2="583.2" y2="493.7"/></g>
+<g><circle cx="580.2" cy="498.8" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:4 - 101 MB/s, ratio 3.014, cv 3.7%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="499.9" x2="606.6" y2="498.9"/><line x1="603.6" y1="499.9" x2="609.6" y2="499.9"/><line x1="603.6" y1="498.9" x2="609.6" y2="498.9"/></g>
+<g><circle cx="606.6" cy="499.4" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:5 - 101 MB/s, ratio 3.062, cv 0.3%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="527.7" x2="614.7" y2="526.6"/><line x1="611.7" y1="527.7" x2="617.7" y2="527.7"/><line x1="611.7" y1="526.6" x2="617.7" y2="526.6"/></g>
+<g><circle cx="614.7" cy="527.1" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:6 - 83 MB/s, ratio 3.076, cv 0.4%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="603.7" x2="628.1" y2="591.5"/><line x1="625.1" y1="603.7" x2="631.1" y2="603.7"/><line x1="625.1" y1="591.5" x2="631.1" y2="591.5"/></g>
+<g><circle cx="628.1" cy="597.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:7 - 50 MB/s, ratio 3.100, cv 4.3%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="661.8" x2="632.9" y2="658.9"/><line x1="629.9" y1="661.8" x2="635.9" y2="661.8"/><line x1="629.9" y1="658.9" x2="635.9" y2="658.9"/></g>
+<g><circle cx="632.9" cy="660.4" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:8 - 32 MB/s, ratio 3.109, cv 1.0%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="642.0" x2="648.1" y2="636.0"/><line x1="645.1" y1="642.0" x2="651.1" y2="642.0"/><line x1="645.1" y1="636.0" x2="651.1" y2="636.0"/></g>
+<g><circle cx="648.1" cy="638.9" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:9 - 37 MB/s, ratio 3.136, cv 2.1%</title></g>
+<path d="M155.3,385.6 L469.3,450.3 L545.2,473.4 L580.2,497.9 L606.6,500.4 L614.7,527.4 L628.1,592.6 L632.9,660.7 L648.1,633.7" fill="none" stroke="#e87ba4" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="398.8" x2="155.3" y2="373.5"/><line x1="152.3" y1="398.8" x2="158.3" y2="398.8"/><line x1="152.3" y1="373.5" x2="158.3" y2="373.5"/></g>
+<g><circle cx="155.3" cy="385.6" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:1 - 225 MB/s, ratio 2.252, cv 8.9%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="451.4" x2="469.3" y2="449.2"/><line x1="466.3" y1="451.4" x2="472.3" y2="451.4"/><line x1="466.3" y1="449.2" x2="472.3" y2="449.2"/></g>
+<g><circle cx="469.3" cy="450.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:2 - 142 MB/s, ratio 2.815, cv 0.8%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="474.1" x2="545.2" y2="472.7"/><line x1="542.2" y1="474.1" x2="548.2" y2="474.1"/><line x1="542.2" y1="472.7" x2="548.2" y2="472.7"/></g>
+<g><circle cx="545.2" cy="473.4" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:3 - 121 MB/s, ratio 2.951, cv 0.5%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="501.1" x2="580.2" y2="494.7"/><line x1="577.2" y1="501.1" x2="583.2" y2="501.1"/><line x1="577.2" y1="494.7" x2="583.2" y2="494.7"/></g>
+<g><circle cx="580.2" cy="497.9" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:4 - 102 MB/s, ratio 3.014, cv 2.3%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="501.7" x2="606.6" y2="499.2"/><line x1="603.6" y1="501.7" x2="609.6" y2="501.7"/><line x1="603.6" y1="499.2" x2="609.6" y2="499.2"/></g>
+<g><circle cx="606.6" cy="500.4" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:5 - 100 MB/s, ratio 3.062, cv 0.9%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="529.0" x2="614.7" y2="525.9"/><line x1="611.7" y1="529.0" x2="617.7" y2="529.0"/><line x1="611.7" y1="525.9" x2="617.7" y2="525.9"/></g>
+<g><circle cx="614.7" cy="527.4" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:6 - 83 MB/s, ratio 3.076, cv 1.1%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="592.7" x2="628.1" y2="592.4"/><line x1="625.1" y1="592.7" x2="631.1" y2="592.7"/><line x1="625.1" y1="592.4" x2="631.1" y2="592.4"/></g>
+<g><circle cx="628.1" cy="592.6" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:7 - 52 MB/s, ratio 3.100, cv 0.1%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="661.7" x2="632.9" y2="659.8"/><line x1="629.9" y1="661.7" x2="635.9" y2="661.7"/><line x1="629.9" y1="659.8" x2="635.9" y2="659.8"/></g>
+<g><circle cx="632.9" cy="660.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:8 - 32 MB/s, ratio 3.109, cv 0.7%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="636.7" x2="648.1" y2="630.8"/><line x1="645.1" y1="636.7" x2="651.1" y2="636.7"/><line x1="645.1" y1="630.8" x2="651.1" y2="630.8"/></g>
+<g><circle cx="648.1" cy="633.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:9 - 39 MB/s, ratio 3.136, cv 2.1%</title></g>
+<path d="M424.5,303.3 L469.7,302.5 L512.2,335.4 L556.8,337.3 L600.0,392.4 L622.6,422.2 L629.7,447.7 L635.9,496.9 L637.0,565.8" fill="none" stroke="#eda100" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="424.5" y1="315.8" x2="424.5" y2="291.8"/><line x1="421.5" y1="315.8" x2="427.5" y2="315.8"/><line x1="421.5" y1="291.8" x2="427.5" y2="291.8"/></g>
+<g><circle cx="424.5" cy="303.3" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:1 - 403 MB/s, ratio 2.735, cv 8.5%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.7" y1="308.7" x2="469.7" y2="296.7"/><line x1="466.7" y1="308.7" x2="472.7" y2="308.7"/><line x1="466.7" y1="296.7" x2="472.7" y2="296.7"/></g>
+<g><circle cx="469.7" cy="302.5" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:2 - 405 MB/s, ratio 2.816, cv 4.2%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="512.2" y1="337.3" x2="512.2" y2="333.5"/><line x1="509.2" y1="337.3" x2="515.2" y2="337.3"/><line x1="509.2" y1="333.5" x2="515.2" y2="333.5"/></g>
+<g><circle cx="512.2" cy="335.4" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:3 - 321 MB/s, ratio 2.892, cv 1.3%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="556.8" y1="339.6" x2="556.8" y2="335.1"/><line x1="553.8" y1="339.6" x2="559.8" y2="339.6"/><line x1="553.8" y1="335.1" x2="559.8" y2="335.1"/></g>
+<g><circle cx="556.8" cy="337.3" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:4 - 317 MB/s, ratio 2.972, cv 1.6%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="600.0" y1="397.4" x2="600.0" y2="387.5"/><line x1="597.0" y1="397.4" x2="603.0" y2="397.4"/><line x1="597.0" y1="387.5" x2="603.0" y2="387.5"/></g>
+<g><circle cx="600.0" cy="392.4" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:5 - 215 MB/s, ratio 3.050, cv 3.5%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="622.6" y1="425.1" x2="622.6" y2="419.3"/><line x1="619.6" y1="425.1" x2="625.6" y2="425.1"/><line x1="619.6" y1="419.3" x2="625.6" y2="419.3"/></g>
+<g><circle cx="622.6" cy="422.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:6 - 174 MB/s, ratio 3.090, cv 2.1%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="629.7" y1="450.4" x2="629.7" y2="445.1"/><line x1="626.7" y1="450.4" x2="632.7" y2="450.4"/><line x1="626.7" y1="445.1" x2="632.7" y2="445.1"/></g>
+<g><circle cx="629.7" cy="447.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:7 - 145 MB/s, ratio 3.103, cv 1.9%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="635.9" y1="498.8" x2="635.9" y2="495.1"/><line x1="632.9" y1="498.8" x2="638.9" y2="498.8"/><line x1="632.9" y1="495.1" x2="638.9" y2="495.1"/></g>
+<g><circle cx="635.9" cy="496.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:8 - 102 MB/s, ratio 3.114, cv 1.3%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="637.0" y1="567.0" x2="637.0" y2="564.6"/><line x1="634.0" y1="567.0" x2="640.0" y2="567.0"/><line x1="634.0" y1="564.6" x2="640.0" y2="564.6"/></g>
+<g><circle cx="637.0" cy="565.8" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:9 - 63 MB/s, ratio 3.116, cv 0.8%</title></g>
+<path d="M127.1,142.4 L426.3,216.0 L489.2,228.7 L516.3,240.8 L539.0,282.8 L544.6,266.3 L557.1,311.7 L560.9,359.1 L575.0,386.1" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="127.1" y1="147.8" x2="127.1" y2="137.3"/><line x1="124.1" y1="147.8" x2="130.1" y2="147.8"/><line x1="124.1" y1="137.3" x2="130.1" y2="137.3"/></g>
+<g><circle cx="127.1" cy="142.4" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:1 - 1.26 GB/s, ratio 2.201, cv 3.7%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="426.3" y1="230.6" x2="426.3" y2="202.7"/><line x1="423.3" y1="230.6" x2="429.3" y2="230.6"/><line x1="423.3" y1="202.7" x2="429.3" y2="202.7"/></g>
+<g><circle cx="426.3" cy="216.0" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:2 - 747 MB/s, ratio 2.738, cv 9.8%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="489.2" y1="238.9" x2="489.2" y2="219.1"/><line x1="486.2" y1="238.9" x2="492.2" y2="238.9"/><line x1="486.2" y1="219.1" x2="492.2" y2="219.1"/></g>
+<g><circle cx="489.2" cy="228.7" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:3 - 683 MB/s, ratio 2.851, cv 7.0%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.3" y1="247.0" x2="516.3" y2="234.9"/><line x1="513.3" y1="247.0" x2="519.3" y2="247.0"/><line x1="513.3" y1="234.9" x2="519.3" y2="234.9"/></g>
+<g><circle cx="516.3" cy="240.8" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:4 - 627 MB/s, ratio 2.900, cv 4.3%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="539.0" y1="316.4" x2="539.0" y2="255.7"/><line x1="536.0" y1="316.4" x2="542.0" y2="316.4"/><line x1="536.0" y1="255.7" x2="542.0" y2="255.7"/></g>
+<g><circle cx="539.0" cy="282.8" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:5 - 466 MB/s, ratio 2.940, cv 21.2%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="544.6" y1="271.3" x2="544.6" y2="261.5"/><line x1="541.6" y1="271.3" x2="547.6" y2="271.3"/><line x1="541.6" y1="261.5" x2="547.6" y2="261.5"/></g>
+<g><circle cx="544.6" cy="266.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:6 - 524 MB/s, ratio 2.950, cv 3.5%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="557.1" y1="318.0" x2="557.1" y2="305.7"/><line x1="554.1" y1="318.0" x2="560.1" y2="318.0"/><line x1="554.1" y1="305.7" x2="560.1" y2="305.7"/></g>
+<g><circle cx="557.1" cy="311.7" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:7 - 380 MB/s, ratio 2.973, cv 4.3%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="560.9" y1="359.4" x2="560.9" y2="358.8"/><line x1="557.9" y1="359.4" x2="563.9" y2="359.4"/><line x1="557.9" y1="358.8" x2="563.9" y2="358.8"/></g>
+<g><circle cx="560.9" cy="359.1" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:8 - 271 MB/s, ratio 2.980, cv 0.2%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="575.0" y1="403.3" x2="575.0" y2="370.8"/><line x1="572.0" y1="403.3" x2="578.0" y2="403.3"/><line x1="572.0" y1="370.8" x2="578.0" y2="370.8"/></g>
+<g><circle cx="575.0" cy="386.1" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:9 - 224 MB/s, ratio 3.005, cv 11.4%</title></g>
+<path d="M157.9,142.8 L472.1,208.1 L545.4,224.3 L580.1,268.2 L606.5,388.6 L614.6,278.4 L627.9,328.0 L632.5,376.1 L648.0,394.8" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="154.2" x2="157.9" y2="132.3"/><line x1="154.9" y1="154.2" x2="160.9" y2="154.2"/><line x1="154.9" y1="132.3" x2="160.9" y2="132.3"/></g>
+<g><circle cx="157.9" cy="142.8" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:1 - 1.25 GB/s, ratio 2.257, cv 7.7%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="215.8" x2="472.1" y2="200.9"/><line x1="469.1" y1="215.8" x2="475.1" y2="215.8"/><line x1="469.1" y1="200.9" x2="475.1" y2="200.9"/></g>
+<g><circle cx="472.1" cy="208.1" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:2 - 790 MB/s, ratio 2.820, cv 5.3%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="228.8" x2="545.4" y2="219.9"/><line x1="542.4" y1="228.8" x2="548.4" y2="228.8"/><line x1="542.4" y1="219.9" x2="548.4" y2="219.9"/></g>
+<g><circle cx="545.4" cy="224.3" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:3 - 705 MB/s, ratio 2.952, cv 3.1%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="283.4" x2="580.1" y2="254.5"/><line x1="577.1" y1="283.4" x2="583.1" y2="283.4"/><line x1="577.1" y1="254.5" x2="583.1" y2="254.5"/></g>
+<g><circle cx="580.1" cy="268.2" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:4 - 517 MB/s, ratio 3.014, cv 10.2%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="428.3" x2="606.5" y2="357.7"/><line x1="603.5" y1="428.3" x2="609.5" y2="428.3"/><line x1="603.5" y1="357.7" x2="609.5" y2="357.7"/></g>
+<g><circle cx="606.5" cy="388.6" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:5 - 220 MB/s, ratio 3.061, cv 24.5%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="285.7" x2="614.6" y2="271.5"/><line x1="611.6" y1="285.7" x2="617.6" y2="285.7"/><line x1="611.6" y1="271.5" x2="617.6" y2="271.5"/></g>
+<g><circle cx="614.6" cy="278.4" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:6 - 481 MB/s, ratio 3.076, cv 5.0%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="328.8" x2="627.9" y2="327.1"/><line x1="624.9" y1="328.8" x2="630.9" y2="328.8"/><line x1="624.9" y1="327.1" x2="630.9" y2="327.1"/></g>
+<g><circle cx="627.9" cy="328.0" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:7 - 338 MB/s, ratio 3.100, cv 0.6%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="379.7" x2="632.5" y2="372.5"/><line x1="629.5" y1="379.7" x2="635.5" y2="379.7"/><line x1="629.5" y1="372.5" x2="635.5" y2="372.5"/></g>
+<g><circle cx="632.5" cy="376.1" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:8 - 241 MB/s, ratio 3.108, cv 2.6%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="403.1" x2="648.0" y2="386.9"/><line x1="645.0" y1="403.1" x2="651.0" y2="403.1"/><line x1="645.0" y1="386.9" x2="651.0" y2="386.9"/></g>
+<g><circle cx="648.0" cy="394.8" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:9 - 211 MB/s, ratio 3.136, cv 5.7%</title></g>
+<path d="M141.2,150.0 L447.9,214.1 L516.9,226.9 L547.7,248.9 L572.3,253.6 L579.1,271.9 L592.1,323.8 L596.3,374.6 L611.2,406.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="141.2" y1="163.7" x2="141.2" y2="137.6"/><line x1="138.2" y1="163.7" x2="144.2" y2="163.7"/><line x1="138.2" y1="137.6" x2="144.2" y2="137.6"/></g>
+<g><circle cx="141.2" cy="150.0" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:1 - 1.19 GB/s, ratio 2.227, cv 9.2%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="447.9" y1="220.8" x2="447.9" y2="207.7"/><line x1="444.9" y1="220.8" x2="450.9" y2="220.8"/><line x1="444.9" y1="207.7" x2="450.9" y2="207.7"/></g>
+<g><circle cx="447.9" cy="214.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:2 - 757 MB/s, ratio 2.777, cv 4.7%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.9" y1="232.8" x2="516.9" y2="221.2"/><line x1="513.9" y1="232.8" x2="519.9" y2="232.8"/><line x1="513.9" y1="221.2" x2="519.9" y2="221.2"/></g>
+<g><circle cx="516.9" cy="226.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:3 - 692 MB/s, ratio 2.901, cv 4.1%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="547.7" y1="254.0" x2="547.7" y2="243.9"/><line x1="544.7" y1="254.0" x2="550.7" y2="254.0"/><line x1="544.7" y1="243.9" x2="550.7" y2="243.9"/></g>
+<g><circle cx="547.7" cy="248.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:4 - 592 MB/s, ratio 2.956, cv 3.6%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="572.3" y1="259.0" x2="572.3" y2="248.3"/><line x1="569.3" y1="259.0" x2="575.3" y2="259.0"/><line x1="569.3" y1="248.3" x2="575.3" y2="248.3"/></g>
+<g><circle cx="572.3" cy="253.6" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:5 - 573 MB/s, ratio 3.000, cv 3.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="579.1" y1="277.4" x2="579.1" y2="266.6"/><line x1="576.1" y1="277.4" x2="582.1" y2="277.4"/><line x1="576.1" y1="266.6" x2="582.1" y2="266.6"/></g>
+<g><circle cx="579.1" cy="271.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:6 - 503 MB/s, ratio 3.012, cv 3.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="592.1" y1="330.8" x2="592.1" y2="317.2"/><line x1="589.1" y1="330.8" x2="595.1" y2="330.8"/><line x1="589.1" y1="317.2" x2="595.1" y2="317.2"/></g>
+<g><circle cx="592.1" cy="323.8" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:7 - 349 MB/s, ratio 3.036, cv 4.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="596.3" y1="381.0" x2="596.3" y2="368.5"/><line x1="593.3" y1="381.0" x2="599.3" y2="381.0"/><line x1="593.3" y1="368.5" x2="599.3" y2="368.5"/></g>
+<g><circle cx="596.3" cy="374.6" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:8 - 243 MB/s, ratio 3.043, cv 4.4%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="611.2" y1="448.4" x2="611.2" y2="373.6"/><line x1="608.2" y1="448.4" x2="614.2" y2="448.4"/><line x1="608.2" y1="373.6" x2="614.2" y2="373.6"/></g>
+<g><circle cx="611.2" cy="406.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:9 - 195 MB/s, ratio 3.070, cv 25.8%</title></g>
+<text x="164.9" y="145.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="479.1" y="208.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="552.4" y="216.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="587.1" y="284.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="613.5" y="332.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="621.6" y="272.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="634.9" y="318.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="639.5" y="367.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="655.0" y="403.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="434.0" y="511.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="479.9" y="527.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="524.4" y="562.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="569.7" y="566.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="615.4" y="619.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="638.4" y="670.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="646.2" y="695.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="652.4" y="757.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="653.5" y="800.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="162.3" y="371.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="476.3" y="444.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="552.2" y="466.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="587.2" y="491.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="613.6" y="492.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="621.7" y="520.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="635.1" y="590.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="639.9" y="653.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="655.1" y="631.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="431.5" y="296.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="476.7" y="295.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="519.2" y="328.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="563.8" y="330.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="607.0" y="385.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="629.6" y="415.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="636.7" y="440.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="642.9" y="489.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="644.0" y="558.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="134.1" y="135.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="433.3" y="209.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="523.3" y="233.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="546.0" y="275.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="551.6" y="259.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="564.1" y="304.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="567.9" y="352.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="582.0" y="379.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="587.1" y="261.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="655.0" y="387.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="554.7" y="241.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="579.3" y="246.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="599.1" y="316.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="78.0" y="932.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">compress, level 6, by threads</text>
+<line x1="78.0" y1="1094.5" x2="528.0" y2="1094.5" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="1098.5" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">50 MB/s</text>
+<line x1="78.0" y1="1056.2" x2="528.0" y2="1056.2" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="1060.2" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">100 MB/s</text>
+<line x1="78.0" y1="1017.8" x2="528.0" y2="1017.8" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="1021.8" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
+<line x1="78.0" y1="967.1" x2="528.0" y2="967.1" stroke="#e7e6e2" stroke-width="1"/>
+<text x="70.0" y="971.1" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">500 MB/s</text>
+<line x1="78.0" y1="1140.0" x2="528.0" y2="1140.0" stroke="#52514e" stroke-width="1"/>
+<text x="78.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">1</text>
+<text x="190.5" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">2</text>
+<text x="303.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">4</text>
+<text x="415.5" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">8</text>
+<text x="528.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">10</text>
+<text x="303.0" y="1170.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">threads</text>
+<path d="M78.0,1073.6 L190.5,1025.8 L303.0,996.4 L415.5,975.7 L528.0,966.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="78.0" cy="1073.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:1 - 73 MB/s, cv 15.5%</title></g>
+<g><circle cx="190.5" cy="1025.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:2 - 173 MB/s, cv 1.1%</title></g>
+<g><circle cx="303.0" cy="996.4" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:4 - 295 MB/s, cv 10.9%</title></g>
+<g><circle cx="415.5" cy="975.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:8 - 428 MB/s, cv 6.4%</title></g>
+<g><circle cx="528.0" cy="966.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:10 - 503 MB/s, cv 3.8%</title></g>
+<text x="520.0" y="958.7" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">503 MB/s</text>
+<path d="M78.0,1068.8 L190.5,1029.6 L303.0,1000.9 L415.5,976.7 L528.0,969.3" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="78.0" cy="1068.8" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:1 - 80 MB/s, cv 3.8%</title></g>
+<g><circle cx="190.5" cy="1029.6" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:2 - 162 MB/s, cv 0.9%</title></g>
+<g><circle cx="303.0" cy="1000.9" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:4 - 272 MB/s, cv 7.6%</title></g>
+<g><circle cx="415.5" cy="976.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:8 - 421 MB/s, cv 2.2%</title></g>
+<g><circle cx="528.0" cy="969.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:10 - 481 MB/s, cv 5.0%</title></g>
+<path d="M78.0,1063.9 L190.5,1025.3 L303.0,998.0 L415.5,971.0 L528.0,964.5" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="78.0" cy="1063.9" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:1 - 87 MB/s, cv 1.1%</title></g>
+<g><circle cx="190.5" cy="1025.3" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:2 - 175 MB/s, cv 0.4%</title></g>
+<g><circle cx="303.0" cy="998.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:4 - 286 MB/s, cv 1.4%</title></g>
+<g><circle cx="415.5" cy="971.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:8 - 466 MB/s, cv 1.5%</title></g>
+<g><circle cx="528.0" cy="964.5" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:10 - 524 MB/s, cv 3.5%</title></g>
+<g><circle cx="78.0" cy="1025.6" r="4" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz - 174 MB/s, cv 2.1%</title></g>
+<text x="86.0" y="1028.6" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">174 MB/s</text>
+<g><circle cx="78.0" cy="1066.8" r="4" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng - 83 MB/s, cv 1.1%</title></g>
+<text x="86.0" y="1069.8" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">83 MB/s</text>
+<g><circle cx="78.0" cy="1066.7" r="4" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip - 83 MB/s, cv 0.4%</title></g>
+<g><circle cx="78.0" cy="1125.5" r="4" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip - 29 MB/s, cv 0.4%</title></g>
+<text x="86.0" y="1128.5" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">29 MB/s</text>
+<path d="M78.0,1067.9 L190.5,1029.9 L303.0,1003.4 L415.5,977.8 L528.0,969.5" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="78.0" cy="1067.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:1 - 81 MB/s, cv 0.3%</title></g>
+<g><circle cx="190.5" cy="1029.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:2 - 161 MB/s, cv 0.7%</title></g>
+<g><circle cx="303.0" cy="1003.4" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:4 - 259 MB/s, cv 2.0%</title></g>
+<g><circle cx="415.5" cy="977.8" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:8 - 412 MB/s, cv 4.3%</title></g>
+<g><circle cx="528.0" cy="969.5" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:10 - 478 MB/s, cv 6.9%</title></g>
+<text x="572.0" y="932.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">decompress, own output, by threads</text>
+<line x1="572.0" y1="1126.0" x2="1022.0" y2="1126.0" stroke="#e7e6e2" stroke-width="1"/>
+<text x="1018.0" y="1123.0" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">200 MB/s</text>
+<line x1="572.0" y1="1075.0" x2="1022.0" y2="1075.0" stroke="#e7e6e2" stroke-width="1"/>
+<line x1="572.0" y1="1036.3" x2="1022.0" y2="1036.3" stroke="#e7e6e2" stroke-width="1"/>
+<text x="1018.0" y="1033.3" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">1.00 GB/s</text>
+<line x1="572.0" y1="997.7" x2="1022.0" y2="997.7" stroke="#e7e6e2" stroke-width="1"/>
+<text x="1018.0" y="994.7" font-size="8" fill="#52514e" text-anchor="end" font-weight="normal">2.00 GB/s</text>
+<line x1="572.0" y1="1140.0" x2="1022.0" y2="1140.0" stroke="#52514e" stroke-width="1"/>
+<text x="572.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">1</text>
+<text x="684.5" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">2</text>
+<text x="797.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">4</text>
+<text x="909.5" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">8</text>
+<text x="1022.0" y="1154.0" font-size="10" fill="#52514e" text-anchor="middle" font-weight="normal">10</text>
+<text x="797.0" y="1170.0" font-size="11" fill="#52514e" text-anchor="middle" font-weight="normal">threads</text>
+<path d="M572.0,1063.7 L684.5,1026.7 L797.0,1000.8 L909.5,970.1 L1022.0,964.6" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="572.0" cy="1063.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:1 - 613 MB/s, cv 1.6%</title></g>
+<g><circle cx="684.5" cy="1026.7" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:2 - 1.19 GB/s, cv 0.2%</title></g>
+<g><circle cx="797.0" cy="1000.8" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:4 - 1.89 GB/s, cv 7.7%</title></g>
+<g><circle cx="909.5" cy="970.1" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:8 - 3.29 GB/s, cv 7.7%</title></g>
+<g><circle cx="1022.0" cy="964.6" r="4" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p threads:10 - 3.62 GB/s, cv 7.7%</title></g>
+<text x="1014.0" y="956.6" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">3.62 GB/s</text>
+<path d="M572.0,1089.5 L684.5,1090.3 L797.0,1091.5 L909.5,1090.5 L1022.0,1090.7" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="572.0" cy="1089.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:1 - 385 MB/s, cv 0.3%</title></g>
+<g><circle cx="684.5" cy="1090.3" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:2 - 379 MB/s, cv 0.2%</title></g>
+<g><circle cx="797.0" cy="1091.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:4 - 371 MB/s, cv 2.7%</title></g>
+<g><circle cx="909.5" cy="1090.5" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:8 - 379 MB/s, cv 0.6%</title></g>
+<g><circle cx="1022.0" cy="1090.7" r="4" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p threads:10 - 377 MB/s, cv 1.5%</title></g>
+<text x="1014.0" y="1082.7" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">377 MB/s</text>
+<path d="M572.0,1065.2 L684.5,1030.6 L797.0,995.6 L909.5,969.0 L1022.0,966.7" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="572.0" cy="1065.2" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:1 - 595 MB/s, cv 0.9%</title></g>
+<g><circle cx="684.5" cy="1030.6" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:2 - 1.11 GB/s, cv 5.7%</title></g>
+<g><circle cx="797.0" cy="995.6" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:4 - 2.08 GB/s, cv 6.2%</title></g>
+<g><circle cx="909.5" cy="969.0" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:8 - 3.35 GB/s, cv 5.5%</title></g>
+<g><circle cx="1022.0" cy="966.7" r="4" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ threads:10 - 3.49 GB/s, cv 6.3%</title></g>
+<g><circle cx="572.0" cy="1005.1" r="4" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz - 1.75 GB/s, cv 13.3%</title></g>
+<text x="580.0" y="1008.1" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">1.75 GB/s</text>
+<g><circle cx="572.0" cy="1060.3" r="4" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng - 650 MB/s, cv 0.6%</title></g>
+<text x="580.0" y="1063.3" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">650 MB/s</text>
+<g><circle cx="572.0" cy="1061.8" r="4" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip - 633 MB/s, cv 0.7%</title></g>
+<g><circle cx="572.0" cy="1125.4" r="4" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip - 202 MB/s, cv 0.1%</title></g>
+<text x="580.0" y="1128.4" font-size="9" fill="#52514e" text-anchor="start" font-weight="normal">202 MB/s</text>
+<path d="M572.0,1089.4 L684.5,1093.5 L797.0,1091.1 L909.5,1089.9 L1022.0,1091.2" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.7"/>
+<g><circle cx="572.0" cy="1089.4" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:1 - 386 MB/s, cv 0.3%</title></g>
+<g><circle cx="684.5" cy="1093.5" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:2 - 359 MB/s, cv 7.3%</title></g>
+<g><circle cx="797.0" cy="1091.1" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:4 - 374 MB/s, cv 0.7%</title></g>
+<g><circle cx="909.5" cy="1089.9" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:8 - 382 MB/s, cv 5.2%</title></g>
+<g><circle cx="1022.0" cy="1091.2" r="4" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p threads:10 - 374 MB/s, cv 2.2%</title></g>
+<g opacity="0.35"><line x1="1044.0" y1="1042.0" x2="1044.0" y2="986.0" stroke="#52514e" stroke-width="2"/><polygon points="1044.0,980.0 1048.0,989.0 1040.0,989.0" fill="#52514e"/><text x="1044.0" y="1004.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(-90.0 1044.0 1011.0)">better</text></g>
+<text x="16.0" y="1210.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">deflate blocks, level 6, 32 MiB sample</text>
+<text x="188.0" y="1228.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">members</text>
+<text x="200.0" y="1228.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">blocks in stream</text>
+<text x="580.0" y="1228.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">average block size</text>
+<text x="968.0" y="1228.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">compressed</text>
+<text x="1064.0" y="1228.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">uncompressed</text>
+<text x="16.0" y="1264.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@</text>
+<text x="188.0" y="1264.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">516</text>
+<path d="M200 1257 h11.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.4 z" fill="#1baf7a"><title>bgzip -@ - 610 blocks (0 stored, 3 fixed, 607 dynamic), 516 members</title></path>
+<text x="540.0" y="1264.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">610</text>
+<path d="M580 1257 h73.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-73.7 z" fill="#1baf7a"><title>bgzip -@ - avg 9.9 kB compressed, 55.0 kB of input per block</title></path>
+<text x="968.0" y="1264.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.9 kB</text>
+<text x="1064.0" y="1264.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">55.0 kB</text>
+<text x="16.0" y="1296.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<text x="188.0" y="1296.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1289 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#4a3aa7"><title>gzip - 138 blocks (0 stored, 0 fixed, 138 dynamic), 1 members</title></path>
+<text x="540.0" y="1296.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">138</text>
+<path d="M580 1289 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#4a3aa7"><title>gzip - avg 41.1 kB compressed, 243.1 kB of input per block</title></path>
+<text x="968.0" y="1296.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">41.1 kB</text>
+<text x="1064.0" y="1296.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">243.1 kB</text>
+<text x="30.0" y="1318.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<text x="188.0" y="1318.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1311 h272.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-272.0 z" fill="#4a3aa7"><title>gzip · rsyncable - 10,925 blocks (5119 stored, 2545 fixed, 3261 dynamic), 1 members</title></path>
+<text x="540.0" y="1318.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">10,925</text>
+<path d="M580 1311 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#4a3aa7"><title>gzip · rsyncable - avg 533 B compressed, 3.1 kB of input per block</title></path>
+<text x="968.0" y="1318.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">533 B</text>
+<text x="1064.0" y="1318.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.1 kB</text>
+<text x="16.0" y="1350.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
+<text x="188.0" y="1350.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1343 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#2a78d6"><title>gzip-ng - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
+<text x="540.0" y="1350.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">241</text>
+<path d="M580 1343 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#2a78d6"><title>gzip-ng - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
+<text x="968.0" y="1350.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.7 kB</text>
+<text x="1064.0" y="1350.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">139.2 kB</text>
+<text x="30.0" y="1372.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<text x="188.0" y="1372.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1365 h139.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-139.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - 5,663 blocks (2831 stored, 497 fixed, 2335 dynamic), 1 members</title></path>
+<text x="540.0" y="1372.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5,663</text>
+<path d="M580 1365 h4.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.1 z" fill="#2a78d6"><title>gzip-ng · rsyncable - avg 1.0 kB compressed, 5.9 kB of input per block</title></path>
+<text x="968.0" y="1372.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.0 kB</text>
+<text x="1064.0" y="1372.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">5.9 kB</text>
+<text x="16.0" y="1404.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p</text>
+<text x="188.0" y="1404.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1397 h11.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.6 z" fill="#2a78d6"><title>gzip-ng -p - 618 blocks (310 stored, 1 fixed, 307 dynamic), 1 members</title></path>
+<text x="540.0" y="1404.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">618</text>
+<path d="M580 1397 h70.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.2 z" fill="#2a78d6"><title>gzip-ng -p - avg 9.4 kB compressed, 54.3 kB of input per block</title></path>
+<text x="968.0" y="1404.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.4 kB</text>
+<text x="1064.0" y="1404.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">54.3 kB</text>
+<text x="16.0" y="1436.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
+<text x="188.0" y="1436.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">64</text>
+<path d="M200 1429 h2.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.2 z" fill="#eda100"><title>migz - 247 blocks (0 stored, 2 fixed, 245 dynamic), 64 members</title></path>
+<text x="540.0" y="1436.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">247</text>
+<path d="M580 1429 h178.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-178.2 z" fill="#eda100"><title>migz - avg 23.1 kB compressed, 135.8 kB of input per block</title></path>
+<text x="968.0" y="1436.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.1 kB</text>
+<text x="1064.0" y="1436.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">135.8 kB</text>
+<text x="16.0" y="1468.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="188.0" y="1468.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1461 h2.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.1 z" fill="#008300"><title>minigzip - 241 blocks (0 stored, 0 fixed, 241 dynamic), 1 members</title></path>
+<text x="540.0" y="1468.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">241</text>
+<path d="M580 1461 h183.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-183.0 z" fill="#008300"><title>minigzip - avg 23.7 kB compressed, 139.2 kB of input per block</title></path>
+<text x="968.0" y="1468.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">23.7 kB</text>
+<text x="1064.0" y="1468.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">139.2 kB</text>
+<text x="16.0" y="1500.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p</text>
+<text x="188.0" y="1500.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1493 h14.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.2 z" fill="#eb6834"><title>pigz -p - 721 blocks (120 stored, 214 fixed, 387 dynamic), 1 members</title></path>
+<text x="540.0" y="1500.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">721</text>
+<path d="M580 1493 h58.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-58.5 z" fill="#eb6834"><title>pigz -p - avg 7.9 kB compressed, 46.5 kB of input per block</title></path>
+<text x="968.0" y="1500.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.9 kB</text>
+<text x="1064.0" y="1500.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">46.5 kB</text>
+<text x="30.0" y="1522.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<text x="188.0" y="1522.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1515 h70.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.9 z" fill="#eb6834"><title>pigz -p · rsyncable - 2,966 blocks (673 stored, 1185 fixed, 1108 dynamic), 1 members</title></path>
+<text x="540.0" y="1522.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2,966</text>
+<path d="M580 1515 h11.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.3 z" fill="#eb6834"><title>pigz -p · rsyncable - avg 1.9 kB compressed, 11.3 kB of input per block</title></path>
+<text x="968.0" y="1522.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.9 kB</text>
+<text x="1064.0" y="1522.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">11.3 kB</text>
+<text x="30.0" y="1544.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
+<text x="188.0" y="1544.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1537 h18.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-18.7 z" fill="#eb6834"><title>pigz -p · independent - 900 blocks (510 stored, 1 fixed, 389 dynamic), 1 members</title></path>
+<text x="540.0" y="1544.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">900</text>
+<path d="M580 1537 h47.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-47.4 z" fill="#eb6834"><title>pigz -p · independent - avg 6.5 kB compressed, 37.3 kB of input per block</title></path>
+<text x="968.0" y="1544.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.5 kB</text>
+<text x="1064.0" y="1544.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">37.3 kB</text>
+<text x="16.0" y="1576.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p</text>
+<text x="188.0" y="1576.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1569 h14.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-14.2 z" fill="#cd5c5c"><title>pigzpp -p - 722 blocks (118 stored, 217 fixed, 387 dynamic), 1 members</title></path>
+<text x="540.0" y="1576.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">722</text>
+<path d="M580 1569 h58.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-58.4 z" fill="#cd5c5c"><title>pigzpp -p - avg 7.9 kB compressed, 46.5 kB of input per block</title></path>
+<text x="968.0" y="1576.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.9 kB</text>
+<text x="1064.0" y="1576.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">46.5 kB</text>
+<text x="30.0" y="1598.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<text x="188.0" y="1598.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1591 h70.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-70.9 z" fill="#cd5c5c"><title>pigzpp -p · rsyncable - 2,966 blocks (674 stored, 1184 fixed, 1108 dynamic), 1 members</title></path>
+<text x="540.0" y="1598.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2,966</text>
+<path d="M580 1591 h11.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-11.3 z" fill="#cd5c5c"><title>pigzpp -p · rsyncable - avg 1.9 kB compressed, 11.3 kB of input per block</title></path>
+<text x="968.0" y="1598.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">1.9 kB</text>
+<text x="1064.0" y="1598.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">11.3 kB</text>
+<text x="30.0" y="1620.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
+<text x="188.0" y="1620.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1613 h18.7 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-18.7 z" fill="#cd5c5c"><title>pigzpp -p · independent - 900 blocks (510 stored, 1 fixed, 389 dynamic), 1 members</title></path>
+<text x="540.0" y="1620.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">900</text>
+<path d="M580 1613 h47.4 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-47.4 z" fill="#cd5c5c"><title>pigzpp -p · independent - avg 6.5 kB compressed, 37.3 kB of input per block</title></path>
+<text x="968.0" y="1620.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">6.5 kB</text>
+<text x="1064.0" y="1620.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">37.3 kB</text>
+<text x="16.0" y="1668.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">zlib-ng 2.3.90 @ 1239e8883 · gzip-ng 2.0.0 (zlib-ng 2.3.90) · pigz 2.8 · pigzpp 1.1.0 (based on pigz 2.8) · gzip 1.14 · minigzip · bgzip (htslib) 1.22.1 · MiGz 2.0.beta-1 on openjdk version "26.0.2.1" 2026-08-18</text>
+<text x="16.0" y="1682.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">Apple M5, 10 cpus, silesia.tar (202 MiB), Nathans-MacBook-Air-M5-2.local, 2026-09-04</text>
+<text x="16.0" y="1652.0" font-size="10" fill="#c98500" text-anchor="start" font-weight="normal">⚠</text>
+<text x="30.0" y="1652.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">55 benchmarks with cv above 3%</text>
+<a href="https://github.com/nmoinvaz/gzipbench"><text x="1064" y="1682" font-size="10" fill="#52514e" text-anchor="end" text-decoration="underline">github.com/nmoinvaz/gzipbench</text></a>
 </svg>

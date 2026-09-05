@@ -377,9 +377,7 @@ def render(ctx, benchmarks, title, out_path):
     # the row label carries the mode
     census = [b for b in benchmarks if b["kind"] == "blocks"]
     if census:
-        census.sort(key=lambda b: (
-            SERIES_ORDER.index(b["series"]) if b["series"] in SERIES_ORDER
-            else len(SERIES_ORDER), MODE_ORDER.index(b["mode"])))
+        census.sort(key=lambda b: (b["series"], MODE_ORDER.index(b["mode"])))
         sample_mib = census[0]["input_bytes"] / 1048576
         lx0, cw = 16, 340
         cx, sx2 = 200, 580

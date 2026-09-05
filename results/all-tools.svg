@@ -365,83 +365,83 @@
 <text x="580.0" y="790.0" font-size="11" fill="#52514e" text-anchor="start" font-weight="normal">average block size</text>
 <text x="968.0" y="790.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">compressed</text>
 <text x="1064.0" y="790.0" font-size="11" fill="#52514e" text-anchor="end" font-weight="normal">uncompressed</text>
-<text x="16.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p</text>
-<text x="188.0" y="826.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 819 h9.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-9.8 z" fill="#2a78d6"><title>gzip-ng -p - 828 blocks (494 stored, 0 fixed, 334 dynamic), 1 members</title></path>
-<text x="540.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">828</text>
-<path d="M580 819 h140.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-140.3 z" fill="#2a78d6"><title>gzip-ng -p - avg 8.8 kB compressed, 40.5 kB of input per block</title></path>
-<text x="968.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">8.8 kB</text>
-<text x="1064.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">40.5 kB</text>
-<text x="16.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p</text>
+<text x="16.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@</text>
+<text x="188.0" y="826.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">517</text>
+<path d="M200 819 h6.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-6.8 z" fill="#1baf7a"><title>bgzip -@ - 648 blocks (128 stored, 2 fixed, 518 dynamic), 517 members</title></path>
+<text x="540.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">648</text>
+<path d="M580 819 h193.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-193.3 z" fill="#1baf7a"><title>bgzip -@ - avg 12.0 kB compressed, 51.8 kB of input per block</title></path>
+<text x="968.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">12.0 kB</text>
+<text x="1064.0" y="826.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">51.8 kB</text>
+<text x="16.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
 <text x="188.0" y="858.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 851 h8.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-8.6 z" fill="#eb6834"><title>pigz -p - 754 blocks (270 stored, 181 fixed, 303 dynamic), 1 members</title></path>
-<text x="540.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">754</text>
-<path d="M580 851 h147.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-147.0 z" fill="#eb6834"><title>pigz -p - avg 9.2 kB compressed, 44.5 kB of input per block</title></path>
-<text x="968.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.2 kB</text>
-<text x="1064.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">44.5 kB</text>
+<path d="M200 851 h5.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-5.2 z" fill="#4a3aa7"><title>gzip - 553 blocks (37 stored, 0 fixed, 516 dynamic), 1 members</title></path>
+<text x="540.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">553</text>
+<path d="M580 851 h206.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-206.6 z" fill="#4a3aa7"><title>gzip - avg 12.9 kB compressed, 60.7 kB of input per block</title></path>
+<text x="968.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">12.9 kB</text>
+<text x="1064.0" y="858.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">60.7 kB</text>
 <text x="30.0" y="880.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
 <text x="188.0" y="880.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 873 h172.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-172.9 z" fill="#eb6834"><title>pigz -p · rsyncable - 10,625 blocks (2884 stored, 3930 fixed, 3811 dynamic), 1 members</title></path>
-<text x="540.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">10,625</text>
-<path d="M580 873 h6.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-6.8 z" fill="#eb6834"><title>pigz -p · rsyncable - avg 657 B compressed, 3.2 kB of input per block</title></path>
-<text x="968.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">657 B</text>
-<text x="1064.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.2 kB</text>
-<text x="30.0" y="902.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
-<text x="188.0" y="902.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 895 h12.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-12.1 z" fill="#eb6834"><title>pigz -p · independent - 969 blocks (666 stored, 0 fixed, 303 dynamic), 1 members</title></path>
-<text x="540.0" y="902.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">969</text>
-<path d="M580 895 h115.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-115.2 z" fill="#eb6834"><title>pigz -p · independent - avg 7.3 kB compressed, 34.6 kB of input per block</title></path>
-<text x="968.0" y="902.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.3 kB</text>
-<text x="1064.0" y="902.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">34.6 kB</text>
-<text x="16.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">bgzip -@</text>
-<text x="188.0" y="934.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">517</text>
-<path d="M200 927 h6.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-6.8 z" fill="#1baf7a"><title>bgzip -@ - 648 blocks (128 stored, 2 fixed, 518 dynamic), 517 members</title></path>
-<text x="540.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">648</text>
-<path d="M580 927 h193.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-193.3 z" fill="#1baf7a"><title>bgzip -@ - avg 12.0 kB compressed, 51.8 kB of input per block</title></path>
-<text x="968.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">12.0 kB</text>
-<text x="1064.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">51.8 kB</text>
-<text x="16.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
-<text x="188.0" y="966.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">64</text>
-<path d="M200 959 h2.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.3 z" fill="#eda100"><title>migz - 376 blocks (133 stored, 1 fixed, 242 dynamic), 64 members</title></path>
-<text x="540.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">376</text>
-<path d="M580 959 h306.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-306.2 z" fill="#eda100"><title>migz - avg 18.9 kB compressed, 89.2 kB of input per block</title></path>
-<text x="968.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">18.9 kB</text>
-<text x="1064.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">89.2 kB</text>
-<text x="16.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
-<text x="188.0" y="998.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 991 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#e87ba4"><title>gzip-ng - 356 blocks (119 stored, 0 fixed, 237 dynamic), 1 members</title></path>
-<text x="540.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">356</text>
-<path d="M580 991 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#e87ba4"><title>gzip-ng - avg 19.8 kB compressed, 94.3 kB of input per block</title></path>
-<text x="968.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">19.8 kB</text>
-<text x="1064.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">94.3 kB</text>
-<text x="30.0" y="1020.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
-<text x="188.0" y="1020.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1013 h272.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-272.0 z" fill="#e87ba4"><title>gzip-ng · rsyncable - 16,573 blocks (8897 stored, 1734 fixed, 5942 dynamic), 1 members</title></path>
-<text x="540.0" y="1020.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">16,573</text>
-<path d="M580 1013 h3.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-3.0 z" fill="#e87ba4"><title>gzip-ng · rsyncable - avg 425 B compressed, 2.0 kB of input per block</title></path>
-<text x="968.0" y="1020.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">425 B</text>
-<text x="1064.0" y="1020.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.0 kB</text>
-<text x="16.0" y="1052.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
-<text x="188.0" y="1052.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1045 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#008300"><title>minigzip - 356 blocks (119 stored, 0 fixed, 237 dynamic), 1 members</title></path>
-<text x="540.0" y="1052.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">356</text>
-<path d="M580 1045 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#008300"><title>minigzip - avg 19.8 kB compressed, 94.3 kB of input per block</title></path>
-<text x="968.0" y="1052.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">19.8 kB</text>
-<text x="1064.0" y="1052.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">94.3 kB</text>
-<text x="16.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip</text>
+<path d="M200 873 h222.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-222.3 z" fill="#4a3aa7"><title>gzip · rsyncable - 13,590 blocks (6677 stored, 2012 fixed, 4901 dynamic), 1 members</title></path>
+<text x="540.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">13,590</text>
+<path d="M580 873 h4.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.5 z" fill="#4a3aa7"><title>gzip · rsyncable - avg 520 B compressed, 2.5 kB of input per block</title></path>
+<text x="968.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">520 B</text>
+<text x="1064.0" y="880.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.5 kB</text>
+<text x="16.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng</text>
+<text x="188.0" y="912.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 905 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#e87ba4"><title>gzip-ng - 356 blocks (119 stored, 0 fixed, 237 dynamic), 1 members</title></path>
+<text x="540.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">356</text>
+<path d="M580 905 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#e87ba4"><title>gzip-ng - avg 19.8 kB compressed, 94.3 kB of input per block</title></path>
+<text x="968.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">19.8 kB</text>
+<text x="1064.0" y="912.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">94.3 kB</text>
+<text x="30.0" y="934.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<text x="188.0" y="934.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 927 h272.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-272.0 z" fill="#e87ba4"><title>gzip-ng · rsyncable - 16,573 blocks (8897 stored, 1734 fixed, 5942 dynamic), 1 members</title></path>
+<text x="540.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">16,573</text>
+<path d="M580 927 h3.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-3.0 z" fill="#e87ba4"><title>gzip-ng · rsyncable - avg 425 B compressed, 2.0 kB of input per block</title></path>
+<text x="968.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">425 B</text>
+<text x="1064.0" y="934.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.0 kB</text>
+<text x="16.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">gzip-ng -p</text>
+<text x="188.0" y="966.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 959 h9.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-9.8 z" fill="#2a78d6"><title>gzip-ng -p - 828 blocks (494 stored, 0 fixed, 334 dynamic), 1 members</title></path>
+<text x="540.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">828</text>
+<path d="M580 959 h140.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-140.3 z" fill="#2a78d6"><title>gzip-ng -p - avg 8.8 kB compressed, 40.5 kB of input per block</title></path>
+<text x="968.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">8.8 kB</text>
+<text x="1064.0" y="966.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">40.5 kB</text>
+<text x="16.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">migz</text>
+<text x="188.0" y="998.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">64</text>
+<path d="M200 991 h2.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.3 z" fill="#eda100"><title>migz - 376 blocks (133 stored, 1 fixed, 242 dynamic), 64 members</title></path>
+<text x="540.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">376</text>
+<path d="M580 991 h306.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-306.2 z" fill="#eda100"><title>migz - avg 18.9 kB compressed, 89.2 kB of input per block</title></path>
+<text x="968.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">18.9 kB</text>
+<text x="1064.0" y="998.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">89.2 kB</text>
+<text x="16.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">minigzip</text>
+<text x="188.0" y="1030.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1023 h2.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-2.0 z" fill="#008300"><title>minigzip - 356 blocks (119 stored, 0 fixed, 237 dynamic), 1 members</title></path>
+<text x="540.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">356</text>
+<path d="M580 1023 h320.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-320.0 z" fill="#008300"><title>minigzip - avg 19.8 kB compressed, 94.3 kB of input per block</title></path>
+<text x="968.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">19.8 kB</text>
+<text x="1064.0" y="1030.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">94.3 kB</text>
+<text x="16.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigz -p</text>
+<text x="188.0" y="1062.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
+<path d="M200 1055 h8.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-8.6 z" fill="#eb6834"><title>pigz -p - 754 blocks (270 stored, 181 fixed, 303 dynamic), 1 members</title></path>
+<text x="540.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">754</text>
+<path d="M580 1055 h147.0 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-147.0 z" fill="#eb6834"><title>pigz -p - avg 9.2 kB compressed, 44.5 kB of input per block</title></path>
+<text x="968.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">9.2 kB</text>
+<text x="1064.0" y="1062.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">44.5 kB</text>
+<text x="30.0" y="1084.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
 <text x="188.0" y="1084.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1077 h5.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-5.2 z" fill="#4a3aa7"><title>gzip - 553 blocks (37 stored, 0 fixed, 516 dynamic), 1 members</title></path>
-<text x="540.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">553</text>
-<path d="M580 1077 h206.6 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-206.6 z" fill="#4a3aa7"><title>gzip - avg 12.9 kB compressed, 60.7 kB of input per block</title></path>
-<text x="968.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">12.9 kB</text>
-<text x="1064.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">60.7 kB</text>
-<text x="30.0" y="1106.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">rsyncable</text>
+<path d="M200 1077 h172.9 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-172.9 z" fill="#eb6834"><title>pigz -p · rsyncable - 10,625 blocks (2884 stored, 3930 fixed, 3811 dynamic), 1 members</title></path>
+<text x="540.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">10,625</text>
+<path d="M580 1077 h6.8 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-6.8 z" fill="#eb6834"><title>pigz -p · rsyncable - avg 657 B compressed, 3.2 kB of input per block</title></path>
+<text x="968.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">657 B</text>
+<text x="1064.0" y="1084.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">3.2 kB</text>
+<text x="30.0" y="1106.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">independent</text>
 <text x="188.0" y="1106.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
-<path d="M200 1099 h222.3 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-222.3 z" fill="#4a3aa7"><title>gzip · rsyncable - 13,590 blocks (6677 stored, 2012 fixed, 4901 dynamic), 1 members</title></path>
-<text x="540.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">13,590</text>
-<path d="M580 1099 h4.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-4.5 z" fill="#4a3aa7"><title>gzip · rsyncable - avg 520 B compressed, 2.5 kB of input per block</title></path>
-<text x="968.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">520 B</text>
-<text x="1064.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">2.5 kB</text>
+<path d="M200 1099 h12.1 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-12.1 z" fill="#eb6834"><title>pigz -p · independent - 969 blocks (666 stored, 0 fixed, 303 dynamic), 1 members</title></path>
+<text x="540.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">969</text>
+<path d="M580 1099 h115.2 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-115.2 z" fill="#eb6834"><title>pigz -p · independent - avg 7.3 kB compressed, 34.6 kB of input per block</title></path>
+<text x="968.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">7.3 kB</text>
+<text x="1064.0" y="1106.0" font-size="10" fill="#0b0b0b" text-anchor="end" font-weight="normal">34.6 kB</text>
 <text x="16.0" y="1138.0" font-size="10" fill="#0b0b0b" text-anchor="start" font-weight="normal">pigzpp -p</text>
 <text x="188.0" y="1138.0" font-size="10" fill="#52514e" text-anchor="end" font-weight="normal">1</text>
 <path d="M200 1131 h8.5 a4 4 0 0 1 4 4 v4 a4 4 0 0 1 -4 4 h-8.5 z" fill="#cd5c5c"><title>pigzpp -p - 751 blocks (271 stored, 177 fixed, 303 dynamic), 1 members</title></path>

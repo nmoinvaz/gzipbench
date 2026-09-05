@@ -23,9 +23,26 @@ SURFACE = "#fcfcfb"
 INK = "#0b0b0b"
 INK_SOFT = "#52514e"
 GRID = "#e7e6e2"
+WARN = "#c98500"
 # Categorical slots in fixed series order, never cycled
 SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
                  "#e87ba4", "#008300", "#4a3aa7", "#cd5c5c", "#7a7668"]
+
+# Dark-mode counterparts, the same hues re-stepped for the dark surface.
+# Colors absent here keep their light value in both modes.
+DARK = {
+    SURFACE: "#201f1d",
+    INK: "#e8e6e3",
+    INK_SOFT: "#a8a49d",
+    GRID: "#343230",
+    WARN: "#d69a2d",
+    "#eb6834": "#dd5c26",
+    "#eda100": "#c08800",
+    "#e87ba4": "#d1678f",
+    "#4a3aa7": "#7263cf",
+    "#cd5c5c": "#d65a55",
+    "#7a7668": "#8a8579",
+}
 
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
                 "gzip-ng", "minigzip", "gzip", "pigzpp -p"]
@@ -77,10 +94,15 @@ class Svg:
                  f'stroke="{SURFACE}" stroke-width="2"/><title>{esc(title)}</title></g>')
 
     def finish(self, height):
+        # Attribute selectors outrank presentation attributes, so dark mode
+        # swaps every themed color in place without touching the body markup.
+        rules = "".join(f'[fill="{l}"]{{fill:{d}}}[stroke="{l}"]{{stroke:{d}}}'
+                        for l, d in DARK.items())
         header = [
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.w}" '
             f'height="{height}" viewBox="0 0 {self.w} {height}" '
             f'font-family="system-ui, sans-serif">',
+            f'<style>@media (prefers-color-scheme: dark){{{rules}}}</style>',
             f'<rect width="{self.w}" height="{height}" fill="{SURFACE}"/>']
         return "\n".join(header + self.parts + ["</svg>"]) + "\n"
 
@@ -475,7 +497,7 @@ def render(ctx, benchmarks, title, out_path):
     svg.text(16, height - 26, versions, size=10)
     svg.text(16, height - 12, machine, size=10)
     if warnings:
-        svg.text(16, height - 42, "⚠", size=10, fill="#c98500")
+        svg.text(16, height - 42, "⚠", size=10, fill=WARN)
         svg.text(30, height - 42, " · ".join(warnings), size=10)
     svg.add(f'<a href="{REPO_URL}"><text x="{width - 16}" y="{height - 12}" '
             f'font-size="10" fill="{INK_SOFT}" text-anchor="end" '

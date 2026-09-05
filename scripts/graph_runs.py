@@ -173,7 +173,7 @@ def render(ctx, benchmarks, title, out_path):
     sweep_c = [b for b in compress if b["level"] == 6]
     own = [b for b in decompress if b["variant"] == b["producer_variant"]]
     sweep_d = own
-    rows = [b for b in decompress if b["threads"] in (None, tmax)]
+    rows = [b for b in own if b["threads"] in (None, tmax)]
 
     series_seen = []
     for b in benchmarks:
@@ -194,18 +194,15 @@ def render(ctx, benchmarks, title, out_path):
         svg.add(f'<circle cx="{lx:.1f}" cy="24" r="5" fill="{series_color(s)}"/>')
         lx -= 20
 
-    # Decompression panel, throughput bars including the cross-decode pairs
+    # Decompression panel, own-output throughput bars; the cross-decode
+    # pairs get their own panels below the census
     bx, by, bw = 812, 76, 220
-    svg.text(bx, by - 22, "decompress", size=12, fill=INK)
+    svg.text(bx, by - 22, "decompress, own output", size=12, fill=INK)
     rows.sort(key=lambda b: -b["bytes_per_second"])
     bar_max = max((b["bytes_per_second"] for b in rows), default=1)
     y = by
     for b in rows:
-        consumer = variant_label(b["series"], b["threads"])
-        label = consumer
-        if b["producer_variant"] != b["variant"]:
-            ptn = tmax if b["producer"].endswith(("-p", "-@")) else None
-            label += f" ← {variant_label(b['producer'], ptn)}"
+        label = variant_label(b["series"], b["threads"])
         speed = b["bytes_per_second"]
         svg.text(bx, y, label, size=10, fill=INK)
         svg.text(bx + bw, y, fmt_speed(speed), size=10, fill=INK, anchor="end")
@@ -425,6 +422,40 @@ def render(ctx, benchmarks, title, out_path):
                      size=10, fill=INK, anchor="end")
             y += 22
         body_bottom = y + 6
+
+    # Cross-decode panels, every decoder against the block-framed streams
+    cross = []
+    for producer, title in (("migz", "migz output"), ("bgzip-p", "bgzip -@ output")):
+        crows = [b for b in decompress if b["producer_variant"] == producer
+                 and b["threads"] in (None, tmax)]
+        if crows:
+            cross.append((title, crows))
+    if cross:
+        ctop = body_bottom + 46
+        cbw = 380
+        cy_max = ctop
+        for pi, (title, crows) in enumerate(cross):
+            px = 78 + pi * (cbw + 114)
+            svg.text(px, ctop - 18, f"decompress {title}", size=12, fill=INK)
+            crows.sort(key=lambda b: -b["bytes_per_second"])
+            pmax = max(b["bytes_per_second"] for b in crows)
+            y = ctop
+            for b in crows:
+                label = variant_label(b["series"], b["threads"])
+                speed = b["bytes_per_second"]
+                svg.text(px, y, label, size=10, fill=INK)
+                svg.text(px + cbw, y, fmt_speed(speed), size=10, fill=INK,
+                         anchor="end")
+                w = max(cbw * speed / pmax, 6)
+                tip = (f"{label} - {fmt_speed(speed)}, {b['seconds_mean']:.2f} s"
+                       + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
+                svg.add(f'<path d="M{px} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 '
+                        f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" '
+                        f'fill="{series_color(b["series"])}">'
+                        f'<title>{esc(tip)}</title></path>')
+                y += 34
+            cy_max = max(cy_max, y)
+        body_bottom = cy_max + 4
 
     # Version and machine footnote, wrapped when the tools make it long
     versions = " · ".join(v for v in ctx.get("tools", {}).values() if v)

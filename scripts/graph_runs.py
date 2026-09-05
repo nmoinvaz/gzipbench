@@ -25,7 +25,7 @@ INK_SOFT = "#52514e"
 GRID = "#e7e6e2"
 # Categorical slots in fixed series order, never cycled
 SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
-                 "#e87ba4", "#008300", "#4a3aa7", "#946200", "#7a7668"]
+                 "#e87ba4", "#008300", "#4a3aa7", "#00a1a7", "#7a7668"]
 
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
                 "gzip-ng", "minigzip", "gzip", "pigzpp -p"]
@@ -120,14 +120,6 @@ def series_color(series):
     i = SERIES_ORDER.index(series) if series in SERIES_ORDER else len(SERIES_ORDER)
     return SERIES_COLORS[i]
 
-
-# Series drawn dashed so the solid lines they ride on stay visible
-SERIES_DASH = {"pigzpp -p": "6 4"}
-
-
-def series_dash(series):
-    d = SERIES_DASH.get(series)
-    return f' stroke-dasharray="{d}"' if d else ""
 
 
 def variant_label(series, threads):
@@ -277,7 +269,7 @@ def render(ctx, benchmarks, title, out_path):
                 f"{'M' if j == 0 else 'L'}{sx(b['ratio']):.1f},{sy(b['bytes_per_second']):.1f}"
                 for j, b in enumerate(pts))
             svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
-                    f'stroke-width="2" stroke-opacity="0.65"{series_dash(s)}/>')
+                    f'stroke-width="2" stroke-opacity="0.65"/>')
         for b in pts:
             x, yy = sx(b["ratio"]), sy(b["bytes_per_second"])
             cv = cv_of(b)
@@ -359,7 +351,7 @@ def render(ctx, benchmarks, title, out_path):
                 path = " ".join(f"{'M' if q == 0 else 'L'}{x:.1f},{yy:.1f}"
                                 for q, (x, yy) in enumerate(coords))
                 svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
-                        f'stroke-width="2" stroke-opacity="0.7"{series_dash(s)}/>')
+                        f'stroke-width="2" stroke-opacity="0.7"/>')
                 for b, (x, yy) in zip(line, coords):
                     tip = (f"{s} threads:{b['threads']} - {fmt_speed(b['bytes_per_second'])}"
                            + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
@@ -403,12 +395,20 @@ def render(ctx, benchmarks, title, out_path):
         svg.text(ux, gtop - 16, "uncompressed", size=11, anchor="end")
         cmax = max(b["blocks"] for b in census)
         smax = max(b["block_output_bytes"] for b in census)
+        # Rows group by compressor, its name once, mode rows indented under it
         y = gtop + 8
+        prev_series = None
         for b in census:
             color = series_color(b["series"])
             row_label = (b["series"] if b["mode"] == "normal"
                          else f"{b['series']} · {b['mode']}")
-            svg.text(lx0, y + 12, row_label, size=10, fill=INK)
+            if b["series"] != prev_series:
+                if prev_series is not None:
+                    y += 10
+                svg.text(lx0, y + 12, b["series"], size=10, fill=INK)
+                prev_series = b["series"]
+            else:
+                svg.text(lx0 + 14, y + 12, b["mode"], size=10)
             svg.text(cx - 12, y + 12, f"{b['members']:,}", size=10, anchor="end")
             for px0, pw, value, vmax, text, tip in (
                     (cx, cw, b["blocks"], cmax, f"{b['blocks']:,}",

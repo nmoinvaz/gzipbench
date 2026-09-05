@@ -284,7 +284,8 @@ def render(ctx, benchmarks, title, out_path):
     by_series = {}
     for b in ladder:
         by_series.setdefault(b["series"], []).append(b)
-    for s in series_seen:
+    # Reverse draw order so the lead series paint last and sit on top
+    for s in reversed(series_seen):
         pts = sorted(by_series.get(s, []), key=lambda b: b["level"])
         if len(pts) > 1:
             path = " ".join(

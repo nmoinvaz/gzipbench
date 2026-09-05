@@ -76,139 +76,6 @@
 <text x="398.0" y="476.0" font-size="12" fill="#52514e" text-anchor="middle" font-weight="normal">compression ratio</text>
 <text x="78.0" y="54.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">compress</text>
 <g opacity="0.35"><line x1="590.0" y1="158.0" x2="673.0" y2="103.3" stroke="#52514e" stroke-width="2"/><polygon points="678.0,100.0 672.7,108.3 668.3,101.6" fill="#52514e"/><text x="634.0" y="122.0" font-size="11" fill="#52514e" text-anchor="middle" transform="rotate(-33.4 634.0 129.0)">better</text></g>
-<path d="M141.2,109.4 L447.9,138.3 L516.9,144.1 L547.7,154.0 L572.3,156.1 L579.1,164.4 L592.1,187.8 L596.3,210.7 L611.2,224.9" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="141.2" y1="115.6" x2="141.2" y2="103.8"/><line x1="138.2" y1="115.6" x2="144.2" y2="115.6"/><line x1="138.2" y1="103.8" x2="144.2" y2="103.8"/></g>
-<g><circle cx="141.2" cy="109.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:1 - 1.19 GB/s, ratio 2.227, cv 9.2%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="447.9" y1="141.3" x2="447.9" y2="135.4"/><line x1="444.9" y1="141.3" x2="450.9" y2="141.3"/><line x1="444.9" y1="135.4" x2="450.9" y2="135.4"/></g>
-<g><circle cx="447.9" cy="138.3" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:2 - 757 MB/s, ratio 2.777, cv 4.7%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.9" y1="146.8" x2="516.9" y2="141.5"/><line x1="513.9" y1="146.8" x2="519.9" y2="146.8"/><line x1="513.9" y1="141.5" x2="519.9" y2="141.5"/></g>
-<g><circle cx="516.9" cy="144.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:3 - 692 MB/s, ratio 2.901, cv 4.1%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="547.7" y1="156.3" x2="547.7" y2="151.7"/><line x1="544.7" y1="156.3" x2="550.7" y2="156.3"/><line x1="544.7" y1="151.7" x2="550.7" y2="151.7"/></g>
-<g><circle cx="547.7" cy="154.0" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:4 - 592 MB/s, ratio 2.956, cv 3.6%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="572.3" y1="158.6" x2="572.3" y2="153.7"/><line x1="569.3" y1="158.6" x2="575.3" y2="158.6"/><line x1="569.3" y1="153.7" x2="575.3" y2="153.7"/></g>
-<g><circle cx="572.3" cy="156.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:5 - 573 MB/s, ratio 3.000, cv 3.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="579.1" y1="166.8" x2="579.1" y2="162.0"/><line x1="576.1" y1="166.8" x2="582.1" y2="166.8"/><line x1="576.1" y1="162.0" x2="582.1" y2="162.0"/></g>
-<g><circle cx="579.1" cy="164.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:6 - 503 MB/s, ratio 3.012, cv 3.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="592.1" y1="190.9" x2="592.1" y2="184.8"/><line x1="589.1" y1="190.9" x2="595.1" y2="190.9"/><line x1="589.1" y1="184.8" x2="595.1" y2="184.8"/></g>
-<g><circle cx="592.1" cy="187.8" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:7 - 349 MB/s, ratio 3.036, cv 4.8%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="596.3" y1="213.6" x2="596.3" y2="208.0"/><line x1="593.3" y1="213.6" x2="599.3" y2="213.6"/><line x1="593.3" y1="208.0" x2="599.3" y2="208.0"/></g>
-<g><circle cx="596.3" cy="210.7" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:8 - 243 MB/s, ratio 3.043, cv 4.4%</title></g>
-<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="611.2" y1="244.0" x2="611.2" y2="210.3"/><line x1="608.2" y1="244.0" x2="614.2" y2="244.0"/><line x1="608.2" y1="210.3" x2="614.2" y2="210.3"/></g>
-<g><circle cx="611.2" cy="224.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:9 - 195 MB/s, ratio 3.070, cv 25.8%</title></g>
-<path d="M157.9,106.1 L472.1,135.6 L545.4,142.9 L580.1,162.7 L606.5,217.0 L614.6,167.3 L627.9,189.7 L632.5,211.4 L648.0,219.8" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="111.3" x2="157.9" y2="101.4"/><line x1="154.9" y1="111.3" x2="160.9" y2="111.3"/><line x1="154.9" y1="101.4" x2="160.9" y2="101.4"/></g>
-<g><circle cx="157.9" cy="106.1" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:1 - 1.25 GB/s, ratio 2.257, cv 7.7%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="139.1" x2="472.1" y2="132.3"/><line x1="469.1" y1="139.1" x2="475.1" y2="139.1"/><line x1="469.1" y1="132.3" x2="475.1" y2="132.3"/></g>
-<g><circle cx="472.1" cy="135.6" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:2 - 790 MB/s, ratio 2.820, cv 5.3%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="144.9" x2="545.4" y2="140.9"/><line x1="542.4" y1="144.9" x2="548.4" y2="144.9"/><line x1="542.4" y1="140.9" x2="548.4" y2="140.9"/></g>
-<g><circle cx="545.4" cy="142.9" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:3 - 705 MB/s, ratio 2.952, cv 3.1%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="169.6" x2="580.1" y2="156.5"/><line x1="577.1" y1="169.6" x2="583.1" y2="169.6"/><line x1="577.1" y1="156.5" x2="583.1" y2="156.5"/></g>
-<g><circle cx="580.1" cy="162.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:4 - 517 MB/s, ratio 3.014, cv 10.2%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="234.9" x2="606.5" y2="203.1"/><line x1="603.5" y1="234.9" x2="609.5" y2="234.9"/><line x1="603.5" y1="203.1" x2="609.5" y2="203.1"/></g>
-<g><circle cx="606.5" cy="217.0" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:5 - 220 MB/s, ratio 3.061, cv 24.5%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="170.6" x2="614.6" y2="164.2"/><line x1="611.6" y1="170.6" x2="617.6" y2="170.6"/><line x1="611.6" y1="164.2" x2="617.6" y2="164.2"/></g>
-<g><circle cx="614.6" cy="167.3" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:6 - 481 MB/s, ratio 3.076, cv 5.0%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="190.0" x2="627.9" y2="189.3"/><line x1="624.9" y1="190.0" x2="630.9" y2="190.0"/><line x1="624.9" y1="189.3" x2="630.9" y2="189.3"/></g>
-<g><circle cx="627.9" cy="189.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:7 - 338 MB/s, ratio 3.100, cv 0.6%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="213.0" x2="632.5" y2="209.8"/><line x1="629.5" y1="213.0" x2="635.5" y2="213.0"/><line x1="629.5" y1="209.8" x2="635.5" y2="209.8"/></g>
-<g><circle cx="632.5" cy="211.4" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:8 - 241 MB/s, ratio 3.108, cv 2.6%</title></g>
-<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="223.6" x2="648.0" y2="216.3"/><line x1="645.0" y1="223.6" x2="651.0" y2="223.6"/><line x1="645.0" y1="216.3" x2="651.0" y2="216.3"/></g>
-<g><circle cx="648.0" cy="219.8" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:9 - 211 MB/s, ratio 3.136, cv 5.7%</title></g>
-<path d="M127.1,106.0 L426.3,139.2 L489.2,144.9 L516.3,150.3 L539.0,169.3 L544.6,161.9 L557.1,182.3 L560.9,203.7 L575.0,215.9" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="127.1" y1="108.4" x2="127.1" y2="103.6"/><line x1="124.1" y1="108.4" x2="130.1" y2="108.4"/><line x1="124.1" y1="103.6" x2="130.1" y2="103.6"/></g>
-<g><circle cx="127.1" cy="106.0" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:1 - 1.26 GB/s, ratio 2.201, cv 3.7%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="426.3" y1="145.7" x2="426.3" y2="133.2"/><line x1="423.3" y1="145.7" x2="429.3" y2="145.7"/><line x1="423.3" y1="133.2" x2="429.3" y2="133.2"/></g>
-<g><circle cx="426.3" cy="139.2" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:2 - 747 MB/s, ratio 2.738, cv 9.8%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="489.2" y1="149.5" x2="489.2" y2="140.6"/><line x1="486.2" y1="149.5" x2="492.2" y2="149.5"/><line x1="486.2" y1="140.6" x2="492.2" y2="140.6"/></g>
-<g><circle cx="489.2" cy="144.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:3 - 683 MB/s, ratio 2.851, cv 7.0%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.3" y1="153.1" x2="516.3" y2="147.7"/><line x1="513.3" y1="153.1" x2="519.3" y2="153.1"/><line x1="513.3" y1="147.7" x2="519.3" y2="147.7"/></g>
-<g><circle cx="516.3" cy="150.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:4 - 627 MB/s, ratio 2.900, cv 4.3%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="539.0" y1="184.5" x2="539.0" y2="157.1"/><line x1="536.0" y1="184.5" x2="542.0" y2="184.5"/><line x1="536.0" y1="157.1" x2="542.0" y2="157.1"/></g>
-<g><circle cx="539.0" cy="169.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:5 - 466 MB/s, ratio 2.940, cv 21.2%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="544.6" y1="164.1" x2="544.6" y2="159.7"/><line x1="541.6" y1="164.1" x2="547.6" y2="164.1"/><line x1="541.6" y1="159.7" x2="547.6" y2="159.7"/></g>
-<g><circle cx="544.6" cy="161.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:6 - 524 MB/s, ratio 2.950, cv 3.5%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="557.1" y1="185.2" x2="557.1" y2="179.6"/><line x1="554.1" y1="185.2" x2="560.1" y2="185.2"/><line x1="554.1" y1="179.6" x2="560.1" y2="179.6"/></g>
-<g><circle cx="557.1" cy="182.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:7 - 380 MB/s, ratio 2.973, cv 4.3%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="560.9" y1="203.9" x2="560.9" y2="203.6"/><line x1="557.9" y1="203.9" x2="563.9" y2="203.9"/><line x1="557.9" y1="203.6" x2="563.9" y2="203.6"/></g>
-<g><circle cx="560.9" cy="203.7" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:8 - 271 MB/s, ratio 2.980, cv 0.2%</title></g>
-<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="575.0" y1="223.6" x2="575.0" y2="209.0"/><line x1="572.0" y1="223.6" x2="578.0" y2="223.6"/><line x1="572.0" y1="209.0" x2="578.0" y2="209.0"/></g>
-<g><circle cx="575.0" cy="215.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:9 - 224 MB/s, ratio 3.005, cv 11.4%</title></g>
-<path d="M424.5,178.5 L469.7,178.2 L512.2,193.0 L556.8,193.9 L600.0,218.7 L622.6,232.2 L629.7,243.7 L635.9,265.9 L637.0,297.0" fill="none" stroke="#eda100" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="424.5" y1="184.2" x2="424.5" y2="173.4"/><line x1="421.5" y1="184.2" x2="427.5" y2="184.2"/><line x1="421.5" y1="173.4" x2="427.5" y2="173.4"/></g>
-<g><circle cx="424.5" cy="178.5" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:1 - 403 MB/s, ratio 2.735, cv 8.5%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.7" y1="181.0" x2="469.7" y2="175.6"/><line x1="466.7" y1="181.0" x2="472.7" y2="181.0"/><line x1="466.7" y1="175.6" x2="472.7" y2="175.6"/></g>
-<g><circle cx="469.7" cy="178.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:2 - 405 MB/s, ratio 2.816, cv 4.2%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="512.2" y1="193.9" x2="512.2" y2="192.2"/><line x1="509.2" y1="193.9" x2="515.2" y2="193.9"/><line x1="509.2" y1="192.2" x2="515.2" y2="192.2"/></g>
-<g><circle cx="512.2" cy="193.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:3 - 321 MB/s, ratio 2.892, cv 1.3%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="556.8" y1="194.9" x2="556.8" y2="192.9"/><line x1="553.8" y1="194.9" x2="559.8" y2="194.9"/><line x1="553.8" y1="192.9" x2="559.8" y2="192.9"/></g>
-<g><circle cx="556.8" cy="193.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:4 - 317 MB/s, ratio 2.972, cv 1.6%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="600.0" y1="221.0" x2="600.0" y2="216.5"/><line x1="597.0" y1="221.0" x2="603.0" y2="221.0"/><line x1="597.0" y1="216.5" x2="603.0" y2="216.5"/></g>
-<g><circle cx="600.0" cy="218.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:5 - 215 MB/s, ratio 3.050, cv 3.5%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="622.6" y1="233.5" x2="622.6" y2="230.9"/><line x1="619.6" y1="233.5" x2="625.6" y2="233.5"/><line x1="619.6" y1="230.9" x2="625.6" y2="230.9"/></g>
-<g><circle cx="622.6" cy="232.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:6 - 174 MB/s, ratio 3.090, cv 2.1%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="629.7" y1="244.9" x2="629.7" y2="242.5"/><line x1="626.7" y1="244.9" x2="632.7" y2="244.9"/><line x1="626.7" y1="242.5" x2="632.7" y2="242.5"/></g>
-<g><circle cx="629.7" cy="243.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:7 - 145 MB/s, ratio 3.103, cv 1.9%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="635.9" y1="266.7" x2="635.9" y2="265.0"/><line x1="632.9" y1="266.7" x2="638.9" y2="266.7"/><line x1="632.9" y1="265.0" x2="638.9" y2="265.0"/></g>
-<g><circle cx="635.9" cy="265.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:8 - 102 MB/s, ratio 3.114, cv 1.3%</title></g>
-<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="637.0" y1="297.5" x2="637.0" y2="296.4"/><line x1="634.0" y1="297.5" x2="640.0" y2="297.5"/><line x1="634.0" y1="296.4" x2="640.0" y2="296.4"/></g>
-<g><circle cx="637.0" cy="297.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:9 - 63 MB/s, ratio 3.116, cv 0.8%</title></g>
-<path d="M155.3,215.7 L469.3,244.9 L545.2,255.3 L580.2,266.3 L606.6,267.5 L614.7,279.7 L628.1,309.0 L632.9,339.8 L648.1,327.6" fill="none" stroke="#e87ba4" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="221.6" x2="155.3" y2="210.2"/><line x1="152.3" y1="221.6" x2="158.3" y2="221.6"/><line x1="152.3" y1="210.2" x2="158.3" y2="210.2"/></g>
-<g><circle cx="155.3" cy="215.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:1 - 225 MB/s, ratio 2.252, cv 8.9%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.4" x2="469.3" y2="244.3"/><line x1="466.3" y1="245.4" x2="472.3" y2="245.4"/><line x1="466.3" y1="244.3" x2="472.3" y2="244.3"/></g>
-<g><circle cx="469.3" cy="244.9" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:2 - 142 MB/s, ratio 2.815, cv 0.8%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.6" x2="545.2" y2="254.9"/><line x1="542.2" y1="255.6" x2="548.2" y2="255.6"/><line x1="542.2" y1="254.9" x2="548.2" y2="254.9"/></g>
-<g><circle cx="545.2" cy="255.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:3 - 121 MB/s, ratio 2.951, cv 0.5%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="267.8" x2="580.2" y2="264.9"/><line x1="577.2" y1="267.8" x2="583.2" y2="267.8"/><line x1="577.2" y1="264.9" x2="583.2" y2="264.9"/></g>
-<g><circle cx="580.2" cy="266.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:4 - 102 MB/s, ratio 3.014, cv 2.3%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="268.0" x2="606.6" y2="266.9"/><line x1="603.6" y1="268.0" x2="609.6" y2="268.0"/><line x1="603.6" y1="266.9" x2="609.6" y2="266.9"/></g>
-<g><circle cx="606.6" cy="267.5" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:5 - 100 MB/s, ratio 3.062, cv 0.9%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="280.4" x2="614.7" y2="278.9"/><line x1="611.7" y1="280.4" x2="617.7" y2="280.4"/><line x1="611.7" y1="278.9" x2="617.7" y2="278.9"/></g>
-<g><circle cx="614.7" cy="279.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:6 - 83 MB/s, ratio 3.076, cv 1.1%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="309.1" x2="628.1" y2="309.0"/><line x1="625.1" y1="309.1" x2="631.1" y2="309.1"/><line x1="625.1" y1="309.0" x2="631.1" y2="309.0"/></g>
-<g><circle cx="628.1" cy="309.0" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:7 - 52 MB/s, ratio 3.100, cv 0.1%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.2" x2="632.9" y2="339.4"/><line x1="629.9" y1="340.2" x2="635.9" y2="340.2"/><line x1="629.9" y1="339.4" x2="635.9" y2="339.4"/></g>
-<g><circle cx="632.9" cy="339.8" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:8 - 32 MB/s, ratio 3.109, cv 0.7%</title></g>
-<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="329.0" x2="648.1" y2="326.3"/><line x1="645.1" y1="329.0" x2="651.1" y2="329.0"/><line x1="645.1" y1="326.3" x2="651.1" y2="326.3"/></g>
-<g><circle cx="648.1" cy="327.6" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:9 - 39 MB/s, ratio 3.136, cv 2.1%</title></g>
-<path d="M155.3,212.2 L469.3,245.5 L545.2,255.3 L580.2,266.7 L606.6,267.0 L614.7,279.5 L628.1,311.2 L632.9,339.6 L648.1,330.0" fill="none" stroke="#008300" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="212.3" x2="155.3" y2="212.1"/><line x1="152.3" y1="212.3" x2="158.3" y2="212.3"/><line x1="152.3" y1="212.1" x2="158.3" y2="212.1"/></g>
-<g><circle cx="155.3" cy="212.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:1 - 238 MB/s, ratio 2.252, cv 0.2%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.9" x2="469.3" y2="245.0"/><line x1="466.3" y1="245.9" x2="472.3" y2="245.9"/><line x1="466.3" y1="245.0" x2="472.3" y2="245.0"/></g>
-<g><circle cx="469.3" cy="245.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:2 - 141 MB/s, ratio 2.815, cv 0.8%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.5" x2="545.2" y2="255.2"/><line x1="542.2" y1="255.5" x2="548.2" y2="255.5"/><line x1="542.2" y1="255.2" x2="548.2" y2="255.2"/></g>
-<g><circle cx="545.2" cy="255.3" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:3 - 121 MB/s, ratio 2.951, cv 0.2%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="269.1" x2="580.2" y2="264.5"/><line x1="577.2" y1="269.1" x2="583.2" y2="269.1"/><line x1="577.2" y1="264.5" x2="583.2" y2="264.5"/></g>
-<g><circle cx="580.2" cy="266.7" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:4 - 101 MB/s, ratio 3.014, cv 3.7%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="267.2" x2="606.6" y2="266.8"/><line x1="603.6" y1="267.2" x2="609.6" y2="267.2"/><line x1="603.6" y1="266.8" x2="609.6" y2="266.8"/></g>
-<g><circle cx="606.6" cy="267.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:5 - 101 MB/s, ratio 3.062, cv 0.3%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="279.8" x2="614.7" y2="279.3"/><line x1="611.7" y1="279.8" x2="617.7" y2="279.8"/><line x1="611.7" y1="279.3" x2="617.7" y2="279.3"/></g>
-<g><circle cx="614.7" cy="279.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:6 - 83 MB/s, ratio 3.076, cv 0.4%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="314.0" x2="628.1" y2="308.6"/><line x1="625.1" y1="314.0" x2="631.1" y2="314.0"/><line x1="625.1" y1="308.6" x2="631.1" y2="308.6"/></g>
-<g><circle cx="628.1" cy="311.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:7 - 50 MB/s, ratio 3.100, cv 4.3%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.3" x2="632.9" y2="339.0"/><line x1="629.9" y1="340.3" x2="635.9" y2="340.3"/><line x1="629.9" y1="339.0" x2="635.9" y2="339.0"/></g>
-<g><circle cx="632.9" cy="339.6" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:8 - 32 MB/s, ratio 3.109, cv 1.0%</title></g>
-<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="331.3" x2="648.1" y2="328.6"/><line x1="645.1" y1="331.3" x2="651.1" y2="331.3"/><line x1="645.1" y1="328.6" x2="651.1" y2="328.6"/></g>
-<g><circle cx="648.1" cy="330.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:9 - 37 MB/s, ratio 3.136, cv 2.1%</title></g>
-<path d="M427.0,275.5 L472.9,282.7 L517.4,298.5 L562.7,300.6 L608.4,324.4 L631.4,347.2 L639.2,358.5 L645.4,386.8 L646.5,406.0" fill="none" stroke="#4a3aa7" stroke-width="2" stroke-opacity="0.65"/>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="427.0" y1="275.7" x2="427.0" y2="275.4"/><line x1="424.0" y1="275.7" x2="430.0" y2="275.7"/><line x1="424.0" y1="275.4" x2="430.0" y2="275.4"/></g>
-<g><circle cx="427.0" cy="275.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:1 - 88 MB/s, ratio 2.739, cv 0.3%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.9" y1="283.7" x2="472.9" y2="281.7"/><line x1="469.9" y1="283.7" x2="475.9" y2="283.7"/><line x1="469.9" y1="281.7" x2="475.9" y2="281.7"/></g>
-<g><circle cx="472.9" cy="282.7" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:2 - 79 MB/s, ratio 2.822, cv 1.6%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="517.4" y1="298.6" x2="517.4" y2="298.4"/><line x1="514.4" y1="298.6" x2="520.4" y2="298.6"/><line x1="514.4" y1="298.4" x2="520.4" y2="298.4"/></g>
-<g><circle cx="517.4" cy="298.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:3 - 61 MB/s, ratio 2.902, cv 0.1%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="562.7" y1="300.7" x2="562.7" y2="300.5"/><line x1="559.7" y1="300.7" x2="565.7" y2="300.7"/><line x1="559.7" y1="300.5" x2="565.7" y2="300.5"/></g>
-<g><circle cx="562.7" cy="300.6" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:4 - 59 MB/s, ratio 2.983, cv 0.2%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="608.4" y1="324.8" x2="608.4" y2="324.0"/><line x1="605.4" y1="324.8" x2="611.4" y2="324.8"/><line x1="605.4" y1="324.0" x2="611.4" y2="324.0"/></g>
-<g><circle cx="608.4" cy="324.4" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:5 - 41 MB/s, ratio 3.065, cv 0.6%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="631.4" y1="347.5" x2="631.4" y2="347.0"/><line x1="628.4" y1="347.5" x2="634.4" y2="347.5"/><line x1="628.4" y1="347.0" x2="634.4" y2="347.0"/></g>
-<g><circle cx="631.4" cy="347.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:6 - 29 MB/s, ratio 3.106, cv 0.4%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="639.2" y1="358.5" x2="639.2" y2="358.4"/><line x1="636.2" y1="358.5" x2="642.2" y2="358.5"/><line x1="636.2" y1="358.4" x2="642.2" y2="358.4"/></g>
-<g><circle cx="639.2" cy="358.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:7 - 24 MB/s, ratio 3.120, cv 0.1%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="645.4" y1="387.0" x2="645.4" y2="386.6"/><line x1="642.4" y1="387.0" x2="648.4" y2="387.0"/><line x1="642.4" y1="386.6" x2="648.4" y2="386.6"/></g>
-<g><circle cx="645.4" cy="386.8" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:8 - 15 MB/s, ratio 3.131, cv 0.3%</title></g>
-<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="646.5" y1="406.5" x2="646.5" y2="405.6"/><line x1="643.5" y1="406.5" x2="649.5" y2="406.5"/><line x1="643.5" y1="405.6" x2="649.5" y2="405.6"/></g>
-<g><circle cx="646.5" cy="406.0" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:9 - 11 MB/s, ratio 3.133, cv 0.7%</title></g>
 <path d="M157.9,110.4 L472.1,139.0 L545.4,142.6 L580.1,173.3 L606.5,194.9 L614.6,167.6 L627.9,188.4 L632.5,210.5 L648.0,226.8" fill="none" stroke="#cd5c5c" stroke-width="2" stroke-opacity="0.65"/>
 <g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="119.1" x2="157.9" y2="102.8"/><line x1="154.9" y1="119.1" x2="160.9" y2="119.1"/><line x1="154.9" y1="102.8" x2="160.9" y2="102.8"/></g>
 <g><circle cx="157.9" cy="110.4" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:1 - 1.17 GB/s, ratio 2.257, cv 12.7%</title></g>
@@ -228,41 +95,175 @@
 <g><circle cx="632.5" cy="210.5" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:8 - 244 MB/s, ratio 3.108, cv 0.7%</title></g>
 <g stroke="#cd5c5c" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="243.4" x2="648.0" y2="213.6"/><line x1="645.0" y1="243.4" x2="651.0" y2="243.4"/><line x1="645.0" y1="213.6" x2="651.0" y2="213.6"/></g>
 <g><circle cx="648.0" cy="226.8" r="5.5" fill="#cd5c5c" stroke="#fcfcfb" stroke-width="2"/><title>pigzpp -p 10 level:9 - 189 MB/s, ratio 3.136, cv 23.0%</title></g>
-<text x="148.2" y="102.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="454.9" y="131.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="523.9" y="137.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="554.7" y="147.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="579.3" y="149.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="599.1" y="180.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
-<text x="603.3" y="203.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="618.2" y="217.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="479.1" y="128.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="621.6" y="160.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
-<text x="634.9" y="182.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
-<text x="655.0" y="212.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="546.0" y="162.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="567.9" y="196.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="431.5" y="171.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="476.7" y="171.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="519.2" y="186.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="636.7" y="236.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
-<text x="642.9" y="258.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="644.0" y="290.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="162.3" y="208.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
-<text x="476.3" y="237.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
-<text x="552.2" y="248.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
-<text x="587.2" y="259.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="613.6" y="260.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
-<text x="639.9" y="332.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
-<text x="635.1" y="304.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<path d="M427.0,275.5 L472.9,282.7 L517.4,298.5 L562.7,300.6 L608.4,324.4 L631.4,347.2 L639.2,358.5 L645.4,386.8 L646.5,406.0" fill="none" stroke="#4a3aa7" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="427.0" y1="275.7" x2="427.0" y2="275.4"/><line x1="424.0" y1="275.7" x2="430.0" y2="275.7"/><line x1="424.0" y1="275.4" x2="430.0" y2="275.4"/></g>
+<g><circle cx="427.0" cy="275.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:1 - 88 MB/s, ratio 2.739, cv 0.3%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.9" y1="283.7" x2="472.9" y2="281.7"/><line x1="469.9" y1="283.7" x2="475.9" y2="283.7"/><line x1="469.9" y1="281.7" x2="475.9" y2="281.7"/></g>
+<g><circle cx="472.9" cy="282.7" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:2 - 79 MB/s, ratio 2.822, cv 1.6%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="517.4" y1="298.6" x2="517.4" y2="298.4"/><line x1="514.4" y1="298.6" x2="520.4" y2="298.6"/><line x1="514.4" y1="298.4" x2="520.4" y2="298.4"/></g>
+<g><circle cx="517.4" cy="298.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:3 - 61 MB/s, ratio 2.902, cv 0.1%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="562.7" y1="300.7" x2="562.7" y2="300.5"/><line x1="559.7" y1="300.7" x2="565.7" y2="300.7"/><line x1="559.7" y1="300.5" x2="565.7" y2="300.5"/></g>
+<g><circle cx="562.7" cy="300.6" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:4 - 59 MB/s, ratio 2.983, cv 0.2%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="608.4" y1="324.8" x2="608.4" y2="324.0"/><line x1="605.4" y1="324.8" x2="611.4" y2="324.8"/><line x1="605.4" y1="324.0" x2="611.4" y2="324.0"/></g>
+<g><circle cx="608.4" cy="324.4" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:5 - 41 MB/s, ratio 3.065, cv 0.6%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="631.4" y1="347.5" x2="631.4" y2="347.0"/><line x1="628.4" y1="347.5" x2="634.4" y2="347.5"/><line x1="628.4" y1="347.0" x2="634.4" y2="347.0"/></g>
+<g><circle cx="631.4" cy="347.2" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:6 - 29 MB/s, ratio 3.106, cv 0.4%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="639.2" y1="358.5" x2="639.2" y2="358.4"/><line x1="636.2" y1="358.5" x2="642.2" y2="358.5"/><line x1="636.2" y1="358.4" x2="642.2" y2="358.4"/></g>
+<g><circle cx="639.2" cy="358.5" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:7 - 24 MB/s, ratio 3.120, cv 0.1%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="645.4" y1="387.0" x2="645.4" y2="386.6"/><line x1="642.4" y1="387.0" x2="648.4" y2="387.0"/><line x1="642.4" y1="386.6" x2="648.4" y2="386.6"/></g>
+<g><circle cx="645.4" cy="386.8" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:8 - 15 MB/s, ratio 3.131, cv 0.3%</title></g>
+<g stroke="#4a3aa7" stroke-opacity="0.7" stroke-width="1.5"><line x1="646.5" y1="406.5" x2="646.5" y2="405.6"/><line x1="643.5" y1="406.5" x2="649.5" y2="406.5"/><line x1="643.5" y1="405.6" x2="649.5" y2="405.6"/></g>
+<g><circle cx="646.5" cy="406.0" r="5.5" fill="#4a3aa7" stroke="#fcfcfb" stroke-width="2"/><title>gzip level:9 - 11 MB/s, ratio 3.133, cv 0.7%</title></g>
+<path d="M155.3,212.2 L469.3,245.5 L545.2,255.3 L580.2,266.7 L606.6,267.0 L614.7,279.5 L628.1,311.2 L632.9,339.6 L648.1,330.0" fill="none" stroke="#008300" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="212.3" x2="155.3" y2="212.1"/><line x1="152.3" y1="212.3" x2="158.3" y2="212.3"/><line x1="152.3" y1="212.1" x2="158.3" y2="212.1"/></g>
+<g><circle cx="155.3" cy="212.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:1 - 238 MB/s, ratio 2.252, cv 0.2%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.9" x2="469.3" y2="245.0"/><line x1="466.3" y1="245.9" x2="472.3" y2="245.9"/><line x1="466.3" y1="245.0" x2="472.3" y2="245.0"/></g>
+<g><circle cx="469.3" cy="245.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:2 - 141 MB/s, ratio 2.815, cv 0.8%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.5" x2="545.2" y2="255.2"/><line x1="542.2" y1="255.5" x2="548.2" y2="255.5"/><line x1="542.2" y1="255.2" x2="548.2" y2="255.2"/></g>
+<g><circle cx="545.2" cy="255.3" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:3 - 121 MB/s, ratio 2.951, cv 0.2%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="269.1" x2="580.2" y2="264.5"/><line x1="577.2" y1="269.1" x2="583.2" y2="269.1"/><line x1="577.2" y1="264.5" x2="583.2" y2="264.5"/></g>
+<g><circle cx="580.2" cy="266.7" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:4 - 101 MB/s, ratio 3.014, cv 3.7%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="267.2" x2="606.6" y2="266.8"/><line x1="603.6" y1="267.2" x2="609.6" y2="267.2"/><line x1="603.6" y1="266.8" x2="609.6" y2="266.8"/></g>
+<g><circle cx="606.6" cy="267.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:5 - 101 MB/s, ratio 3.062, cv 0.3%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="279.8" x2="614.7" y2="279.3"/><line x1="611.7" y1="279.8" x2="617.7" y2="279.8"/><line x1="611.7" y1="279.3" x2="617.7" y2="279.3"/></g>
+<g><circle cx="614.7" cy="279.5" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:6 - 83 MB/s, ratio 3.076, cv 0.4%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="314.0" x2="628.1" y2="308.6"/><line x1="625.1" y1="314.0" x2="631.1" y2="314.0"/><line x1="625.1" y1="308.6" x2="631.1" y2="308.6"/></g>
+<g><circle cx="628.1" cy="311.2" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:7 - 50 MB/s, ratio 3.100, cv 4.3%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.3" x2="632.9" y2="339.0"/><line x1="629.9" y1="340.3" x2="635.9" y2="340.3"/><line x1="629.9" y1="339.0" x2="635.9" y2="339.0"/></g>
+<g><circle cx="632.9" cy="339.6" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:8 - 32 MB/s, ratio 3.109, cv 1.0%</title></g>
+<g stroke="#008300" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="331.3" x2="648.1" y2="328.6"/><line x1="645.1" y1="331.3" x2="651.1" y2="331.3"/><line x1="645.1" y1="328.6" x2="651.1" y2="328.6"/></g>
+<g><circle cx="648.1" cy="330.0" r="5.5" fill="#008300" stroke="#fcfcfb" stroke-width="2"/><title>minigzip level:9 - 37 MB/s, ratio 3.136, cv 2.1%</title></g>
+<path d="M155.3,215.7 L469.3,244.9 L545.2,255.3 L580.2,266.3 L606.6,267.5 L614.7,279.7 L628.1,309.0 L632.9,339.8 L648.1,327.6" fill="none" stroke="#e87ba4" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="155.3" y1="221.6" x2="155.3" y2="210.2"/><line x1="152.3" y1="221.6" x2="158.3" y2="221.6"/><line x1="152.3" y1="210.2" x2="158.3" y2="210.2"/></g>
+<g><circle cx="155.3" cy="215.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:1 - 225 MB/s, ratio 2.252, cv 8.9%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.3" y1="245.4" x2="469.3" y2="244.3"/><line x1="466.3" y1="245.4" x2="472.3" y2="245.4"/><line x1="466.3" y1="244.3" x2="472.3" y2="244.3"/></g>
+<g><circle cx="469.3" cy="244.9" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:2 - 142 MB/s, ratio 2.815, cv 0.8%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.2" y1="255.6" x2="545.2" y2="254.9"/><line x1="542.2" y1="255.6" x2="548.2" y2="255.6"/><line x1="542.2" y1="254.9" x2="548.2" y2="254.9"/></g>
+<g><circle cx="545.2" cy="255.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:3 - 121 MB/s, ratio 2.951, cv 0.5%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.2" y1="267.8" x2="580.2" y2="264.9"/><line x1="577.2" y1="267.8" x2="583.2" y2="267.8"/><line x1="577.2" y1="264.9" x2="583.2" y2="264.9"/></g>
+<g><circle cx="580.2" cy="266.3" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:4 - 102 MB/s, ratio 3.014, cv 2.3%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.6" y1="268.0" x2="606.6" y2="266.9"/><line x1="603.6" y1="268.0" x2="609.6" y2="268.0"/><line x1="603.6" y1="266.9" x2="609.6" y2="266.9"/></g>
+<g><circle cx="606.6" cy="267.5" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:5 - 100 MB/s, ratio 3.062, cv 0.9%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.7" y1="280.4" x2="614.7" y2="278.9"/><line x1="611.7" y1="280.4" x2="617.7" y2="280.4"/><line x1="611.7" y1="278.9" x2="617.7" y2="278.9"/></g>
+<g><circle cx="614.7" cy="279.7" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:6 - 83 MB/s, ratio 3.076, cv 1.1%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="628.1" y1="309.1" x2="628.1" y2="309.0"/><line x1="625.1" y1="309.1" x2="631.1" y2="309.1"/><line x1="625.1" y1="309.0" x2="631.1" y2="309.0"/></g>
+<g><circle cx="628.1" cy="309.0" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:7 - 52 MB/s, ratio 3.100, cv 0.1%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.9" y1="340.2" x2="632.9" y2="339.4"/><line x1="629.9" y1="340.2" x2="635.9" y2="340.2"/><line x1="629.9" y1="339.4" x2="635.9" y2="339.4"/></g>
+<g><circle cx="632.9" cy="339.8" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:8 - 32 MB/s, ratio 3.109, cv 0.7%</title></g>
+<g stroke="#e87ba4" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.1" y1="329.0" x2="648.1" y2="326.3"/><line x1="645.1" y1="329.0" x2="651.1" y2="329.0"/><line x1="645.1" y1="326.3" x2="651.1" y2="326.3"/></g>
+<g><circle cx="648.1" cy="327.6" r="5.5" fill="#e87ba4" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng level:9 - 39 MB/s, ratio 3.136, cv 2.1%</title></g>
+<path d="M424.5,178.5 L469.7,178.2 L512.2,193.0 L556.8,193.9 L600.0,218.7 L622.6,232.2 L629.7,243.7 L635.9,265.9 L637.0,297.0" fill="none" stroke="#eda100" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="424.5" y1="184.2" x2="424.5" y2="173.4"/><line x1="421.5" y1="184.2" x2="427.5" y2="184.2"/><line x1="421.5" y1="173.4" x2="427.5" y2="173.4"/></g>
+<g><circle cx="424.5" cy="178.5" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:1 - 403 MB/s, ratio 2.735, cv 8.5%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="469.7" y1="181.0" x2="469.7" y2="175.6"/><line x1="466.7" y1="181.0" x2="472.7" y2="181.0"/><line x1="466.7" y1="175.6" x2="472.7" y2="175.6"/></g>
+<g><circle cx="469.7" cy="178.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:2 - 405 MB/s, ratio 2.816, cv 4.2%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="512.2" y1="193.9" x2="512.2" y2="192.2"/><line x1="509.2" y1="193.9" x2="515.2" y2="193.9"/><line x1="509.2" y1="192.2" x2="515.2" y2="192.2"/></g>
+<g><circle cx="512.2" cy="193.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:3 - 321 MB/s, ratio 2.892, cv 1.3%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="556.8" y1="194.9" x2="556.8" y2="192.9"/><line x1="553.8" y1="194.9" x2="559.8" y2="194.9"/><line x1="553.8" y1="192.9" x2="559.8" y2="192.9"/></g>
+<g><circle cx="556.8" cy="193.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:4 - 317 MB/s, ratio 2.972, cv 1.6%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="600.0" y1="221.0" x2="600.0" y2="216.5"/><line x1="597.0" y1="221.0" x2="603.0" y2="221.0"/><line x1="597.0" y1="216.5" x2="603.0" y2="216.5"/></g>
+<g><circle cx="600.0" cy="218.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:5 - 215 MB/s, ratio 3.050, cv 3.5%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="622.6" y1="233.5" x2="622.6" y2="230.9"/><line x1="619.6" y1="233.5" x2="625.6" y2="233.5"/><line x1="619.6" y1="230.9" x2="625.6" y2="230.9"/></g>
+<g><circle cx="622.6" cy="232.2" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:6 - 174 MB/s, ratio 3.090, cv 2.1%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="629.7" y1="244.9" x2="629.7" y2="242.5"/><line x1="626.7" y1="244.9" x2="632.7" y2="244.9"/><line x1="626.7" y1="242.5" x2="632.7" y2="242.5"/></g>
+<g><circle cx="629.7" cy="243.7" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:7 - 145 MB/s, ratio 3.103, cv 1.9%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="635.9" y1="266.7" x2="635.9" y2="265.0"/><line x1="632.9" y1="266.7" x2="638.9" y2="266.7"/><line x1="632.9" y1="265.0" x2="638.9" y2="265.0"/></g>
+<g><circle cx="635.9" cy="265.9" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:8 - 102 MB/s, ratio 3.114, cv 1.3%</title></g>
+<g stroke="#eda100" stroke-opacity="0.7" stroke-width="1.5"><line x1="637.0" y1="297.5" x2="637.0" y2="296.4"/><line x1="634.0" y1="297.5" x2="640.0" y2="297.5"/><line x1="634.0" y1="296.4" x2="640.0" y2="296.4"/></g>
+<g><circle cx="637.0" cy="297.0" r="5.5" fill="#eda100" stroke="#fcfcfb" stroke-width="2"/><title>migz level:9 - 63 MB/s, ratio 3.116, cv 0.8%</title></g>
+<path d="M127.1,106.0 L426.3,139.2 L489.2,144.9 L516.3,150.3 L539.0,169.3 L544.6,161.9 L557.1,182.3 L560.9,203.7 L575.0,215.9" fill="none" stroke="#1baf7a" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="127.1" y1="108.4" x2="127.1" y2="103.6"/><line x1="124.1" y1="108.4" x2="130.1" y2="108.4"/><line x1="124.1" y1="103.6" x2="130.1" y2="103.6"/></g>
+<g><circle cx="127.1" cy="106.0" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:1 - 1.26 GB/s, ratio 2.201, cv 3.7%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="426.3" y1="145.7" x2="426.3" y2="133.2"/><line x1="423.3" y1="145.7" x2="429.3" y2="145.7"/><line x1="423.3" y1="133.2" x2="429.3" y2="133.2"/></g>
+<g><circle cx="426.3" cy="139.2" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:2 - 747 MB/s, ratio 2.738, cv 9.8%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="489.2" y1="149.5" x2="489.2" y2="140.6"/><line x1="486.2" y1="149.5" x2="492.2" y2="149.5"/><line x1="486.2" y1="140.6" x2="492.2" y2="140.6"/></g>
+<g><circle cx="489.2" cy="144.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:3 - 683 MB/s, ratio 2.851, cv 7.0%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.3" y1="153.1" x2="516.3" y2="147.7"/><line x1="513.3" y1="153.1" x2="519.3" y2="153.1"/><line x1="513.3" y1="147.7" x2="519.3" y2="147.7"/></g>
+<g><circle cx="516.3" cy="150.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:4 - 627 MB/s, ratio 2.900, cv 4.3%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="539.0" y1="184.5" x2="539.0" y2="157.1"/><line x1="536.0" y1="184.5" x2="542.0" y2="184.5"/><line x1="536.0" y1="157.1" x2="542.0" y2="157.1"/></g>
+<g><circle cx="539.0" cy="169.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:5 - 466 MB/s, ratio 2.940, cv 21.2%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="544.6" y1="164.1" x2="544.6" y2="159.7"/><line x1="541.6" y1="164.1" x2="547.6" y2="164.1"/><line x1="541.6" y1="159.7" x2="547.6" y2="159.7"/></g>
+<g><circle cx="544.6" cy="161.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:6 - 524 MB/s, ratio 2.950, cv 3.5%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="557.1" y1="185.2" x2="557.1" y2="179.6"/><line x1="554.1" y1="185.2" x2="560.1" y2="185.2"/><line x1="554.1" y1="179.6" x2="560.1" y2="179.6"/></g>
+<g><circle cx="557.1" cy="182.3" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:7 - 380 MB/s, ratio 2.973, cv 4.3%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="560.9" y1="203.9" x2="560.9" y2="203.6"/><line x1="557.9" y1="203.9" x2="563.9" y2="203.9"/><line x1="557.9" y1="203.6" x2="563.9" y2="203.6"/></g>
+<g><circle cx="560.9" cy="203.7" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:8 - 271 MB/s, ratio 2.980, cv 0.2%</title></g>
+<g stroke="#1baf7a" stroke-opacity="0.7" stroke-width="1.5"><line x1="575.0" y1="223.6" x2="575.0" y2="209.0"/><line x1="572.0" y1="223.6" x2="578.0" y2="223.6"/><line x1="572.0" y1="209.0" x2="578.0" y2="209.0"/></g>
+<g><circle cx="575.0" cy="215.9" r="5.5" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/><title>bgzip -@ 10 level:9 - 224 MB/s, ratio 3.005, cv 11.4%</title></g>
+<path d="M157.9,106.1 L472.1,135.6 L545.4,142.9 L580.1,162.7 L606.5,217.0 L614.6,167.3 L627.9,189.7 L632.5,211.4 L648.0,219.8" fill="none" stroke="#eb6834" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="157.9" y1="111.3" x2="157.9" y2="101.4"/><line x1="154.9" y1="111.3" x2="160.9" y2="111.3"/><line x1="154.9" y1="101.4" x2="160.9" y2="101.4"/></g>
+<g><circle cx="157.9" cy="106.1" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:1 - 1.25 GB/s, ratio 2.257, cv 7.7%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="472.1" y1="139.1" x2="472.1" y2="132.3"/><line x1="469.1" y1="139.1" x2="475.1" y2="139.1"/><line x1="469.1" y1="132.3" x2="475.1" y2="132.3"/></g>
+<g><circle cx="472.1" cy="135.6" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:2 - 790 MB/s, ratio 2.820, cv 5.3%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="545.4" y1="144.9" x2="545.4" y2="140.9"/><line x1="542.4" y1="144.9" x2="548.4" y2="144.9"/><line x1="542.4" y1="140.9" x2="548.4" y2="140.9"/></g>
+<g><circle cx="545.4" cy="142.9" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:3 - 705 MB/s, ratio 2.952, cv 3.1%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="580.1" y1="169.6" x2="580.1" y2="156.5"/><line x1="577.1" y1="169.6" x2="583.1" y2="169.6"/><line x1="577.1" y1="156.5" x2="583.1" y2="156.5"/></g>
+<g><circle cx="580.1" cy="162.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:4 - 517 MB/s, ratio 3.014, cv 10.2%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="606.5" y1="234.9" x2="606.5" y2="203.1"/><line x1="603.5" y1="234.9" x2="609.5" y2="234.9"/><line x1="603.5" y1="203.1" x2="609.5" y2="203.1"/></g>
+<g><circle cx="606.5" cy="217.0" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:5 - 220 MB/s, ratio 3.061, cv 24.5%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="614.6" y1="170.6" x2="614.6" y2="164.2"/><line x1="611.6" y1="170.6" x2="617.6" y2="170.6"/><line x1="611.6" y1="164.2" x2="617.6" y2="164.2"/></g>
+<g><circle cx="614.6" cy="167.3" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:6 - 481 MB/s, ratio 3.076, cv 5.0%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="627.9" y1="190.0" x2="627.9" y2="189.3"/><line x1="624.9" y1="190.0" x2="630.9" y2="190.0"/><line x1="624.9" y1="189.3" x2="630.9" y2="189.3"/></g>
+<g><circle cx="627.9" cy="189.7" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:7 - 338 MB/s, ratio 3.100, cv 0.6%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="632.5" y1="213.0" x2="632.5" y2="209.8"/><line x1="629.5" y1="213.0" x2="635.5" y2="213.0"/><line x1="629.5" y1="209.8" x2="635.5" y2="209.8"/></g>
+<g><circle cx="632.5" cy="211.4" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:8 - 241 MB/s, ratio 3.108, cv 2.6%</title></g>
+<g stroke="#eb6834" stroke-opacity="0.7" stroke-width="1.5"><line x1="648.0" y1="223.6" x2="648.0" y2="216.3"/><line x1="645.0" y1="223.6" x2="651.0" y2="223.6"/><line x1="645.0" y1="216.3" x2="651.0" y2="216.3"/></g>
+<g><circle cx="648.0" cy="219.8" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/><title>pigz -p 10 level:9 - 211 MB/s, ratio 3.136, cv 5.7%</title></g>
+<path d="M141.2,109.4 L447.9,138.3 L516.9,144.1 L547.7,154.0 L572.3,156.1 L579.1,164.4 L592.1,187.8 L596.3,210.7 L611.2,224.9" fill="none" stroke="#2a78d6" stroke-width="2" stroke-opacity="0.65"/>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="141.2" y1="115.6" x2="141.2" y2="103.8"/><line x1="138.2" y1="115.6" x2="144.2" y2="115.6"/><line x1="138.2" y1="103.8" x2="144.2" y2="103.8"/></g>
+<g><circle cx="141.2" cy="109.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:1 - 1.19 GB/s, ratio 2.227, cv 9.2%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="447.9" y1="141.3" x2="447.9" y2="135.4"/><line x1="444.9" y1="141.3" x2="450.9" y2="141.3"/><line x1="444.9" y1="135.4" x2="450.9" y2="135.4"/></g>
+<g><circle cx="447.9" cy="138.3" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:2 - 757 MB/s, ratio 2.777, cv 4.7%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="516.9" y1="146.8" x2="516.9" y2="141.5"/><line x1="513.9" y1="146.8" x2="519.9" y2="146.8"/><line x1="513.9" y1="141.5" x2="519.9" y2="141.5"/></g>
+<g><circle cx="516.9" cy="144.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:3 - 692 MB/s, ratio 2.901, cv 4.1%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="547.7" y1="156.3" x2="547.7" y2="151.7"/><line x1="544.7" y1="156.3" x2="550.7" y2="156.3"/><line x1="544.7" y1="151.7" x2="550.7" y2="151.7"/></g>
+<g><circle cx="547.7" cy="154.0" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:4 - 592 MB/s, ratio 2.956, cv 3.6%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="572.3" y1="158.6" x2="572.3" y2="153.7"/><line x1="569.3" y1="158.6" x2="575.3" y2="158.6"/><line x1="569.3" y1="153.7" x2="575.3" y2="153.7"/></g>
+<g><circle cx="572.3" cy="156.1" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:5 - 573 MB/s, ratio 3.000, cv 3.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="579.1" y1="166.8" x2="579.1" y2="162.0"/><line x1="576.1" y1="166.8" x2="582.1" y2="166.8"/><line x1="576.1" y1="162.0" x2="582.1" y2="162.0"/></g>
+<g><circle cx="579.1" cy="164.4" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:6 - 503 MB/s, ratio 3.012, cv 3.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="592.1" y1="190.9" x2="592.1" y2="184.8"/><line x1="589.1" y1="190.9" x2="595.1" y2="190.9"/><line x1="589.1" y1="184.8" x2="595.1" y2="184.8"/></g>
+<g><circle cx="592.1" cy="187.8" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:7 - 349 MB/s, ratio 3.036, cv 4.8%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="596.3" y1="213.6" x2="596.3" y2="208.0"/><line x1="593.3" y1="213.6" x2="599.3" y2="213.6"/><line x1="593.3" y1="208.0" x2="599.3" y2="208.0"/></g>
+<g><circle cx="596.3" cy="210.7" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:8 - 243 MB/s, ratio 3.043, cv 4.4%</title></g>
+<g stroke="#2a78d6" stroke-opacity="0.7" stroke-width="1.5"><line x1="611.2" y1="244.0" x2="611.2" y2="210.3"/><line x1="608.2" y1="244.0" x2="614.2" y2="244.0"/><line x1="608.2" y1="210.3" x2="614.2" y2="210.3"/></g>
+<g><circle cx="611.2" cy="224.9" r="5.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/><title>gzip-ng -p 10 level:9 - 195 MB/s, ratio 3.070, cv 25.8%</title></g>
+<text x="164.9" y="103.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="479.1" y="132.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="552.4" y="135.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="587.1" y="166.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="613.5" y="187.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="621.6" y="160.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
+<text x="639.5" y="203.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="655.0" y="219.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
 <text x="434.0" y="268.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
 <text x="479.9" y="275.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
 <text x="524.4" y="291.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
 <text x="569.7" y="293.6" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
-<text x="646.2" y="351.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="615.4" y="317.4" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="638.4" y="340.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L6</text>
 <text x="652.4" y="379.8" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
 <text x="653.5" y="399.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
-<text x="587.1" y="166.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="162.3" y="205.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="476.3" y="238.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="552.2" y="248.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="587.2" y="259.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="613.6" y="260.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="655.1" y="323.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="635.1" y="302.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="431.5" y="171.5" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="476.7" y="171.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="519.2" y="186.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L3</text>
+<text x="563.8" y="186.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="607.0" y="211.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="636.7" y="236.7" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L7</text>
+<text x="642.9" y="258.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L8</text>
+<text x="134.1" y="99.0" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L1</text>
+<text x="433.3" y="132.2" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L2</text>
+<text x="523.3" y="143.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L4</text>
+<text x="546.0" y="162.3" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
+<text x="582.0" y="208.9" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L9</text>
+<text x="579.3" y="149.1" font-size="10" fill="#52514e" text-anchor="start" font-weight="normal">L5</text>
 <text x="78.0" y="494.0" font-size="12" fill="#0b0b0b" text-anchor="start" font-weight="normal">compress, level 6, by threads</text>
 <line x1="78.0" y1="656.5" x2="528.0" y2="656.5" stroke="#e7e6e2" stroke-width="1"/>
 <text x="70.0" y="660.5" font-size="9" fill="#52514e" text-anchor="end" font-weight="normal">50 MB/s</text>

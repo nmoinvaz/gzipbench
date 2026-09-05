@@ -494,6 +494,17 @@ def main():
             decompress("pigzpp-p", "pigzpp-p", t)
         decompress("gzip", "gzip", None)
 
+        # Every decoder against the MiGz and bgzip streams, the block-framed
+        # formats a decoder meets in the wild; MiGz's own reader needs its
+        # block size hints, so no MiGz row under bgzip
+        for producer in ("migz", "bgzip-p"):
+            decompress("pigz-p", producer, tmax)
+            decompress("pigzpp-p", producer, tmax)
+            if producer != "bgzip-p":
+                decompress("bgzip-p", producer, tmax)
+            for vslug in ("gzipng", "minigzip", "gzip"):
+                decompress(vslug, producer, None)
+
         # Deflate block census, level 6 streams in each mode a tool supports,
         # on a capped sample because the scan decodes every Huffman symbol
         # in pure Python

@@ -25,7 +25,7 @@ INK_SOFT = "#52514e"
 GRID = "#e7e6e2"
 # Categorical slots in fixed series order, never cycled
 SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
-                 "#e87ba4", "#008300", "#4a3aa7", "#b0368f", "#7a7668"]
+                 "#e87ba4", "#008300", "#4a3aa7", "#c936a4", "#7a7668"]
 
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
                 "gzip-ng", "minigzip", "gzip", "pigzpp -p"]

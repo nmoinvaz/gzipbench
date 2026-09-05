@@ -4,3 +4,4 @@ tools/src/
 tools/bin/
 tools/zlibng.json
 *.gz
+silesia.tar

@@ -25,7 +25,7 @@ INK_SOFT = "#52514e"
 GRID = "#e7e6e2"
 # Categorical slots in fixed series order, never cycled
 SERIES_COLORS = ["#2a78d6", "#eb6834", "#1baf7a", "#eda100",
-                 "#e87ba4", "#008300", "#4a3aa7", "#b3538f", "#7a7668"]
+                 "#e87ba4", "#008300", "#4a3aa7", "#946200", "#7a7668"]
 
 SERIES_ORDER = ["gzip-ng -p", "pigz -p", "bgzip -@", "migz",
                 "gzip-ng", "minigzip", "gzip", "pigzpp -p"]
@@ -34,7 +34,6 @@ REPO_URL = "https://github.com/nmoinvaz/gzipbench"
 
 
 MODE_ORDER = ["normal", "rsyncable", "independent"]
-MODE_OPACITY = {"normal": 1.0, "rsyncable": 0.66, "independent": 0.4}
 
 
 def fmt_speed(bps):
@@ -120,6 +119,15 @@ def nice_log_ticks(lo, hi):
 def series_color(series):
     i = SERIES_ORDER.index(series) if series in SERIES_ORDER else len(SERIES_ORDER)
     return SERIES_COLORS[i]
+
+
+# Series drawn dashed so the solid lines they ride on stay visible
+SERIES_DASH = {"pigzpp -p": "6 4"}
+
+
+def series_dash(series):
+    d = SERIES_DASH.get(series)
+    return f' stroke-dasharray="{d}"' if d else ""
 
 
 def variant_label(series, threads):
@@ -269,7 +277,7 @@ def render(ctx, benchmarks, title, out_path):
                 f"{'M' if j == 0 else 'L'}{sx(b['ratio']):.1f},{sy(b['bytes_per_second']):.1f}"
                 for j, b in enumerate(pts))
             svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
-                    f'stroke-width="2" stroke-opacity="0.65"/>')
+                    f'stroke-width="2" stroke-opacity="0.65"{series_dash(s)}/>')
         for b in pts:
             x, yy = sx(b["ratio"]), sy(b["bytes_per_second"])
             cv = cv_of(b)
@@ -351,7 +359,7 @@ def render(ctx, benchmarks, title, out_path):
                 path = " ".join(f"{'M' if q == 0 else 'L'}{x:.1f},{yy:.1f}"
                                 for q, (x, yy) in enumerate(coords))
                 svg.add(f'<path d="{path}" fill="none" stroke="{series_color(s)}" '
-                        f'stroke-width="2" stroke-opacity="0.7"/>')
+                        f'stroke-width="2" stroke-opacity="0.7"{series_dash(s)}/>')
                 for b, (x, yy) in zip(line, coords):
                     tip = (f"{s} threads:{b['threads']} - {fmt_speed(b['bytes_per_second'])}"
                            + (f", cv {cv_of(b) * 100:.1f}%" if cv_of(b) > 0 else ""))
@@ -374,7 +382,7 @@ def render(ctx, benchmarks, title, out_path):
 
     # Deflate block census, paired bar panels: how many blocks each mode
     # cuts the stream into, and how big the average block is, per variant,
-    # bar shade carries the mode within a variant's color
+    # the row label carries the mode
     census = [b for b in benchmarks if b["kind"] == "blocks"]
     if census:
         census.sort(key=lambda b: (
@@ -398,7 +406,6 @@ def render(ctx, benchmarks, title, out_path):
         y = gtop + 8
         for b in census:
             color = series_color(b["series"])
-            op = MODE_OPACITY.get(b["mode"], 1.0)
             row_label = (b["series"] if b["mode"] == "normal"
                          else f"{b['series']} · {b['mode']}")
             svg.text(lx0, y + 12, row_label, size=10, fill=INK)
@@ -414,8 +421,7 @@ def render(ctx, benchmarks, title, out_path):
                      f"{fmt_bytes(b['block_input_bytes'])} of input per block")):
                 w = max((pw - 64) * value / vmax, 6)
                 svg.add(f'<path d="M{px0} {y + 5} h{w - 4:.1f} a4 4 0 0 1 4 4 '
-                        f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" fill="{color}" '
-                        f'fill-opacity="{op}">'
+                        f'v4 a4 4 0 0 1 -4 4 h{-(w - 4):.1f} z" fill="{color}">'
                         f'<title>{esc(row_label + " - " + tip)}</title></path>')
                 svg.text(px0 + pw, y + 12, text, size=10, fill=INK, anchor="end")
             svg.text(ux, y + 12, fmt_bytes(b["block_input_bytes"]),

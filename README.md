@@ -2,21 +2,10 @@
 
 Whole-process gzip command line benchmarks across implementations.
 
-`bench.py` times each tool compressing and decompressing one input stream,
-stdin to stdout, the way the tools sit in pipelines, so startup, threading,
-and IO all count. Every decoder's warmup output is verified against the
-input's size and crc. In-process buffer codec benchmarks are
-[codecbench]'s job instead.
-
-The variant matrix follows the [gzip-ng] README benchmarks. Each tool runs
-the compression level ladder, levels 1 through 9, serial and parallel
-variants separately, parallel tools sweep thread counts at level 6, and
-the decompression grid crosses decoders with producers, gzip-ng decoding
-bgzip and MiGz output as well as its own. A deflate block census then
-compresses a capped sample in each mode a tool supports, normal,
-`--rsyncable`, and independent, and counts the blocks and members in every
-stream by parsing the deflate bitstream itself
-(`scripts/deflate_blocks.py`).
+`bench.py` times whole processes, stdin to stdout, so startup, threading,
+and IO all count. Each run covers the level ladder, thread sweeps at
+level 6, a decompression grid crossing decoders with producers, and a
+deflate block census.
 
 ## Tools
 
@@ -38,7 +27,6 @@ stream by parsing the deflate bitstream itself
 [MiGz]: https://github.com/linkedin/migz
 [zlib-ng]: https://github.com/zlib-ng/zlib-ng
 [gzip]: https://www.gnu.org/software/gzip/
-[codecbench]: https://github.com/nmoinvaz/codecbench
 
 Tools in `tools/bin` are preferred, then PATH, missing ones are skipped
 and noted. `GZIPNG`, `PIGZ`, `PIGZPP`, `GZIP`, `MINIGZIP`, `BGZIP`, and

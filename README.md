@@ -62,14 +62,10 @@ curl -LO https://mirror.circlestorm.org/silesia.tar
 python3 scripts/graph_runs.py results/all-tools.json
 ```
 
-The showcased run measures the [Silesia corpus], the common ground of
-compression benchmarks. With no input files the benchmark instead
-generates a deterministic synthetic mix of source-like text, build-log
-lines, and random blocks, weighted to land near the 4.8 to 1 of the
-gzip-ng README corpus under `gzip -6`. Any files passed are concatenated
-into one stream.
-
-[Silesia corpus]: http://sun.aei.polsl.pl/~sdeor/index.php?page=silesia
+Any files passed are concatenated into one stream. With no input files
+the benchmark instead generates a deterministic synthetic mix of
+source-like text, build-log lines, and random blocks, weighted to land
+near the 4.8 to 1 of the gzip-ng README corpus under `gzip -6`.
 
 `--levels`, `--threads`, `--runs`, `--size-mb`, and `--blocks-mb` trim or
 grow the matrix, `./bench.py --help` lists the defaults. Everything needs
@@ -93,7 +89,11 @@ block census panels, block counts and average block sizes across the
 normal, rsyncable, and independent modes, repetition error bars, and
 machine specs. An aggregate table prints to stdout.
 
-All tools on the [Silesia corpus](https://mirror.circlestorm.org/silesia.tar)
-(`silesia.tar`, 202 MiB), the common ground of compression benchmarks:
+## Results
+
+All tools on the [Silesia corpus] (`silesia.tar`, 202 MiB), the common
+ground of compression benchmarks, built and run as above:
+
+[Silesia corpus]: http://sun.aei.polsl.pl/~sdeor/index.php?page=silesia
 
 ![All tools, compress and decompress](results/all-tools.svg)
